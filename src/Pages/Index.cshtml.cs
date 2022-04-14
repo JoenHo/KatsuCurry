@@ -11,6 +11,7 @@ namespace ContosoCrafts.WebSite.Pages
     /// Owen Clinton
     /// Joen Ho
     /// Srimithra Bingi
+    /// Ying Chu Troy Chen
     /// </summary>
 
     public class IndexModel : PageModel
