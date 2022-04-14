@@ -8,9 +8,9 @@ namespace ContosoCrafts.WebSite.Pages
 {
 
     /// <summary>
-    /// Selina Hu
-    /// JenChieh Lu
     /// Owen Clinton
+    /// Joen Ho
+    /// </summary>
 
     public class IndexModel : PageModel
     {
