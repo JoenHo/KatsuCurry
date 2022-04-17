@@ -148,6 +148,7 @@ ul {
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin: auto 16px;
 }
 
     /* Hide default HTML checkbox */
