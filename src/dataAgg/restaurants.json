@@ -3,96 +3,128 @@
         "formatted_address": "825 Harrison St, Seattle, WA 98109, United States",
         "name": "Hurry Curry of Tokyo - South Lake Union",
         "place_id": "ChIJR_81-DcVkFQRA45NENHOdPc",
-        "hours": "['Monday: 10:00 AM \u2013 10:00 PM', 'Tuesday: 10:00 AM \u2013 10:00 PM', 'Wednesday: 10:00 AM \u2013 10:00 PM', 'Thursday: 10:00 AM \u2013 10:00 PM', 'Friday: 10:00 AM \u2013 10:00 PM', 'Saturday: 10:00 AM \u2013 10:00 PM', 'Sunday: 10:00 AM \u2013 9:30 PM']"
+        "hours": "['Monday: 10:00 AM – 10:00 PM', 'Tuesday: 10:00 AM – 10:00 PM', 'Wednesday: 10:00 AM – 10:00 PM', 'Thursday: 10:00 AM – 10:00 PM', 'Friday: 10:00 AM – 10:00 PM', 'Saturday: 10:00 AM – 10:00 PM', 'Sunday: 10:00 AM – 9:30 PM']",
+        "phone": "(206) 681-9443",
+        "website": "http:\/\/www.hurrycurryoftokyo-seattle.com\/"
     },
     {
         "formatted_address": "1256 Republican St #5538, Seattle, WA 98109, United States",
         "name": "Teinei",
         "place_id": "ChIJu5p1wjAVkFQRwZLpQ1dgTjk",
-        "hours": "['Monday: 11:30 AM \u2013 2:00 PM, 5:00 \u2013 9:30 PM', 'Tuesday: 11:30 AM \u2013 2:00 PM, 5:00 \u2013 9:30 PM', 'Wednesday: 11:30 AM \u2013 2:00 PM, 5:00 \u2013 9:30 PM', 'Thursday: 11:30 AM \u2013 2:00 PM, 5:00 \u2013 9:30 PM', 'Friday: 11:30 AM \u2013 2:00 PM, 5:00 \u2013 10:30 PM', 'Saturday: 11:30 AM \u2013 2:00 PM, 5:00 \u2013 10:30 PM', 'Sunday: 11:30 AM \u2013 2:00 PM, 5:00 \u2013 9:30 PM']"
+        "hours": "['Monday: 11:30 AM – 2:00 PM, 5:00 – 9:30 PM', 'Tuesday: 11:30 AM – 2:00 PM, 5:00 – 9:30 PM', 'Wednesday: 11:30 AM – 2:00 PM, 5:00 – 9:30 PM', 'Thursday: 11:30 AM – 2:00 PM, 5:00 – 9:30 PM', 'Friday: 11:30 AM – 2:00 PM, 5:00 – 10:30 PM', 'Saturday: 11:30 AM – 2:00 PM, 5:00 – 10:30 PM', 'Sunday: 11:30 AM – 2:00 PM, 5:00 – 9:30 PM']",
+        "phone": "(206) 420-4500",
+        "website": "https:\/\/teinei-seattle.com\/"
     },
     {
         "formatted_address": "954 E Union St, Seattle, WA 98122, United States",
         "name": "Gokan Sushi & Katsu",
         "place_id": "ChIJyfULEMxqkFQRzsf3us_nEZM",
-        "hours": "['Monday: Closed', 'Tuesday: 4:00 \u2013 10:00 PM', 'Wednesday: 4:00 \u2013 10:00 PM', 'Thursday: 4:00 \u2013 11:00 PM', 'Friday: 4:00 PM \u2013 12:00 AM', 'Saturday: 4:00 PM \u2013 12:00 AM', 'Sunday: 4:00 \u2013 10:00 PM']"
+        "hours": "['Monday: Closed', 'Tuesday: 4:00 – 10:00 PM', 'Wednesday: 4:00 – 10:00 PM', 'Thursday: 4:00 – 11:00 PM', 'Friday: 4:00 PM – 12:00 AM', 'Saturday: 4:00 PM – 12:00 AM', 'Sunday: 4:00 – 10:00 PM']",
+        "phone": "(206) 325-3534",
+        "website": "http:\/\/www.thegokan.com\/"
     },
     {
         "formatted_address": "1222 E Pine St, Seattle, WA 98122, United States",
         "name": "Ramen Danbo",
         "place_id": "ChIJG6lbkM1qkFQRP8iOMgqQvvo",
-        "hours": "['Monday: 11:00 AM \u2013 11:00 PM', 'Tuesday: 11:00 AM \u2013 11:00 PM', 'Wednesday: 11:00 AM \u2013 11:00 PM', 'Thursday: 11:00 AM \u2013 11:00 PM', 'Friday: 11:00 AM \u2013 11:00 PM', 'Saturday: 11:00 AM \u2013 11:00 PM', 'Sunday: 11:00 AM \u2013 11:00 PM']"
+        "hours": "['Monday: 11:00 AM – 11:00 PM', 'Tuesday: 11:00 AM – 11:00 PM', 'Wednesday: 11:00 AM – 11:00 PM', 'Thursday: 11:00 AM – 11:00 PM', 'Friday: 11:00 AM – 11:00 PM', 'Saturday: 11:00 AM – 11:00 PM', 'Sunday: 11:00 AM – 11:00 PM']",
+        "phone": "(206) 566-5479",
+        "website": "http:\/\/ramendanbo.com\/"
     },
     {
         "formatted_address": "1510 Belmont Ave, Seattle, WA 98122, United States",
         "name": "Menya Musashi Tsukemen & Ramen",
         "place_id": "ChIJLbCqjpprkFQRvDEwgmqAq6A",
-        "hours": "['Monday: 11:30 AM \u2013 3:00 PM, 5:00 \u2013 9:30 PM', 'Tuesday: 11:30 AM \u2013 3:00 PM, 5:00 \u2013 9:30 PM', 'Wednesday: Closed', 'Thursday: 11:30 AM \u2013 3:00 PM, 5:00 \u2013 9:30 PM', 'Friday: 11:30 AM \u2013 9:30 PM', 'Saturday: 11:30 AM \u2013 9:30 PM', 'Sunday: 11:30 AM \u2013 9:30 PM']"
+        "hours": "['Monday: 11:30 AM – 3:00 PM, 5:00 – 9:30 PM', 'Tuesday: 11:30 AM – 3:00 PM, 5:00 – 9:30 PM', 'Wednesday: Closed', 'Thursday: 11:30 AM – 3:00 PM, 5:00 – 9:30 PM', 'Friday: 11:30 AM – 9:30 PM', 'Saturday: 11:30 AM – 9:30 PM', 'Sunday: 11:30 AM – 9:30 PM']",
+        "phone": "(206) 257-4289",
+        "website": "http:\/\/menyamusashi-seattle.us\/"
     },
     {
         "formatted_address": "320 E Pine St, Seattle, WA 98122, United States",
         "name": "Kizuki Ramen & Izakaya",
         "place_id": "ChIJsaflMstqkFQR5SEdWDIEiGs",
-        "hours": "['Monday: 11:00 AM \u2013 9:30 PM', 'Tuesday: 11:00 AM \u2013 9:30 PM', 'Wednesday: 11:00 AM \u2013 9:30 PM', 'Thursday: 11:00 AM \u2013 9:30 PM', 'Friday: 11:00 AM \u2013 10:00 PM', 'Saturday: 11:00 AM \u2013 10:00 PM', 'Sunday: 11:00 AM \u2013 9:30 PM']"
+        "hours": "['Monday: 11:00 AM – 9:30 PM', 'Tuesday: 11:00 AM – 9:30 PM', 'Wednesday: 11:00 AM – 9:30 PM', 'Thursday: 11:00 AM – 9:30 PM', 'Friday: 11:00 AM – 10:00 PM', 'Saturday: 11:00 AM – 10:00 PM', 'Sunday: 11:00 AM – 9:30 PM']",
+        "phone": "(425) 553-0867",
+        "website": "https:\/\/www.kizuki.com\/"
     },
     {
         "formatted_address": "500 Mercer St #2b, Seattle, WA 98109, United States",
         "name": "Ten Sushi",
         "place_id": "ChIJzU0sQUcVkFQRW-JhtEZVWD0",
-        "hours": "['Monday: 10:00 AM \u2013 3:00 AM', 'Tuesday: 10:00 AM \u2013 3:00 AM', 'Wednesday: 10:00 AM \u2013 3:00 AM', 'Thursday: 10:00 AM \u2013 3:00 AM', 'Friday: 10:00 AM \u2013 3:00 AM', 'Saturday: 10:00 AM \u2013 3:00 AM', 'Sunday: 10:00 AM \u2013 3:00 AM']"
+        "hours": "['Monday: 10:00 AM – 3:00 AM', 'Tuesday: 10:00 AM – 3:00 AM', 'Wednesday: 10:00 AM – 3:00 AM', 'Thursday: 10:00 AM – 3:00 AM', 'Friday: 10:00 AM – 3:00 AM', 'Saturday: 10:00 AM – 3:00 AM', 'Sunday: 10:00 AM – 3:00 AM']",
+        "phone": "(206) 453-3881",
+        "website": "https:\/\/tensushiseattle.com\/"
     },
     {
         "formatted_address": "1054 N 39th St, Seattle, WA 98103, United States",
         "name": "Kamonegi",
         "place_id": "ChIJL3l1VVUUkFQR9DzkOndnea8",
-        "hours": "['Monday: Closed', 'Tuesday: 4:00 \u2013 10:00 PM', 'Wednesday: 4:00 \u2013 10:00 PM', 'Thursday: 4:00 \u2013 10:00 PM', 'Friday: 4:00 \u2013 10:00 PM', 'Saturday: 4:00 \u2013 10:00 PM', 'Sunday: Closed']"
+        "hours": "['Monday: Closed', 'Tuesday: 4:00 – 10:00 PM', 'Wednesday: 4:00 – 10:00 PM', 'Thursday: 4:00 – 10:00 PM', 'Friday: 4:00 – 10:00 PM', 'Saturday: 4:00 – 10:00 PM', 'Sunday: Closed']",
+        "phone": "(206) 632-0185",
+        "website": "https:\/\/www.kamonegiseattle.com\/"
     },
     {
         "formatted_address": "515 South Main St, Seattle, WA 98104, United States",
         "name": "Tsukushinbo",
         "place_id": "ChIJnc-QmrtqkFQRlFnDTZSfac8",
-        "hours": "['Monday: 5:00 \u2013 10:00 PM', 'Tuesday: 5:00 \u2013 10:00 PM', 'Wednesday: 5:00 \u2013 10:00 PM', 'Thursday: 5:00 \u2013 10:00 PM', 'Friday: 5:00 \u2013 11:00 PM', 'Saturday: 5:00 \u2013 11:00 PM', 'Sunday: 5:00 \u2013 9:30 PM']"
+        "hours": "['Monday: 5:00 – 10:00 PM', 'Tuesday: 5:00 – 10:00 PM', 'Wednesday: 5:00 – 10:00 PM', 'Thursday: 5:00 – 10:00 PM', 'Friday: 5:00 – 11:00 PM', 'Saturday: 5:00 – 11:00 PM', 'Sunday: 5:00 – 9:30 PM']",
+        "phone": "(206) 467-4004",
+        "website": "https:\/\/twitter.com\/Tsukushinbosea"
     },
     {
         "formatted_address": "4 W Roy St, Seattle, WA 98119, United States",
         "name": "Shiki",
         "place_id": "ChIJ83vnL0IVkFQRAI20xtnp6do",
-        "hours": "['Monday: Closed', 'Tuesday: Closed', 'Wednesday: 5:00 \u2013 9:00 PM', 'Thursday: 5:00 \u2013 9:00 PM', 'Friday: 5:00 \u2013 9:00 PM', 'Saturday: 5:00 \u2013 9:00 PM', 'Sunday: 5:00 \u2013 9:00 PM']"
+        "hours": "['Monday: Closed', 'Tuesday: Closed', 'Wednesday: 5:00 – 9:00 PM', 'Thursday: 5:00 – 9:00 PM', 'Friday: 5:00 – 9:00 PM', 'Saturday: 5:00 – 9:00 PM', 'Sunday: 5:00 – 9:00 PM']",
+        "phone": "(206) 281-1352",
+        "website": "http:\/\/www.shikijapaneserestaurant.com\/"
     },
     {
         "formatted_address": "500 E Pine St, Seattle, WA 98122, United States",
         "name": "Tamari Bar",
         "place_id": "ChIJ7_eIRctqkFQRguCK7heBC84",
-        "hours": "['Monday: Closed', 'Tuesday: 5:00 \u2013 11:00 PM', 'Wednesday: 5:00 \u2013 11:00 PM', 'Thursday: 5:00 \u2013 11:00 PM', 'Friday: 5:00 \u2013 11:00 PM', 'Saturday: 5:00 \u2013 11:00 PM', 'Sunday: 5:00 \u2013 11:00 PM']"
+        "hours": "['Monday: Closed', 'Tuesday: 5:00 – 11:00 PM', 'Wednesday: 5:00 – 11:00 PM', 'Thursday: 5:00 – 11:00 PM', 'Friday: 5:00 – 11:00 PM', 'Saturday: 5:00 – 11:00 PM', 'Sunday: 5:00 – 11:00 PM']",
+        "phone": "(206) 979-8800",
+        "website": "https:\/\/www.tamaribarseattle.com\/"
     },
     {
         "formatted_address": "610 S Jackson St, Seattle, WA 98104, United States",
         "name": "Itsumono",
         "place_id": "ChIJ4ddzd7xqkFQR3ysPAKkjWzw",
-        "hours": "['Monday: Closed', 'Tuesday: 5:00 PM \u2013 12:00 AM', 'Wednesday: 5:00 PM \u2013 12:00 AM', 'Thursday: 5:00 PM \u2013 12:00 AM', 'Friday: 5:00 PM \u2013 2:00 AM', 'Saturday: 5:00 PM \u2013 2:00 AM', 'Sunday: Closed']"
+        "hours": "['Monday: Closed', 'Tuesday: 5:00 PM – 12:00 AM', 'Wednesday: 5:00 PM – 12:00 AM', 'Thursday: 5:00 PM – 12:00 AM', 'Friday: 5:00 PM – 2:00 AM', 'Saturday: 5:00 PM – 2:00 AM', 'Sunday: Closed']",
+        "phone": "(206) 682-1828",
+        "website": "https:\/\/itsumonoseattle.wixsite.com\/home"
     },
     {
         "formatted_address": "224 Broadway E, Seattle, WA 98102, United States",
         "name": "Rondo Japanese Kitchen",
         "place_id": "ChIJGdAxATMVkFQR6yvhh0A7Dgw",
-        "hours": "['Monday: 11:30 AM \u2013 9:30 PM', 'Tuesday: Closed', 'Wednesday: 11:30 AM \u2013 9:30 PM', 'Thursday: 11:30 AM \u2013 9:30 PM', 'Friday: 11:30 AM \u2013 9:30 PM', 'Saturday: 11:30 AM \u2013 9:30 PM', 'Sunday: 11:30 AM \u2013 9:30 PM']"
+        "hours": "['Monday: 11:30 AM – 9:30 PM', 'Tuesday: Closed', 'Wednesday: 11:30 AM – 9:30 PM', 'Thursday: 11:30 AM – 9:30 PM', 'Friday: 11:30 AM – 9:30 PM', 'Saturday: 11:30 AM – 9:30 PM', 'Sunday: 11:30 AM – 9:30 PM']",
+        "phone": "(206) 588-2051",
+        "website": "https:\/\/www.rondojapanesekitchen.com\/"
     },
     {
         "formatted_address": "1618 N 45th St, Seattle, WA 98103, United States",
         "name": "ISSIAN",
         "place_id": "ChIJRU0bzVAUkFQROPiPwuOpPkU",
-        "hours": "['Monday: Closed', 'Tuesday: 4:30 \u2013 9:00 PM', 'Wednesday: 4:30 \u2013 9:00 PM', 'Thursday: 4:30 \u2013 9:00 PM', 'Friday: 4:30 \u2013 9:00 PM', 'Saturday: 4:30 \u2013 9:00 PM', 'Sunday: 4:30 \u2013 8:30 PM']"
+        "hours": "['Monday: Closed', 'Tuesday: 4:30 – 9:00 PM', 'Wednesday: 4:30 – 9:00 PM', 'Thursday: 4:30 – 9:00 PM', 'Friday: 4:30 – 9:00 PM', 'Saturday: 4:30 – 9:00 PM', 'Sunday: 4:30 – 8:30 PM']",
+        "phone": "(206) 632-7010",
+        "website": "https:\/\/issianjapanesestonegrill.weebly.com\/"
     },
     {
         "formatted_address": "512 S King St, Seattle, WA 98104, United States",
         "name": "Musashi's",
         "place_id": "ChIJXdIEhbxqkFQRqRNA3F9923w",
-        "hours": "['Monday: 11:00 AM \u2013 2:30 PM, 4:00 \u2013 9:00 PM', 'Tuesday: 11:00 AM \u2013 2:30 PM, 4:00 \u2013 9:00 PM', 'Wednesday: 11:00 AM \u2013 2:30 PM, 4:00 \u2013 9:00 PM', 'Thursday: 11:00 AM \u2013 2:30 PM, 4:00 \u2013 9:00 PM', 'Friday: 11:00 AM \u2013 2:30 PM, 4:00 \u2013 9:00 PM', 'Saturday: 4:00 \u2013 9:00 PM', 'Sunday: Closed']"
+        "hours": "['Monday: 11:00 AM – 2:30 PM, 4:00 – 9:00 PM', 'Tuesday: 11:00 AM – 2:30 PM, 4:00 – 9:00 PM', 'Wednesday: 11:00 AM – 2:30 PM, 4:00 – 9:00 PM', 'Thursday: 11:00 AM – 2:30 PM, 4:00 – 9:00 PM', 'Friday: 11:00 AM – 2:30 PM, 4:00 – 9:00 PM', 'Saturday: 4:00 – 9:00 PM', 'Sunday: Closed']",
+        "phone": "(206) 829-0277",
+        "website": null
     },
     {
         "formatted_address": "2230 1st Ave, Seattle, WA 98121, United States",
         "name": "Umi Sake House",
         "place_id": "ChIJlwUFuk0VkFQRzdTvH0McgL0",
-        "hours": "['Monday: 4:00 \u2013 11:00 PM', 'Tuesday: 4:00 \u2013 11:00 PM', 'Wednesday: 4:00 \u2013 11:00 PM', 'Thursday: 4:00 \u2013 11:00 PM', 'Friday: 4:00 PM \u2013 12:00 AM', 'Saturday: 4:00 PM \u2013 12:00 AM', 'Sunday: 4:00 \u2013 11:00 PM']"
+        "hours": "['Monday: 4:00 – 11:00 PM', 'Tuesday: 4:00 – 11:00 PM', 'Wednesday: 4:00 – 11:00 PM', 'Thursday: 4:00 – 11:00 PM', 'Friday: 4:00 PM – 12:00 AM', 'Saturday: 4:00 PM – 12:00 AM', 'Sunday: 4:00 – 11:00 PM']",
+        "phone": "(206) 374-8717",
+        "website": null
     }
 ]
