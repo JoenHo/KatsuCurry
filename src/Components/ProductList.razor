@@ -15,8 +15,12 @@
             <div class="card-footer">
                 <small class="text-muted">
                     <button @onclick="(e => SelectProduct(product?.Id ?? string.Empty))"
-                        data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                            data-toggle="modal" data-target="#productModal" class="btn btn-primary">
                         More Info
+                    </button>
+                    <button @onclick="(e => SelectProduct(product?.Id ?? string.Empty))"
+                            data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                        Quick Link
                     </button>
                 </small>
             </div>
@@ -42,6 +46,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">@selectedProduct.Description</p>
+                            
                         </div>
                     </div>
                 </div>
