@@ -6,16 +6,15 @@ using Microsoft.Extensions.Logging;
 
 namespace ContosoCrafts.WebSite.Pages
 {
-
     /// <summary>
-    /// Owen Clinton
-    /// Joen Ho
-    /// Srimithra Bingi
-    /// Ying Chu Troy Chen
+    /// Apply simple and efficient authorize attribute for razor page
     /// </summary>
-
     public class IndexModel : PageModel
     {
+        // THe following methods are simple implementation of
+        // C# System under HTTPClient to call a request
+        // to our desire API, logger and ProdocutService
+        // then post it and display to homepage for viewing
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger,
@@ -28,6 +27,6 @@ namespace ContosoCrafts.WebSite.Pages
         public JsonFileProductService ProductService { get; }
         public IEnumerable<Product>? Products { get; private set; }
 
-        public void OnGet() => Products = ProductService.GetProducts(); // This is a comment2
+        public void OnGet() => Products = ProductService.GetProducts();
     }
 }
