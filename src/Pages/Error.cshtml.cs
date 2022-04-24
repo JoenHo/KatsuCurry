@@ -5,9 +5,16 @@ using Microsoft.Extensions.Logging;
 
 namespace ContosoCrafts.WebSite.Pages
 {
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None,
+        NoStore = true)]
+    /// <summary>
+    /// This method is to check if the request object Id is matching
+    /// the one we see on the webpage
+    /// </summary>
     public class ErrorModel : PageModel
     {
+        // Setting all the basic template for error checking
+        // of the function call request
         public string? RequestId { get; set; }
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
@@ -16,6 +23,9 @@ namespace ContosoCrafts.WebSite.Pages
 
         public ErrorModel(ILogger<ErrorModel> logger) => _logger = logger;
 
-        public void OnGet() => RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+        // if the Activity.current is null use HttpContext.TraceIdentifier
+        // to set the trace id, vice versa
+        public void OnGet() =>
+            RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
     }
 }
