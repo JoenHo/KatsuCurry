@@ -3,8 +3,12 @@ using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite.Models
 {
+    /// <summary>
+    /// This class holds C# representation of the Product.json data
+    /// </summary>
     public class Product
     {
+        // followings are the properties of Product
         public string? Id { get; set; }
         public string? Maker { get; set; }
 
@@ -15,6 +19,10 @@ namespace ContosoCrafts.WebSite.Models
         public string? Description { get; set; }
         public int[]? Ratings { get; set; }
 
+        /// <summary>
+        /// This method converts the class objects back to JSON representation
+        /// </summary>
+        /// <returns>a string of JSON representation of the class objects</returns>
         public override string ToString() => JsonSerializer.Serialize<Product>(this);
     }
 }
