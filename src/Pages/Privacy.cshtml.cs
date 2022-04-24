@@ -8,12 +8,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace ContosoCrafts.WebSite.Pages
 {
     /// <summary>
-    /// This is class for the privacy page
+    /// This class is the pgae model class for Privacy.cshtml 
     /// </summary>
     public class PrivacyModel : PageModel
     {
         /// <summary>
-        /// This function is called when the privacy page is called 
+        /// Whenever a user makes a GET request to a page, this method is invoked
         /// </summary>
         public void OnGet()
         {
