@@ -79,7 +79,8 @@
     @RenderSection("Scripts", required: false)
 
     <script type="text/javascript">document.getElementById("testslider").addEventListener('click', () => {
-           
+            document.getElementById("restaurant_page").classList.toggle('hide');
+            document.getElementById("food_page").classList.toggle('hide');
         });</script>
 </body>
 </html>
