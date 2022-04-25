@@ -31,6 +31,10 @@ namespace ContosoCrafts.WebSite.Controllers
         [HttpGet]
         public IEnumerable<Product> Get() => ProductService.GetProducts();
 
+        /// <summary>
+        /// This method returns the food list when HttpGet is requested
+        /// </summary>
+        /// <returns>food</returns>
         [HttpGet]
         public IEnumerable<Food> GetFoodData() => ProductService.GetFood();
 
