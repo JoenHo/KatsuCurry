@@ -3,6 +3,7 @@
 @using Microsoft.AspNetCore.Components.Web
 @inject JsonFileProductService ProductService
 
+<div id="restaurant_page" class="restaurant_page" runat="server">
 <div class="card-columns">
     @foreach (var product in ProductService.GetProducts())
     {
@@ -87,7 +88,7 @@
 </div>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+</div>
 @code
 {
     Product? selectedProduct;
