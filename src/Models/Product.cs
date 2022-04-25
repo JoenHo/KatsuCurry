@@ -8,7 +8,9 @@ namespace ContosoCrafts.WebSite.Models
     /// </summary>
     public class Product
     {
+
         // followings are the properties of Product
+        [JsonPropertyName("place_id")]
         public string? Id { get; set; }
         public string? Maker { get; set; }
 
