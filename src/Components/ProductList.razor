@@ -119,12 +119,20 @@
 {
     Product? selectedProduct;
     string? selectedProductId;
+    Food? selectedFood;
+    string? selectedFoodId;
 
     void SelectProduct(string productId)
     {
         selectedProductId = productId;
         selectedProduct = ProductService.GetProducts().First(x => x.Id == productId);
         GetCurrentRating();
+    }
+
+    void SelectFood(string foodId)
+    {
+        selectedFoodId = foodId;
+        selectedFood = ProductService.GetFood().First(x => x.Restaurant == foodId);
     }
 
     int currentRating = 0;
