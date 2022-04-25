@@ -16,6 +16,7 @@ namespace ContosoCrafts.WebSite.Models
 
         [JsonPropertyName("img")]
         public string? Image { get; set; }
+        [JsonPropertyName("website")]
         public string? Url { get; set; }
         public string? Title { get; set; }
         public string? phone { get; set; }
