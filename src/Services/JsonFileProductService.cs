@@ -6,7 +6,7 @@ using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
 
 namespace ContosoCrafts.WebSite.Services
-{
+{ 
     public class JsonFileProductService
     {
         /// Initiate the web hosting environment for application to apply
@@ -19,14 +19,27 @@ namespace ContosoCrafts.WebSite.Services
         public IWebHostEnvironment WebHostEnvironment { get; }
 
         /// Get the file path and filename for loading
-        private string JsonFileName => Path.Combine(
+        private string JsonFileRestaurantName => Path.Combine(
             WebHostEnvironment.WebRootPath, "data", "products.json");
-        
+
+        private string JsonFileFoodName => Path.Combine(
+                    WebHostEnvironment.WebRootPath, "data", "products.json");
+
         /// Get the json text and convert it to list
         public IEnumerable<Product> GetProducts()
         {
-            using var jsonFileReader = File.OpenText(JsonFileName);
+            using var jsonFileReader = File.OpenText(JsonFileRestaurantName);
             return JsonSerializer.Deserialize<Product[]>
+                (jsonFileReader.ReadToEnd(), new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+        }
+
+        public IEnumerable<Food> GetFood()
+        {
+            using var jsonFileReader = File.OpenText(JsonFileFoodName);
+            return JsonSerializer.Deserialize<Food[]>
                 (jsonFileReader.ReadToEnd(), new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
@@ -60,10 +73,10 @@ namespace ContosoCrafts.WebSite.Services
             }
 
             // Update client's rating to restaurant
-            using var outputStream = File.OpenWrite(JsonFileName);
+            using var outputRestaurantStream = File.OpenWrite(JsonFileRestaurantName);
 
             JsonSerializer.Serialize<IEnumerable<Product>>(
-                new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                new Utf8JsonWriter(outputRestaurantStream, new JsonWriterOptions
                 {
                     SkipValidation = true,
                     Indented = true
