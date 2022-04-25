@@ -18,12 +18,13 @@ namespace ContosoCrafts.WebSite.Services
         /// Call the IWebHostEnvironment object
         public IWebHostEnvironment WebHostEnvironment { get; }
 
-        /// Get the file path and filename for loading
+        /// Get the file path and filename of Restaurant data for loading
         private string JsonFileRestaurantName => Path.Combine(
             WebHostEnvironment.WebRootPath, "data", "products.json");
 
+        /// Get the file path and filename of Food data for loading
         private string JsonFileFoodName => Path.Combine(
-                    WebHostEnvironment.WebRootPath, "data", "products.json");
+                    WebHostEnvironment.WebRootPath, "data", "food.json");
 
         /// Get the json text and convert it to list
         public IEnumerable<Product> GetProducts()
@@ -36,6 +37,7 @@ namespace ContosoCrafts.WebSite.Services
                 });
         }
 
+        /// Get the json text and convert it to list
         public IEnumerable<Food> GetFood()
         {
             using var jsonFileReader = File.OpenText(JsonFileFoodName);
