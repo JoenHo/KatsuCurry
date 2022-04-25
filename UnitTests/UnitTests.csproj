@@ -16,4 +16,8 @@
   <ItemGroup>
     <None Remove="Moq" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\ContosoCrafts.WebSite.csproj" />
+  </ItemGroup>
 </Project>
