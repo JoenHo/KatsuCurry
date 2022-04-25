@@ -12,8 +12,8 @@ namespace ContosoCrafts.WebSite.Models
         // followings are the properties of Product
         [JsonPropertyName("place_id")]
         public string? Id { get; set; }
+        public string? name { get; set; }
         public string? Maker { get; set; }
-
         [JsonPropertyName("img")]
         public string? Image { get; set; }
         [JsonPropertyName("website")]
