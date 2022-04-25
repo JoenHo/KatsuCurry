@@ -7,7 +7,8 @@
     "phone": "(206) 681-9443",
     "website": "http:\/\/www.hurrycurryoftokyo-seattle.com\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950135-2b08b06c-138d-4d8f-9c2e-be83b7d41394.jpg",
-    "type": "Katsu Curry"
+    "type": "Katsu Curry",
+    "Ratings": null
   },
   {
     "formatted_address": "1256 Republican St #5538, Seattle, WA 98109, United States",
@@ -17,7 +18,8 @@
     "phone": "(206) 420-4500",
     "website": "https:\/\/teinei-seattle.com\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950146-d7eca227-1fda-4ac3-9dcd-3c5adb219eb0.jpg",
-    "type": "Katsu Curry"
+    "type": "Katsu Curry",
+    "Ratings": null
   },
   {
     "formatted_address": "954 E Union St, Seattle, WA 98122, United States",
@@ -27,7 +29,8 @@
     "phone": "(206) 325-3534",
     "website": "http:\/\/www.thegokan.com\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950133-f4c7b8b5-223f-4685-ba6b-588ef8ce20b2.jpg",
-    "type": "Katsu Curry"
+    "type": "Katsu Curry",
+    "Ratings": null
   },
   {
     "formatted_address": "1222 E Pine St, Seattle, WA 98122, United States",
@@ -37,7 +40,8 @@
     "phone": "(206) 566-5479",
     "website": "http:\/\/ramendanbo.com\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950142-24595622-c14b-492a-81b2-e2dbe47e8bf2.jpg",
-    "type": "Ramen"
+    "type": "Ramen",
+    "Ratings": null
   },
   {
     "formatted_address": "1510 Belmont Ave, Seattle, WA 98122, United States",
@@ -47,7 +51,8 @@
     "phone": "(206) 257-4289",
     "website": "http:\/\/menyamusashi-seattle.us\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950140-6a3766f3-a4e8-4878-ab2f-e3810d22d23e.jpg",
-    "type": "Ramen"
+    "type": "Ramen",
+    "Ratings": null
   },
   {
     "formatted_address": "320 E Pine St, Seattle, WA 98122, United States",
@@ -57,7 +62,8 @@
     "phone": "(425) 553-0867",
     "website": "https:\/\/www.kizuki.com\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950139-37178e59-e21a-475a-8db4-9b321f1fc2cc.jpg",
-    "type": "Ramen"
+    "type": "Ramen",
+    "Ratings": null
   },
   {
     "formatted_address": "500 Mercer St #2b, Seattle, WA 98109, United States",
@@ -67,7 +73,8 @@
     "phone": "(206) 453-3881",
     "website": "https:\/\/tensushiseattle.com\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950147-2437cf8e-169f-450d-bda1-b4f35167380e.jpg",
-    "type": "Ramen"
+    "type": "Ramen",
+    "Ratings": null
   },
   {
     "formatted_address": "1054 N 39th St, Seattle, WA 98103, United States",
@@ -77,7 +84,8 @@
     "phone": "(206) 632-0185",
     "website": "https:\/\/www.kamonegiseattle.com\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950138-f4d224e9-7893-4ef4-82af-3b122a99b505.jpg",
-    "type": "Soba"
+    "type": "Soba",
+    "Ratings": null
   },
   {
     "formatted_address": "515 South Main St, Seattle, WA 98104, United States",
@@ -87,7 +95,8 @@
     "phone": "(206) 467-4004",
     "website": "https:\/\/twitter.com\/Tsukushinbosea",
     "img": "https://user-images.githubusercontent.com/33403106/164950149-f89bd6b5-613b-46a4-8d44-3ce15a386f54.jpg",
-    "type": [ "Soba", "Chirashi", "Izakaya" ]
+    "type": [ "Soba", "Chirashi", "Izakaya" ],
+    "Ratings": null
   },
   {
     "formatted_address": "4 W Roy St, Seattle, WA 98119, United States",
@@ -97,7 +106,8 @@
     "phone": "(206) 281-1352",
     "website": "http:\/\/www.shikijapaneserestaurant.com\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950144-169c9e69-ed7e-4c8d-bdac-118df8ecd136.png",
-    "type": "Soba"
+    "type": "Soba",
+    "Ratings": null
   },
   {
     "formatted_address": "500 E Pine St, Seattle, WA 98122, United States",
@@ -107,7 +117,8 @@
     "phone": "(206) 979-8800",
     "website": "https:\/\/www.tamaribarseattle.com\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950145-2140b200-d2e1-4d3b-9ff7-14fdc14837d1.jpg",
-    "type": "Izakaya"
+    "type": "Izakaya",
+    "Ratings": null
   },
   {
     "formatted_address": "610 S Jackson St, Seattle, WA 98104, United States",
@@ -117,7 +128,8 @@
     "phone": "(206) 682-1828",
     "website": "https:\/\/itsumonoseattle.wixsite.com\/home",
     "img": "https://user-images.githubusercontent.com/33403106/164950137-cac19696-dcc8-469d-a710-565a1488e991.jpg",
-    "type": "Izakaya"
+    "type": "Izakaya",
+    "Ratings": null
   },
   {
     "formatted_address": "224 Broadway E, Seattle, WA 98102, United States",
@@ -127,7 +139,8 @@
     "phone": "(206) 588-2051",
     "website": "https:\/\/www.rondojapanesekitchen.com\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950143-edd2b64a-290e-4706-b5f2-0d93d68d9fff.jpg",
-    "type": "Izakaya"
+    "type": "Izakaya",
+    "Ratings": null
   },
   {
     "formatted_address": "1618 N 45th St, Seattle, WA 98103, United States",
@@ -137,7 +150,8 @@
     "phone": "(206) 632-7010",
     "website": "https:\/\/issianjapanesestonegrill.weebly.com\/",
     "img": "https://user-images.githubusercontent.com/33403106/164950136-33e90c0d-45c6-4966-8f78-aab4ce8325ab.jpg",
-    "type": "Izakaya"
+    "type": "Izakaya",
+    "Ratings": null
   },
   {
     "formatted_address": "512 S King St, Seattle, WA 98104, United States",
@@ -147,7 +161,8 @@
     "phone": "(206) 829-0277",
     "website": null,
     "img": "https://user-images.githubusercontent.com/33403106/164950141-2c341983-b5e5-4708-a593-b0336c0d7e23.jpg",
-    "type": "Chirashi"
+    "type": "Chirashi",
+    "Ratings": null
   },
   {
     "formatted_address": "2230 1st Ave, Seattle, WA 98121, United States",
@@ -157,6 +172,7 @@
     "phone": "(206) 374-8717",
     "website": null,
     "img": "https://user-images.githubusercontent.com/33403106/164950150-03341740-de61-4f1e-bdb4-8553a733c639.jpg",
-    "type": "Chirashi"
+    "type": "Chirashi",
+    "Ratings": null
   }
 ]
