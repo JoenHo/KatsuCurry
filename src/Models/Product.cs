@@ -22,6 +22,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? phone { get; set; }
         public string? hours { get; set; }
         public int[]? Ratings { get; set; }
+ 
 
         /// <summary>
         /// This method converts the class objects back to JSON representation
