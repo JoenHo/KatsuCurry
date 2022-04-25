@@ -86,11 +86,33 @@
         }
     </div>
 </div>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </div>
 
 <div id="food_page" class="hide" runat="server">
+    <div class="card-columns">
+        @foreach (var food in ProductService.GetFood())
+        {
+            <div class="card">
+                <div class="card-img" style="background-image: url('@food.Image');">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@food.Restaurant</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">
+                        <button @onclick="(e => SelectFood(food?.Restaurant ?? string.Empty))"
+                                data-toggle="modal" data-target="#FoodModal" class="btn btn-primary">
+                            More Info
+                        </button>
+                        <button @onclick="(e => SelectFood(food?.Restaurant ?? string.Empty))"
+                                data-toggle="modal" data-target="#FoodModal" class="btn btn-primary">
+                            Quick Link
+                        </button>
+                    </small>
+                </div>
+            </div>
+        }
+    </div>
 </div>
 
 @code
@@ -135,3 +157,5 @@
         SelectProduct(selectedProductId);
     }
 }
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
