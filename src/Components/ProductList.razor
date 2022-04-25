@@ -10,7 +10,7 @@
             <div class="card-img" style="background-image: url('@product.Image');">
             </div>
             <div class="card-body">
-                <h5 class="card-title">@product.Title</h5>
+                <h5 class="card-title">@product.name</h5>
             </div>
             <div class="card-footer">
                 <small class="text-muted">
@@ -35,7 +35,7 @@
         {
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="productTitle">@selectedProduct.Title</h5>
+                    <h5 class="modal-title" id="productTitle">@selectedProduct.name</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -45,7 +45,7 @@
                         <div class="card-img" style="background-image: url('@selectedProduct.Image');">
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Phone: @selectedProduct.name</p>
+                            <p class="card-text">Name: @selectedProduct.name</p>
                         </div>
                         <div class="card-body">
                             <p class="card-text">Phone: @selectedProduct.phone</p>
