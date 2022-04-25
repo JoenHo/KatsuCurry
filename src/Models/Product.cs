@@ -19,6 +19,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? Url { get; set; }
         public string? Title { get; set; }
         public string? phone { get; set; }
+        public string? hours { get; set; }
         public int[]? Ratings { get; set; }
 
         /// <summary>
