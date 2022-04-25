@@ -31,6 +31,9 @@ namespace ContosoCrafts.WebSite.Controllers
         [HttpGet]
         public IEnumerable<Product> Get() => ProductService.GetProducts();
 
+        [HttpGet]
+        public IEnumerable<Food> GetFoodData() => ProductService.GetFood();
+
         /// <summary>
         /// This method updates the rating of the requested item
         /// </summary>
