@@ -10,12 +10,21 @@ using ContosoCrafts.WebSite.Pages;
 
 namespace UnitTests.Pages.Index
 {
+
+    /// <summary>
+    /// This class is for unit testing IndexModel class
+    /// The tests cover the following methods:
+    /// - OnGet()
+    /// </summary>
     public class IndexTests
     {
         #region TestSetup
 
         public static IndexModel pageModel;
 
+        /// <summary>
+        /// Setting up the test environment
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -29,6 +38,10 @@ namespace UnitTests.Pages.Index
         #endregion TestSetup
 
         #region OnGet
+        /// <summary>
+        /// ModelState.IsValid should return true after OnGet is called
+        /// With valid activity, Products should contain items
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
