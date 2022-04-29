@@ -10,10 +10,12 @@ namespace ContosoCrafts.WebSite.Models
     {
 
         // followings are the properties of Food data
-        public string? Restaurant { get; set; }
+        public string? Id { get; set; }
+        public string? Name { get; set; }
         public string? Description { get; set; }
         [JsonPropertyName("img")]
         public string? Image { get; set; }
+        public string[]? Restaurants { get; set; }
 
         /// <summary>
         /// This method converts the class objects back to JSON representation
