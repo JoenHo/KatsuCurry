@@ -25,7 +25,13 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // Collection of the Data
         public IEnumerable<ContosoCrafts.WebSite.Models.Product> Products { get; private set; }
 
-        
+        /// <summary>
+        /// REST OnGet, return all data
+        /// </summary>
+        public void OnGet()
+        {
+            Products = ProductService.GetProducts();
+        }
     }
 }
 
