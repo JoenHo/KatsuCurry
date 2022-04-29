@@ -19,6 +19,12 @@ namespace ContosoCrafts.WebSite.Pages.Product
             ProductService = productService;
         }
 
+        // Data Service
+        public JsonFileProductService ProductService { get; }
+
+        // Collection of the Data
+        public IEnumerable<ContosoCrafts.WebSite.Models.Product> Products { get; private set; }
+
         
     }
 }
