@@ -1,16 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using System.Linq;
+using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ContosoCrafts.WebSite.Pages.Product
 {
     public class ReadModel : PageModel
     {
-        public void OnGet()
+        // service for acuiring data
+        public JsonFileProductService ProductService { get; }
+        // restaurant data
+        public Models.Product restaurants;
+        // food data
+        public Models.Food foods;
+
+        /// <summary>
+        /// Construtor
+        /// </summary>
+        /// <param name="productService"></param>
+        public ReadModel(JsonFileProductService productService)
         {
+            ProductService = productService;
+        }
+
+        /// <summary>
+        /// This function is called when GET requested
+        /// </summary>
+        /// <param name="id">item id</param>
+        public void OnGet(string id)
+        {
+            restaurants = ProductService.GetProducts().FirstOrDefault(m => m.Id.Equals(id));
+            foods = ProductService.GetFood().FirstOrDefault(m => m.Id.Equals(id));
         }
     }
 }
