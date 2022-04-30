@@ -86,5 +86,19 @@ namespace ContosoCrafts.WebSite.Services
                 products
             );
         }
+
+        public ContosoCrafts.WebSite.Models.Product CreateData()
+        {
+            var data = new ContosoCrafts.WebSite.Models.Product()
+            {
+                Id = System.Guid.NewGuid().ToString(),
+                Name = "Enter Title",
+                Url = "Enter URL",
+                Image = "",
+            };
+
+          
+        }
+
     }
 }
