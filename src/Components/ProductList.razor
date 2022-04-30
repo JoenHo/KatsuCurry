@@ -171,7 +171,7 @@
     void SelectFood(string foodId)
     {
         selectedFoodId = foodId;
-        selectedFood = ProductService.GetFood().First(x => x.Restaurant == foodId);
+        selectedFood = ProductService.GetFood().First(x => x.Id == foodId);
     }
 
     int currentRating = 0;
