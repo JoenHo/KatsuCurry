@@ -128,5 +128,31 @@ namespace ContosoCrafts.WebSite.Services
             }
         }
 
+
+        /// <summary>
+        /// Find the data record
+        /// Update the fields
+        /// Save to the data store
+        /// </summary>
+        /// <param name="data"></param>
+        public ContosoCrafts.WebSite.Models.Product UpdateData(
+            ContosoCrafts.WebSite.Models.Product data)
+        {
+            var products = GetProducts();
+            var productData = products.FirstOrDefault(x =>
+            x.Id.Equals(data.Id));
+            if (productData == null)
+            {
+                return null;
+            }
+
+            productData.Name = data.Name;
+            productData.Url = data.Url;
+            productData.Image = data.Image;
+
+            SaveData(products);
+
+            return productData;
+        }
     }
 }
