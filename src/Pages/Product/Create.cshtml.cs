@@ -25,6 +25,16 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // The data to show
         public ContosoCrafts.WebSite.Models.Product Product;
 
+        // <summary>
+        /// REST Get request
+        /// </summary>
+        /// <param name="id"></param>
+        public IActionResult OnGet()
+        {
+            Product = ProductService.CreateData();
+
+            return RedirectToPage("./Update", new { Id = Product.Id });
+        }
     }
 }
 
