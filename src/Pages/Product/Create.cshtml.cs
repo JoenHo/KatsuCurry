@@ -22,7 +22,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
             ProductService = productService;
         }
 
-        
+        // The data to show
+        public ContosoCrafts.WebSite.Models.Product Product;
+
     }
 }
 
