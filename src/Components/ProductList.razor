@@ -67,7 +67,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">
-                                Website: <a href="@selectedProduct.Url" target="_blank">
+                                <b>WEBSITE:</b> <a href="@selectedProduct.Url" target="_blank">
                                     @selectedProduct.Url
                                 </a>
                             </p>
@@ -117,10 +117,6 @@
                         <button @onclick="(e => SelectFood(food?.Name ?? string.Empty))"
                                 data-toggle="modal" data-target="#FoodModal" class="btn btn-primary">
                             More Info
-                        </button>
-                        <button @onclick="(e => SelectFood(food?.Name ?? string.Empty))"
-                                data-toggle="modal" data-target="#FoodModal" class="btn btn-primary">
-                            Quick Link
                         </button>
                     </small>
                 </div>
