@@ -75,7 +75,8 @@ namespace ContosoCrafts.WebSite.Services
             }
 
             // Update client's rating to restaurant
-            using var outputRestaurantStream = File.OpenWrite(JsonFileRestaurantName);
+            using var outputRestaurantStream =
+                File.OpenWrite(JsonFileRestaurantName);
 
             JsonSerializer.Serialize<IEnumerable<Product>>(
                 new Utf8JsonWriter(outputRestaurantStream, new JsonWriterOptions
@@ -107,6 +108,24 @@ namespace ContosoCrafts.WebSite.Services
             return data;
 
 
+        }
+
+        private void SaveData(IEnumerable<ContosoCrafts.WebSite.Models.Product>
+            products)
+        {
+
+            using (var outputStream = File.Create(JsonFileRestaurantName))
+            {
+                JsonSerializer.Serialize<IEnumerable
+                    <ContosoCrafts.WebSite.Models.Product>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                    products
+                );
+            }
         }
 
     }
