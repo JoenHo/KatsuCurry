@@ -143,6 +143,28 @@
                                 <b class="card-text">@selectedFood.Name</b><br />
                                 <p class="card-text">@selectedFood.Description</p>
                             </div>
+                            <div class="card-body">
+                                <b class="card-text">RESTAURANT SUGGESTION</b><br />
+                                <table>
+                                    <tr>
+                                    @foreach (var restaurant in selectedFood.Restaurants)
+                                    {
+                                        @foreach (var product in ProductService.GetProducts())
+                                        {
+                                            @if (product.Id == restaurant)
+                                            {
+                                                <td>
+                                                    <figure>
+                                                        <img style="border:5px solid #FFF"src=@product.Image alt="restaurant image" width="130" height="130">
+                                                        <figcaption align="center"><a href="@product.Url" target="_blank">@product.Name </a></figcaption>
+                                                    </figure>
+                                                </td>
+                                            }
+                                        }
+                                    }
+                                    </tr>
+                                </table>
+                             </div>
                         </div>
                     </div>
                 </div>
