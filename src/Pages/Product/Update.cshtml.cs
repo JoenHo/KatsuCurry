@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ContosoCrafts.WebSite.Models;
+using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -9,9 +11,8 @@ namespace ContosoCrafts.WebSite.Pages.Product
 {
     public class UpdateModel : PageModel
     {
-        public void OnGet()
-        {
-        }
+        // Data middletier
+        public JsonFileProductService ProductService { get; }
     }
 }
 
