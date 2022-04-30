@@ -110,15 +110,15 @@
                 <div class="card-img" style="background-image: url('@food.Image');">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">@food.Restaurant</h5>
+                    <h5 class="card-title">@food.Name</h5>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">
-                        <button @onclick="(e => SelectFood(food?.Restaurant ?? string.Empty))"
+                        <button @onclick="(e => SelectFood(food?.Name ?? string.Empty))"
                                 data-toggle="modal" data-target="#FoodModal" class="btn btn-primary">
                             More Info
                         </button>
-                        <button @onclick="(e => SelectFood(food?.Restaurant ?? string.Empty))"
+                        <button @onclick="(e => SelectFood(food?.Name ?? string.Empty))"
                                 data-toggle="modal" data-target="#FoodModal" class="btn btn-primary">
                             Quick Link
                         </button>
@@ -134,7 +134,7 @@
             {
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="productTitle">@selectedFood.Restaurant</h5>
+                        <h5 class="modal-title" id="productTitle">@selectedFood.Name</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
