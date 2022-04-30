@@ -12,6 +12,17 @@ namespace ContosoCrafts.WebSite.Pages.Product
     {
         // Data middle tier
         public JsonFileProductService ProductService { get; }
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="productService"></param>
+        public CreateModel(JsonFileProductService productService)
+        {
+            ProductService = productService;
+        }
+
+        
     }
 }
 
