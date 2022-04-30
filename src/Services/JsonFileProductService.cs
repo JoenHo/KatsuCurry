@@ -97,7 +97,16 @@ namespace ContosoCrafts.WebSite.Services
                 Image = "",
             };
 
-          
+            // Get the current set, and append the new record to it becuase
+            // IEnumerable does not have Add
+            var dataSet = GetProducts();
+            dataSet = dataSet.Append(data);
+
+            SaveData(dataSet);
+
+            return data;
+
+
         }
 
     }
