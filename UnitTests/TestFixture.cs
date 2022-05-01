@@ -27,7 +27,7 @@ namespace UnitTests
 
             // This will copy over the latest version of the database files
 
-            var DataWebPath = "../../../../src/bin/Debug/net5.0/wwwroot/data";
+            var DataWebPath = "../../../../src/wwwroot/data";
             var DataUTDirectory = "wwwroot";
             var DataUTPath = DataUTDirectory + "/data";
 
