@@ -62,7 +62,18 @@
     "hours": [ "11:30 AM – 3:00 PM, 5:00 PM – 9:30 PM", "11:30 AM – 3:00 PM, 5:00 PM – 9:30 PM", "Closed", "11:30 AM – 3:00 PM, 5:00 PM – 9:30 PM", "11:30 AM – 9:30 PM", "11:30 AM – 9:30 PM", "11:30 AM – 9:30 PM" ],
     "img": "https://user-images.githubusercontent.com/81502009/166160721-ed993636-764c-4460-96d5-e40e894cb966.jpeg",
     "website": "http://menyamusashi-seattle.us/",
-    "dishes": [ "ramen", "katsudon"],
+    "dishes": [ "ramen", "katsudon" ],
+    "Ratings": null
+  },
+  {
+    "id": "Tamari Bar",
+    "name": "Tamari Bar",
+    "phone": "(206) 979-8800",
+    "address": "500 E Pine St, Seattle, WA 98122",
+    "hours": [ "Closed", "5:00 PM – 11:00 PM", "5:00 PM – 11:00 PM", "5:00 PM – 11:00 PM", "5:00 PM – 11:00 PM", "5:00 PM – 11:00 PM", "5:00 PM – 11:00 PM" ],
+    "img": "https://user-images.githubusercontent.com/81502009/166161097-343b0eb2-06b2-47a9-9a7f-09114df768bf.jpeg",
+    "website": "https://www.tamaribarseattle.com/",
+    "dishes": [ "gyoza", "kaisendon", "sashimi" ],
     "Ratings": null
   }
 ]

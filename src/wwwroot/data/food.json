@@ -32,7 +32,7 @@
     "name": "SASHIMI",
     "description": "Sashimi is a Japanese delicacy consisting of thinly sliced raw fish or shellfish (or even meat) served with soy sauce and other ingredients such as wasabi or ginger paste. Most common ingredients used in the preparation of sashimi are tuna, squid, scallop, whale, and octopus. It is usually served as an appetizer, decorated with shiso leaves, cucumbers, and seaweed.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/17f54b4244a94d048fb0ed14098803a9.jpg?mw=1300",
-    "restaurants": []
+    "restaurants": [ "Tamari Bar" ]
   },
   {
     "id": "karaage",
@@ -151,7 +151,7 @@
     "name": "KAISENDON",
     "description": "One of the most popular fresh seafood one-bowl donburi dishes, kaisendon consists of thinly sliced, assorted raw seafood called sashimi laid over freshly steamed rice. The seafood selection depends on both location and season, and most often includes maguro (tuna), tai (sea bream), ama ebi (deep-water shrimps), hotate (scallops), uni (sea urchin), kani (crab), and sometimes even marinated ikura (salmon roe).",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/a67f8c7b21d341cba2e7537b6de0e7e8.jpg?mw=1300",
-    "restaurants": [ "Momiji Capitol Hill" ]
+    "restaurants": [ "Momiji Capitol Hill", "Tamari Bar" ]
   },
   {
     "id": "tamagoyaki",
@@ -270,7 +270,7 @@
     "name": "GYOZA",
     "description": "The famous Japanese gyoza are crescent-shaped dumplings that have originated from the traditional Chinese jiaozi dumplings. The recipe was slightly altered to accommodate the Japanese taste, and gyoza soon became one of the favorite Japanese meals.",
     "img": "https://cdn.tasteatlas.com//Images/Dishes/3c16ad904018488f8c363413d356cacc.jpg?w=905&h=510",
-    "restaurants": []
+    "restaurants": [ "Tamari Bar" ]
   },
   {
     "id": "yakiniku",
