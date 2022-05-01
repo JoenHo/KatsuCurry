@@ -28,7 +28,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
         // The data to show, bind to it for the post
         [BindProperty]
-        public ProductModel Product { get; set; }
+        public ContosoCrafts.WebSite.Models.Product Product { get; set; }
 
         /// <summary>
         /// REST Get request
@@ -37,7 +37,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id"></param>
         public void OnGet(string id)
         {
-            Product  = ProductService.GetAllData().FirstOrDefault(m => m.Id.Equals(id));
+            Product  = ProductService.GetProducts().FirstOrDefault(m => m.Id.Equals(id));
         }
 
         /// <summary>
