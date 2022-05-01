@@ -25,7 +25,7 @@
     "name": "RAMEN",
     "description": "Ramen is a noodle soup that first appeared in Japan in 1910, when Chinese cooks combined the noodles with a salty broth. The name 'ramen' was derived from the pronunciation of the Chinese word 'lamian' (pulled noodles). Ramen is typically classified by broth flavor, with three especially common categories: shoyu (soy sauce), shio (salt), and miso.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/5f6a4feb8f0b49198e11fd62fd6e0801.jpg?mw=1300",
-    "restaurants": []
+    "restaurants": [ "Ramen Danbo" ]
   },
   {
     "id": "sashimi",

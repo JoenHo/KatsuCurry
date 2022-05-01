@@ -42,5 +42,16 @@
     "website": "https://www.rondojapanesekitchen.com/",
     "dishes": [ "karaage", "katsu_kare" ],
     "Ratings": null
+  },
+  {
+    "id": "Ramen Danbo",
+    "name": "Ramen Danbo",
+    "phone": "(206) 566-5479",
+    "address": "1222 E Pine St, Seattle, WA 98122",
+    "hours": [ "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM" ],
+    "img": "https://user-images.githubusercontent.com/81502009/166160446-41745abb-e19e-4254-99cf-7e5982ece944.jpeg",
+    "website": "https://ramendanbo.com/",
+    "dishes": [ "karaage", "katsu_kare" ],
+    "Ratings": null
   }
 ]
