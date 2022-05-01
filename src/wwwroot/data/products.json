@@ -4,7 +4,7 @@
     "name": "Kamonegi",
     "phone": "(206) 632-0185",
     "address": "1054 N 39TH STREET, SEATTLE, WA 98103",
-    "hours": ["Closed", "4:00 – 10:00 PM", "4:00 – 10:00 PM", "4:00 – 10:00 PM", "4:00 – 10:00 PM", "4:00 – 10:00 PM", "Closed"],
+    "hours": [ "Closed", "4:00 – 10:00 PM", "4:00 – 10:00 PM", "4:00 – 10:00 PM", "4:00 – 10:00 PM", "4:00 – 10:00 PM", "Closed" ],
     "img": "https://user-images.githubusercontent.com/33403106/163694130-d6f942b5-08bd-4ca8-9a2d-ff5ac7c68ec9.jpg",
     "website": "https://www.kamonegiseattle.com/",
     "dishes": [ "soba", "tempra" ],
@@ -20,16 +20,27 @@
     "website": "https://tensushiseattle.com/",
     "dishes": [ "sushi", "tempra" ],
     "Ratings": null
-  }
+  },
   {
     "id": "Momiji Capitol Hill",
-    "name": "Momiji",
+    "name": "Momiji Capitol Hill",
     "phone": "(206) 457-4068",
     "address": "1522 12th Ave, Seattle, WA 98122",
     "hours": [ "4:00 PM – 11:00 PM", "4:00 PM – 11:00 PM", "4:00 PM – 11:00 PM", "4:00 PM – 11:00 PM", "4:00 PM – 12:00 PM", "4:00 PM – 12:00 PM", "Closed" ],
-    "img": "kQINrvCvZGaDCvV8hwYHGI&hl=en",
-    "website": "https://user-images.githubusercontent.com/81502009/166159643-de17e7bd-0bac-4ac9-ac43-9e1c1248ce0a.jpeg",
+    "img": "https://user-images.githubusercontent.com/81502009/166159643-de17e7bd-0bac-4ac9-ac43-9e1c1248ce0a.jpeg",
+    "website": "https://www.momijiseattle.com/",
     "dishes": [ "sushi", "kaisendon" ],
+    "Ratings": null
+  },
+  {
+    "id": "Rondo Japanese Kitchen",
+    "name": "Rondo Japanese Kitchen",
+    "phone": "(206) 588-2051",
+    "address": "224 Broadway E, Seattle, WA 98102",
+    "hours": [ "11:30 AM – 9:30 PM", "11:30 AM – 9:30 PM", "Closed", "11:30 AM – 9:30 PM", "11:30 AM – 9:30 PM", "11:30 AM – 9:30 PM", "11:30 AM – 9:30 PM" ],
+    "img": "https://user-images.githubusercontent.com/81502009/166160036-cd20ae41-4502-4591-814a-f33f5720fcd0.jpeg",
+    "website": "https://www.rondojapanesekitchen.com/",
+    "dishes": [ "karaage", "katsu_kare" ],
     "Ratings": null
   }
 ]

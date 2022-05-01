@@ -18,7 +18,7 @@
     "name": "SUSHI",
     "description": "Sushi is Japan's most famous culinary representative, typically made with rice and fillings which have been rolled inside a a sheet of dry seaweed. However, the term sushi is actually an umbrella term covering a wide range of subvarieties which can be made with a myriad of different ingredients and in as many forms and presentations.",
     "img": "https://cdn.tasteatlas.com/images/dishes/f3abe602fe794beba2f00deee03dee9e.jpg?mw=1300",
-    "restaurants": [ "ten sushi" ]
+    "restaurants": [ "ten sushi", "Momiji Capitol Hill" ]
   },
   {
     "id": "ramen",
@@ -39,7 +39,7 @@
     "name": "KARAAGE",
     "description": "Also known as dry-frying, karaage is a Japanese cooking technique in which various foods are first lightly coated in arrowroot starch, then deep-fried. The use of arrowroot starch preserves the natural water content of fried foods and produces a crispy outer surface, but alternatively, other coating ingredients such as wheat flour, tapioca, or potato starch can also be used.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/e59670f2af424cce982da41273b5d56e.jpg?mw=1300",
-    "restaurants": []
+    "restaurants": [ "Rondo Japanese Kitchen" ]
   },
   {
     "id": "onigiri",
@@ -151,7 +151,7 @@
     "name": "KAISENDON",
     "description": "One of the most popular fresh seafood one-bowl donburi dishes, kaisendon consists of thinly sliced, assorted raw seafood called sashimi laid over freshly steamed rice. The seafood selection depends on both location and season, and most often includes maguro (tuna), tai (sea bream), ama ebi (deep-water shrimps), hotate (scallops), uni (sea urchin), kani (crab), and sometimes even marinated ikura (salmon roe).",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/a67f8c7b21d341cba2e7537b6de0e7e8.jpg?mw=1300",
-    "restaurants": []
+    "restaurants": [ "Momiji Capitol Hill" ]
   },
   {
     "id": "tamagoyaki",
@@ -179,7 +179,7 @@
     "name": "KATSU KARE",
     "description": "Katsu karē is a Japanese curry variation made with a combination of tonkatsu (breaded and fried pork or chicken cutlet) and curry sauce. The dish is sometimes served with just the curry sauce, and sometimes with the full curry – including meat and vegetables.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/b7d669c3d75148cf826de81c9d7e9ac9.jpg?mw=1300",
-    "restaurants": []
+    "restaurants": [ "Rondo Japanese Kitchen" ]
   },
   {
     "id": "tsuke_men",
