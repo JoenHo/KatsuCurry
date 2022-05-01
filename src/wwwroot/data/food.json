@@ -277,7 +277,7 @@
     "name": "YAKINIKU",
     "description": "Yakiniku is a term denoting a Japanese technique (with Korean origins) of cooking bite-sized pieces of meat and vegetables on a table grill. It can also refer to a number of dishes cooked using the same technique. Yakiniku has Korean origins and was inspired by the famous Korean dishes galbi and bulgogi, although the meat in yakiniku is usually not marinated before grilling.",
     "img": "https://cdn.tasteatlas.com/images/dishes/8778f2ab8696489d8b8c16fbd7a685e9.jpg?mw=1300",
-    "restaurants": []
+    "restaurants": [ "Ishoni Yakiniku" ]
   },
   {
     "id": "kakuni",

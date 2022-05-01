@@ -51,7 +51,7 @@
     "hours": [ "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM" ],
     "img": "https://user-images.githubusercontent.com/81502009/166160446-41745abb-e19e-4254-99cf-7e5982ece944.jpeg",
     "website": "https://ramendanbo.com/",
-    "dishes": [ "ramen"],
+    "dishes": [ "ramen" ],
     "Ratings": null
   },
   {
@@ -74,6 +74,17 @@
     "img": "https://user-images.githubusercontent.com/81502009/166161097-343b0eb2-06b2-47a9-9a7f-09114df768bf.jpeg",
     "website": "https://www.tamaribarseattle.com/",
     "dishes": [ "gyoza", "kaisendon", "sashimi" ],
+    "Ratings": null
+  },
+  {
+    "id": "Ishoni Yakiniku",
+    "name": "Ishoni Yakiniku",
+    "phone": "(425) 455-0898",
+    "address": "611 Broadway E, Seattle, WA 98102",
+    "hours": [ "Closed", "5:30 PM – 9:30 PM", "5:30 PM – 9:30 PM", "5:30 PM – 9:30 PM", "5:30 PM – 11:00 PM", "5:30 PM – 11:00 PM", "5:30 PM – 9:30 PM" ],
+    "img": "https://user-images.githubusercontent.com/81502009/166161466-e7daa6b0-73c2-423c-9e1e-cfb03ff99f47.jpeg",
+    "website": "https://ishoniyakinikuseattle.wordpress.com/",
+    "dishes": [ "yakiniku" ],
     "Ratings": null
   }
 ]
