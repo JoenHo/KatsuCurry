@@ -32,7 +32,7 @@
     "name": "SASHIMI",
     "description": "Sashimi is a Japanese delicacy consisting of thinly sliced raw fish or shellfish (or even meat) served with soy sauce and other ingredients such as wasabi or ginger paste. Most common ingredients used in the preparation of sashimi are tuna, squid, scallop, whale, and octopus. It is usually served as an appetizer, decorated with shiso leaves, cucumbers, and seaweed.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/17f54b4244a94d048fb0ed14098803a9.jpg?mw=1300",
-    "restaurants": [ "Tamari Bar" ]
+    "restaurants": [ "Tamari Bar", "Tsukushinbo" ]
   },
   {
     "id": "karaage",
@@ -158,14 +158,14 @@
     "name": "TAMAGOYAKI",
     "description": "Tamagoyaki is a Japanese omelet dish made by using a unique cooking method - the eggs are folded into themselves until they are fully cooked. Although the omelette has no fillings, it is usually seasoned with sugar, mirin, and soy sauce. Tamagoyaki can often be found in bento boxes, and it is traditionally served either for breakfast or as a sushi topping.",
     "img": "https://cdn.tasteatlas.com/images/dishes/5314cd22e3d645299879b119698a9e97.jpg?mw=1300",
-    "restaurants": []
+    "restaurants": [ "Tsukushinbo" ]
   },
   {
     "id": "ebi_furai",
     "name": "EBI FURAI",
     "description": "These large prawns are typically dipped in egg wash, coated in panko breadcrumbs, then deep-fried. Ebi furai falls into the kawari-age category of breaded, deep-fried foods, and it is one of Nagoya's signature dishes.",
     "img": "https://cdn.tasteatlas.com/images/dishrestaurants/664a6aa534934474be17b413bcfc71c7.jpg?mw=1300",
-    "restaurants": []
+    "restaurants": [ "Tsukushinbo" ]
   },
   {
     "id": "dango",
