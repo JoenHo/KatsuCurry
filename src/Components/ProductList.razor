@@ -54,15 +54,21 @@
                         <div class="card-body">
                             <p class="card-text">
                                 <b>HOURS:</b> <br />
-                                <table>
-                                    <tr><td>Monday</td><td>@selectedProduct.Hours[0]</td></tr>
-                                    <tr><td>Tuesday</td><td>@selectedProduct.Hours[1]</td></tr>
-                                    <tr><td>Wednesday</td><td>@selectedProduct.Hours[2]</td></tr>
-                                    <tr><td>Thursday</td><td>@selectedProduct.Hours[3]</td></tr>
-                                    <tr><td>Friday</td><td>@selectedProduct.Hours[4]</td></tr>
-                                    <tr><td>Saturday</td><td>@selectedProduct.Hours[5]</td></tr>
-                                    <tr><td>Sunday</td><td>@selectedProduct.Hours[6]</td></tr>
-                                </table>
+                                @if (selectedProduct.Hours != null)
+                                {
+                                    @if (selectedProduct.Hours.Length >= 7)
+                                    {
+                                        <table>
+                                            <tr><td>Monday</td><td>@selectedProduct.Hours[0]</td></tr>
+                                            <tr><td>Tuesday</td><td>@selectedProduct.Hours[1]</td></tr>
+                                            <tr><td>Wednesday</td><td>@selectedProduct.Hours[2]</td></tr>
+                                            <tr><td>Thursday</td><td>@selectedProduct.Hours[3]</td></tr>
+                                            <tr><td>Friday</td><td>@selectedProduct.Hours[4]</td></tr>
+                                            <tr><td>Saturday</td><td>@selectedProduct.Hours[5]</td></tr>
+                                            <tr><td>Sunday</td><td>@selectedProduct.Hours[6]</td></tr>
+                                        </table>
+                                    }
+                                }
                             </p>
                         </div>
                         <div class="card-body">
