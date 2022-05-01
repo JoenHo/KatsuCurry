@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ContosoCrafts.WebSite.Pages.Product
 {
+    /// <summary>
+    /// This class defines the pgae model of Privacy page 
+    /// </summary>
     public class ReadModel : PageModel
     {
         // service for acuiring data
