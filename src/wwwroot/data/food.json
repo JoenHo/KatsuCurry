@@ -17,7 +17,427 @@
     "id": "sushi",
     "name": "SUSHI",
     "description": "Sushi is Japan's most famous culinary representative, typically made with rice and fillings which have been rolled inside a a sheet of dry seaweed. However, the term sushi is actually an umbrella term covering a wide range of subvarieties which can be made with a myriad of different ingredients and in as many forms and presentations.",
-    "img": "https://cdn.tasteatlas.com/Images/Dishes/fde953e5aa504e8c83a84691582b0399.jpg?mw=1300",
+    "img": "https://cdn.tasteatlas.com/images/dishes/f3abe602fe794beba2f00deee03dee9e.jpg?mw=1300",
     "restaurants": [ "ten sushi" ]
+  },
+  {
+    "id": "ramen",
+    "name": "RAMEN",
+    "description": "Ramen is a noodle soup that first appeared in Japan in 1910, when Chinese cooks combined the noodles with a salty broth. The name 'ramen' was derived from the pronunciation of the Chinese word 'lamian' (pulled noodles). Ramen is typically classified by broth flavor, with three especially common categories: shoyu (soy sauce), shio (salt), and miso.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/5f6a4feb8f0b49198e11fd62fd6e0801.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "sashimi",
+    "name": "SASHIMI",
+    "description": "Sashimi is a Japanese delicacy consisting of thinly sliced raw fish or shellfish (or even meat) served with soy sauce and other ingredients such as wasabi or ginger paste. Most common ingredients used in the preparation of sashimi are tuna, squid, scallop, whale, and octopus. It is usually served as an appetizer, decorated with shiso leaves, cucumbers, and seaweed.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/17f54b4244a94d048fb0ed14098803a9.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "karaage",
+    "name": "KARAAGE",
+    "description": "Also known as dry-frying, karaage is a Japanese cooking technique in which various foods are first lightly coated in arrowroot starch, then deep-fried. The use of arrowroot starch preserves the natural water content of fried foods and produces a crispy outer surface, but alternatively, other coating ingredients such as wheat flour, tapioca, or potato starch can also be used.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/e59670f2af424cce982da41273b5d56e.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "onigiri",
+    "name": "ONIGIRI",
+    "description": "Moist, chewy, and hearty, onigiri or omusubi are Japanese rice balls and a favorite picnic food. The stuffings might include salmon, umeboshi plums, grilled or pickled mushrooms, or various vegetables.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/69f35c5768bc47f386e90a2a145a7230.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "tonkatsu",
+    "name": "TONKATSU",
+    "description": "Tonkatsu is a Japanese dish that consists of a breaded, deep-fried pork cutlet. It involves coating slices of pork with panko, frying them in oil, and then serving with rice and shredded cabbage. The two main types are fillet and loin. Tonkatsu is also the basis of other dishes such as Katsukarē and katsudon.",
+    "img": "https://cdn.tasteatlas.com/images/dishrestaurants/2e5afb1b19554396b8f5617e22d055aa.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "udon",
+    "name": "UDON",
+    "description": "These thick and chewy Japanese noodles are made with wheat flour, and along with soba, they are one of the most popular and most common Japanese noodle varieties. The traditional and most common form of udon is characterized by its round shape, firm texture, and substantial size.",
+    "img": "https://cdn.tasteatlas.com/Images/Ingredients/e8fc15e10edf4f979809e3eb0bbd980e.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "tamago_kake_gohan",
+    "name": "TAMAGO KAKE GOHAN",
+    "description": "Tamago kake gohan is a Japanese dish consisting of cooked rice that is topped with a raw egg. Even though the dish is so simple that some people don't consider its preparation an act of cooking, today there are numerous restaurants in Japan which prepare this dish as their specialty.",
+    "img": "https://cdn.tasteatlas.com//Images/Dishes/37ec5e692e024b2b8b67ec2a81a50c16.jpg?w=905&h=510",
+    "restaurants": []
+  },
+  {
+    "id": "gyutan",
+    "name": "GYUTAN",
+    "description": "Gyutan is a Japanese dish originating from Sendai. It consists of pieces of thinly sliced beef tongue that's cooked on a charcoal grill. It's typically seasoned with salt or soy sauce-based tare sauce before grilling. The dish is usually accompanied by pickled vegetables, a combination of steamed rice and barley known as mugi gohan, or oxtail soup.",
+    "img": "https://cdn.tasteatlas.com//images/dishes/ab35fef5f00342ed9de46a851658a964.jpg?w=905&h=510",
+    "restaurants": []
+  },
+  {
+    "id": "hitsumabushi",
+    "name": "HITSUMABUSHI",
+    "description": "Hitsumabushi is a traditional Japanese dish originating from Nagoya. Although it's similar to unadon regarding most of the ingredients, histumabushi consists of sliced grilled eel that's served on top of steamed rice, but it's accompanied by assorted condiments and garnishes.",
+    "img": "https://cdn.tasteatlas.com/images/dishes/05f416ae7d6a468b91518b5311fc2ff6.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "takoyaki",
+    "name": "TAKOYAKI",
+    "description": "The small, round takoyaki are one of the most famous Japanese snacks, made with a simple egg batter that is enriched with diced octopus pieces. Sliced scallions, pickled ginger, crispy fried tenkasu pieces, and dried fish flakes are often incorporated to elevate the flavors of the dish.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/450a5eb503694d07a9499261daeac10e.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "oyakodon",
+    "name": "OYAKODON",
+    "description": "Oyakodon is a poetically named dish meaning father and child, referring to the fact that both the chicken and the egg are used in the dish. It consists of a bowl of white rice that is topped with chicken, eggs, and chopped scallions. The eggs are poured over the rice before they have completely cooked, and the cooked rice finishes the job and helps the eggs to solidify.",
+    "img": "https://cdn.tasteatlas.com/images/dishrestaurants/d679dd71e53b43dc805b7b88f69228d0.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "inarizushi",
+    "name": "INARI ZUSHI",
+    "description": "Inarizushi is a unique sushi variety which consists of chewy tofu pockets filled with fragrant sushi rice. The filling inside the tofu pockets usually employs plain sushi rice, which can be elevated with many different ingredients such as carrots, shiitake mushrooms, roasted sesame seeds, or pieces of nori.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/fd1d4bdbe47f4c9784196e71f3f1a055.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "chankonabe",
+    "name": "CHANKO NABE",
+    "description": "A highly caloric staple of the sumo wrestlers' diet, chankonabe is a rich stew consisting of dashi, sake, chicken or fish, and vegetables such as daikon and bok choy, although the dish has no fixed recipe and usually contains readily available ingredients that are full of protein.",
+    "img": "https://cdn.tasteatlas.com/images/dishrestaurants/e2ac40c5a13542e292ca5ba17e5b3674.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "monjayaki",
+    "name": "MONJA YAKI",
+    "description": "A specialty of the Japanese Kantō region known as monjayaki is pan-fried batter, a type of pancake consisting of wheat flour (komugiko) and fish broth (dashi). The pancake is mixed with cabbage, seasonings, and other ingredients, cooked until it is crispy on the bottom and partially cooked on the surface.",
+    "img": "https://cdn.tasteatlas.com/images/dishes/a614f321aaf844d6a1635f14c6eb5607.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "champon",
+    "name": "CHAMPON",
+    "description": "Champon is a Japanese noodle dish and a Nagasaki specialty made by frying pork, seafood, and various vegetables in lard, then adding a chicken-pork bone soup and boiling the noodles in the combination. Its name, champon, comes from the Fujian word shapon, meaning to eat a meal.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/4cb29e5cf7bb4f23a71b15c6204a1d5f.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "chawanmushi",
+    "name": "CHAWANMUSHI",
+    "description": "Chawanmushi is a delicate custard-soup, its name meaning steamed in a tea cup. The custard usually consists of an egg mixture that can be flavored with numerous ingredients such as dashi (Japanese stock), soy sauce, mushrooms, tofu, ginko nut, or steamed shrimp.",
+    "img": "https://cdn.tasteatlas.com//Images/Dishes/6d45d3340a464fcfa472a303c8c43e9b.jpg?w=905&h=510",
+    "restaurants": []
+  },
+  {
+    "id": "okonomiyaki",
+    "name": "OKONOMIYAKI",
+    "description": "okonomiyaki is an immensely popular Japanese dish. The batter is made with eggs, flour, water, grated yam, and shredded cabbage. Additional ingredients such as fish, seafood, meat, vegetables or cheese are also occasionally added to the mix. The dish is eaten everywhere in Japan, but it is usually associated with the Kansai region.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/b20ff263631e4b7c9e40ff32bc6d9723.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "katsudon",
+    "name": "KATSUDON",
+    "description": "Katsudon is a type of donburi, meaning it's a rice dish served in a bowl topped with simmered ingredients. In this case, the topping is another Japanese favorite — tonkatsu — a deep-fried and crumbed pork cutlet, but here it is simmered together with vegetables in a seasoned sauce bound with eggs.",
+    "img": "https://cdn.tasteatlas.com//Images/Dishes/15c022c3864e4ea6ab92c6f0a017f39d.jpg?w=905&h=510",
+    "restaurants": []
+  },
+  {
+    "id": "kaisendon",
+    "name": "KAISENDON",
+    "description": "One of the most popular fresh seafood one-bowl donburi dishes, kaisendon consists of thinly sliced, assorted raw seafood called sashimi laid over freshly steamed rice. The seafood selection depends on both location and season, and most often includes maguro (tuna), tai (sea bream), ama ebi (deep-water shrimps), hotate (scallops), uni (sea urchin), kani (crab), and sometimes even marinated ikura (salmon roe).",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/a67f8c7b21d341cba2e7537b6de0e7e8.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "tamagoyaki",
+    "name": "TAMAGOYAKI",
+    "description": "Tamagoyaki is a Japanese omelet dish made by using a unique cooking method - the eggs are folded into themselves until they are fully cooked. Although the omelette has no fillings, it is usually seasoned with sugar, mirin, and soy sauce. Tamagoyaki can often be found in bento boxes, and it is traditionally served either for breakfast or as a sushi topping.",
+    "img": "https://cdn.tasteatlas.com/images/dishes/5314cd22e3d645299879b119698a9e97.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "ebi_furai",
+    "name": "EBI FURAI",
+    "description": "These large prawns are typically dipped in egg wash, coated in panko breadcrumbs, then deep-fried. Ebi furai falls into the kawari-age category of breaded, deep-fried foods, and it is one of Nagoya's signature dishes.",
+    "img": "https://cdn.tasteatlas.com/images/dishrestaurants/664a6aa534934474be17b413bcfc71c7.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "dango",
+    "name": "DANGO",
+    "description": "Dango is a traditional Japanese sweet treat, presented as rice flour and sugar dumplings skewered on a bamboo stick. Some region-specific versions use other types of flour (such as potato or millet flour) or different ingredients such as green tea or azuki bean paste.",
+    "img": "https://cdn.tasteatlas.com//Images/Dishes/993e6e1c97b443ccb07bb62bbfdfa2d8.jpg?w=905&h=510",
+    "restaurants": []
+  },
+  {
+    "id": "katsu_kare",
+    "name": "KATSU KARE",
+    "description": "Katsu karē is a Japanese curry variation made with a combination of tonkatsu (breaded and fried pork or chicken cutlet) and curry sauce. The dish is sometimes served with just the curry sauce, and sometimes with the full curry – including meat and vegetables.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/b7d669c3d75148cf826de81c9d7e9ac9.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "tsuke_men",
+    "name": "TSUKE MEN",
+    "description": "Tsukemen is a noodle dish from Japan that is eaten in a unique way. Cold noodles are dipped in the accompanying soup, broth, or sauce, which are served hot in a separate bowl. The noodles can also be dipped in vinegar or spiced up with chili sauce before consumption.",
+    "img": "https://cdn.tasteatlas.com//images/dishes/c2dbd880ba98473c98e4339ad4a2bfb9.jpg?w=905&h=510",
+    "restaurants": []
+  },
+  {
+    "id": "hamani_dango",
+    "name": "HANAMI DANGO",
+    "description": "Hanami dango are sweet mochi rice dumplings on a skewer, and each of them has a different color – pink is used to symbolize cherry blossoms, white represents the remaining snow of the past winter, and green is used as a herald of spring, representing the color of young grass.",
+    "img": "https://cdn.tasteatlas.com/images/dishes/6dcd11cf87194837ae6399c0a54c46ff.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "korokke",
+    "name": "KOROKKE",
+    "description": "Korokke is a variety of Japanese deep-fried dishes that are a version of the French dish called croquette. It consists of a combination of mashed potatoes and chopped meat, seafood, or vegetables. The combination of those ingredients is shaped in a patty and rolled in flour, eggs, and breadcrumbs, then deep-fried.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/10804f09634648368780bd8698ca13f5.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "kare_raisu",
+    "name": "KARE RAISU",
+    "description": "Japanese curry is an extremely popular dish throughout Japan. Since the curry is almost always served with rice, one can hear the term karē raisu mentioned very often. Curry was brought over to Japan by the British in the 19th century, when Meiji-era Japan welcomed foreigners and their goods.",
+    "img": "https://cdn.tasteatlas.com//images/dishes/3cbb3969462848a19cfbf93573dcf64d.jpg?w=905&h=510",
+    "restaurants": []
+  },
+  {
+    "id": "yakitori",
+    "name": "YAKI TORI",
+    "description": "Yakitori refers to Japanese grilled chicken where pieces of chicken meat are skewered with a particular type of skewer called kushi (which can be made from either steel or bamboo) and are then traditionally grilled over a charcoal fire.",
+    "img": "https://cdn.tasteatlas.com/images/dishes/fb0b075d5fce489ca4abcbb85824003b.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "gyudon",
+    "name": "GYUDON",
+    "description": "Gyūdon is one of the most popular and inexpensive fast food dishes in Japan. Its name can be literally translated to beef bowl. The dish consists of beef and onions served over a bowl of rice. Beef and onions are cooked in a combination of mirin, sugar, sake, and soy sauce, imparting a salty-sweet flavor to the dish.",
+    "img": "https://cdn.tasteatlas.com/Images/DishRestaurants/458c1582a83c421d86412b20d034d2c8.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "teriyaki",
+    "name": "TERIYAKI",
+    "description": "Teriyaki is a Japanese cooking technique in which the ingredients are broiled, roasted, or grilled after they have been marinated in teriyaki sauce, consisting of soy sauce, mirin, and sugar. The word teriyaki is a combination of two words: teri, meaning luster, and yaki, meaning to grill or broil.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/905d84056e564d9f8d8bcbb175b6c38c.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "oden",
+    "name": "ODEN",
+    "description": "Best known as a food cart meal intended for relaxing after a day of hard work, oden is a one-pot dish with numerous ingredients such as fish balls, fish cakes, konnyaku, deep-fried tofu, eggs, and vegetables, simmered in a light, soy sauce-based broth.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/ed77bb45812547149540b7b314230738.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "sukiyaki",
+    "name": "SUKIYAKI",
+    "description": "Sukiyaki is the Japanese sweet and salty hot-pot meal. It is usually prepared tableside on a portable gas stove, in a traditional shallow iron pan. This popular Japanese dish is usually made with beef. Other ingredients in sukiyaki include sliced Chinese cabbage, mushrooms, leeks, gelatinous konnyaku noodles, and shungiku leaves.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/9747a3cbe6614ba3b2a6b4d76564e665.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "yakisoba",
+    "name": "YAKISOBA",
+    "description": "Yakisoba is the Japanese variety of fried noodles. Originating from the Chinese chow main, these noodles are usually mixed with a variety of meat and vegetables. Japanese favorites are usually pork, cabbage, onions, and carrots. The most common noodle varieties used in the dish are ramen noodles or soba noodles.",
+    "img": "https://cdn.tasteatlas.com/images/dishrestaurants/4207db3c1db447389d5f06b5bf655325.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "miso_supu",
+    "name": "MISO SUPU",
+    "description": "Miso soup is a traditional Japanese soy-based soup made from a stock called dashi, miso paste, and various additional ingredients such as seaweed or tofu. It is estimated that more than 70% of Japeanese people consume the soup for breakfast, although it is commonly available at any time of the day.",
+    "img": "https://www.tasteatlas.com/images/recipes/77041455f08045cda88da71197ee11d7.jpg?mw=910",
+    "restaurants": []
+  },
+  {
+    "id": "shabu_shabu",
+    "name": "SHABU SHABU",
+    "description": "Shabu-shabu is a popular Japanese dish consisting of thinly sliced meat and vegetables cooked in water. The dish is an evolved version of the traditional Mongolian nabemono (one-pot) cooking. Roughly translated to swish-swish, its name is referring to the sound that is made when the sliced pieces of meat go through the water.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/61779255e7b145dfab54ed8c517102c4.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "gyoza",
+    "name": "GYOZA",
+    "description": "The famous Japanese gyoza are crescent-shaped dumplings that have originated from the traditional Chinese jiaozi dumplings. The recipe was slightly altered to accommodate the Japanese taste, and gyoza soon became one of the favorite Japanese meals.",
+    "img": "https://cdn.tasteatlas.com//Images/Dishes/3c16ad904018488f8c363413d356cacc.jpg?w=905&h=510",
+    "restaurants": []
+  },
+  {
+    "id": "yakiniku",
+    "name": "YAKINIKU",
+    "description": "Yakiniku is a term denoting a Japanese technique (with Korean origins) of cooking bite-sized pieces of meat and vegetables on a table grill. It can also refer to a number of dishes cooked using the same technique. Yakiniku has Korean origins and was inspired by the famous Korean dishes galbi and bulgogi, although the meat in yakiniku is usually not marinated before grilling.",
+    "img": "https://cdn.tasteatlas.com/images/dishes/8778f2ab8696489d8b8c16fbd7a685e9.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "kakuni",
+    "name": "KAKUNI",
+    "description": "Kakuni is a braised pork dish originating from Nagasaki. The name kakuni means square simmered, referring to the typical shape of the dish. In order to prepare it, thick slices of pork belly are slowly simmered in soy sauce, sake, mirin, dashi, and sugar.",
+    "img": "https://cdn.tasteatlas.com/images/dishes/b937d4a8864e478fb8bca01cf36ab206.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "shogayaki",
+    "name": "SHOGAYAKI",
+    "description": "Shogayaki is one of the most common pork dishes in Japan. It consists of lean cuts of pork that are thinly sliced and braised in a flavorful mixture of soy sauce, mirin, and grated ginger. In Japan, shogayaki is a popular lunch or dinner choice and even though it is commonly prepared in many Japanese households, it is also a staple restaurant item.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/751b7ee08a134b0bbed0849fc17dc622.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "omurice",
+    "name": "OMURICE",
+    "description": "Omurice is a short form of omelet and rice, the two essential ingredients of this Japanese fusion dish. The rice is usually pan-fried together with chicken and ketchup, then wrapped in a thin omelet sheet. Finally, the dish is generously covered with ketchup.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/48988155789e441c851397cdf3bcd3b6.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "goya_chanpuru",
+    "name": "GOYA CHANPURU",
+    "description": "Among the broad group of Japanese chanpuru dishes, goya chanpuru is the most traditional version prepared with stir-fried bitter melon, eggs, pork, and tofu. It is often blended with various seasonings and vegetables. This colorful and nutritious summer stir-fry is the signature dish of Okinawa island.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/246a2585b5b9432ca9aba659fd8ee5e1.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "nikujaga",
+    "name": "NIKUJAGA",
+    "description": "Nikujaga is a Japanese dish consisting of meat (niku) and potatoes (jagaimo) as its main ingredients. Like most dishes in the Japanese cuisine, the meat is added for flavor, rather than substance. The most common type of meat used in nikujaga is thinly sliced beef simmered in soy sauce, sake, and mirin, although pork is more popular in the eastern parts of the country.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/b84a89c346ad45a5a40fa33f6265475e.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "saba_misoni",
+    "name": "SABA MISONI",
+    "description": "Saba misoni is a traditional fish dish originating from Japan. The dish is usually made with a combination of mackerel fillets, sake, soy sauce, mirin, miso, and sugar. The fillets are cooked in a pan with sugar, soy sauce, water, sake, and mirin.",
+    "img": "https://cdn.tasteatlas.com/images/dishes/676216075308437585df5c5fdcc4fda8.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "buri_daikon",
+    "name": "BURI DAIKON",
+    "description": "Buri daikon is a traditional Japanese dish consisting of buri (yellowtail fish) and daikon radish. Other ingredients that are typically used in the dish include ginger, water, sake, sugar, and soy sauce. The fish is simmered in water, sugar, soy sauce, and sake, producing gelatinous dashi.",
+    "img": "https://cdn.tasteatlas.com/images/dishes/d82d3bfe059340e8b0df007f885cb968.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "ankimo",
+    "name": "ANKIMO",
+    "description": "Ankimo is a refined Japanese dish prepared with monkfish liver which is cleaned and soaked in milk, then rinsed and brined in a marinade infused with sake and mirin. It is traditionally rolled in a cylinder, steamed, then served sliced, accompanied by grated daikon, sliced scallions, and ponzu sauce.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/8b5602b81aa4420199f28b7b87b9aa02.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "motsunabe",
+    "name": "MOTSUNABE",
+    "description": "Motsunabe is a variety of nabemono, the versatile and hearty Japanese one-pot dishes. It consists of various pork, chicken, or beef offal cooked in the flavorful soy sauce or miso broth alongside cabbage, garlic chives, and occasionally other ingredients.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/a16cffa83ce7403cb020f6a61eb9ce2f.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "hoto",
+    "name": "HOTO",
+    "description": "Usually regarded as a variety of the popular udon, hōtō is a comforting Japanese dish which consists of flat noodles cooked in a flavorful miso broth alongside various seasonal vegetables such as squash, potatoes, taro roots, or carrots.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/29d1dbcba0d4412ab8b8c46c9b28efe1.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "nimono",
+    "name": "NIMONO",
+    "description": "One of the basic cooking techniques in Japanese cuisine known as nimono refers to simmered foods which are traditionally a part of every meal except breakfast. Nimono is also the principal way of preparing and serving vegetables as well as one of the most popular ways of preparing fish.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/2ae31434ae224692940f1d960ab41b42.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "teppanyaki",
+    "name": "TEPPANYAKI",
+    "description": "Teppanyaki is a Japanese technique of grilling a variety of ingredients on an iron plate. Its name is derived from two words: teppan or an iron plate, and yaki, meaning grilled or broiled. Teppanyaki refers to a variety of dishes cooked in the aforementioned way.",
+    "img": "https://cdn.tasteatlas.com/images/dishrestaurants/d7b771f846d6450e9302691ce7c24bb1.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "mizu_manju",
+    "name": "MIZU MANJU",
+    "description": "Mizu manjū is a unique Japanese confectionery made with the starchy kuzuko powder. The mixture of sugar, water, and kuzuko creates an almost transparent treat with a jelly-like consistency. Traditionally, sweetened red bean paste is used as a filling, but today mizu manjū appears in numerous variations.",
+    "img": "https://cdn.tasteatlas.com//Images/Dishes/157a310018a3493c9d16e875cf58b173.jpg?w=905&h=510",
+    "restaurants": []
+  },
+  {
+    "id": "imagawayaki",
+    "name": "IMAGAWAYAKI",
+    "description": "Imagawayaki is a Japanese snack that is enjoyed throughout the country and is known under various names. The dish consists of a cake-like sponge that is filled with sweetened anko (red bean) mixture. The thick, egg-based batter is poured in special pans, allowing the cake to attain its traditional round form and a crispy shell.",
+    "img": "https://cdn.tasteatlas.com//images/dishes/bc0e2deea0ab48df82ce6c2f11bd8edb.jpg?w=905&h=510",
+    "restaurants": []
+  },
+  {
+    "id": "ichigo_daifuku",
+    "name": "ICHIGO DAIFUKU",
+    "description": "Ichigo daifuku is one of the most interesting versions of the traditional Japanese daifuku sweets. All daifuku varieties consist of a chewy mochi shell, made with pounded glutinous rice and various fillings which are hidden inside the shell.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/ee0231e3bea14f5b9e33f2df4edcda7f.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "warabimochi",
+    "name": "WARABIMOCHI",
+    "description": "Warabimochi is a sweet Japanese concoction reminiscent of jelly. It is made from bracken starch, and is traditionally dusted with sweet toasted soybean flour known as kinako. Warabimochi is one of the most popular sweets in the Kansai area, typically consumed in the summertime, since it is praised for its cool, chewy, and soft texture.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/56f19a784d6f41c39ceab20d751b7ea1.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "taiyaki",
+    "name": "TAIYAKI",
+    "description": "Taiyaki is a Japanese fish-shaped cake that is often consumed as a snack, made from flour and filled with azuki sweet bean paste. It is usually served warm and is often found at most taiyaki stands at any winter festival in Japan.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/87bb69432adb49d0aa6e0a028d40942d.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "sakuramochi",
+    "name": "SAKURAMOCHI",
+    "description": "Sakuramochi is a traditional Japanese dessert that is made to depict sakura (cherry blossom), so the rice cake is usually pink in color. Most of the times, sakuramochi contains red bean paste and it is covered with a salty cherry blossom leaf, which some people consume together with the rice cake, and some don't.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/d7fc79b9bdc64984a2dd74356b18ccf8.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "dorayaki",
+    "name": "DORAYAKI",
+    "description": "By far one of the most popular wagashi (traditional Japanese confections) types, dorayaki is a delicious snack consisting of a sweet filling sandwiched between two fluffy pancakes. Its name stems from dora, the Japanese word for a gong, which the dorayaki shape is reminiscent of.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/f39cd6715ba4416e843b51936447d8fb.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "monaka",
+    "name": "MONAKA",
+    "description": "Monaka is a type of wagashi (traditional Japanese sweets) consisting of an azuki bean jam filling that is sandwiched between two thin mochi wafers. The wafers are crispy, dry, and neutral in flavor, coming in various shapes, colors, and sizes.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/0d6bcb2f09574fcab4445cc84a04d8f3.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "zenzai",
+    "name": "ZENZAI",
+    "description": "Japanese zenzai is an unusual dessert which combines thick red bean soup with mochi, the famous sticky rice cake. It can be made by boiling dried red beans or diluting anko (sweetened red bean paste) in water. The soup can either have a coarse or a completely smooth texture.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/0503d18f51fe4c11a7462c123979bae8.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "yokan",
+    "name": "YOKAN",
+    "description": "Yokan is a Japanese sweet treat that has a form of a firm jelly. It is made with red bean paste, sugar, and agar-agar. The jelly is formed in long rectangular blocks and served sliced into smaller pieces. The two main varieties include neri yokan, the firmer variety, and mizu yokan, a summer version which is lighter and usually served chilled.",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/634d299678b143568c42abbcc1616c33.jpg?mw=1300",
+    "restaurants": []
+  },
+  {
+    "id": "wagashi",
+    "name": "WAGASHI",
+    "description": "Wagashi are traditional Japanese sweets that are usually made from natural, plant-based ingredients such as grains and azuki beans. The sweet treats are typically served with tea and are classified into three categories: namagashi (fresh confectionery), han namagashi (half-dry confectionery), and higashi (dry confectionery).",
+    "img": "https://cdn.tasteatlas.com/Images/Dishes/c2f662d5258347ea834e49059431f30f.jpg?mw=1300",
+    "restaurants": []
   }
 ]
