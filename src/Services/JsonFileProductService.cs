@@ -154,5 +154,22 @@ namespace ContosoCrafts.WebSite.Services
 
             return productData;
         }
+
+        /// <summary>
+        /// Remove the item from the system
+        /// </summary>
+        /// <returns></returns>
+        public ContosoCrafts.WebSite.Models.Product DeleteData(string id)
+        {
+            // Get the current set, and append the new record to it
+            var dataSet = GetProducts();
+            var data = dataSet.FirstOrDefault(m => m.Id.Equals(id));
+
+            var newDataSet = GetProducts().Where(m => m.Id.Equals(id) == false);
+            
+            SaveData(newDataSet);
+
+            return data;
+        }
     }
 }
