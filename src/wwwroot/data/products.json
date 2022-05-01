@@ -51,7 +51,18 @@
     "hours": [ "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM" ],
     "img": "https://user-images.githubusercontent.com/81502009/166160446-41745abb-e19e-4254-99cf-7e5982ece944.jpeg",
     "website": "https://ramendanbo.com/",
-    "dishes": [ "karaage", "katsu_kare" ],
+    "dishes": [ "ramen"],
+    "Ratings": null
+  },
+  {
+    "id": "Menya Musashi Tsukemen & Ramen",
+    "name": "Menya Musashi Tsukemen & Ramen",
+    "phone": "(206) 257-4289",
+    "address": "1510 Belmont Ave, Seattle, WA 98122",
+    "hours": [ "11:30 AM – 3:00 PM, 5:00 PM – 9:30 PM", "11:30 AM – 3:00 PM, 5:00 PM – 9:30 PM", "Closed", "11:30 AM – 3:00 PM, 5:00 PM – 9:30 PM", "11:30 AM – 9:30 PM", "11:30 AM – 9:30 PM", "11:30 AM – 9:30 PM" ],
+    "img": "https://user-images.githubusercontent.com/81502009/166160721-ed993636-764c-4460-96d5-e40e894cb966.jpeg",
+    "website": "http://menyamusashi-seattle.us/",
+    "dishes": [ "ramen", "katsudon"],
     "Ratings": null
   }
 ]

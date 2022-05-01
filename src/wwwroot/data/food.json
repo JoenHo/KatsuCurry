@@ -25,7 +25,7 @@
     "name": "RAMEN",
     "description": "Ramen is a noodle soup that first appeared in Japan in 1910, when Chinese cooks combined the noodles with a salty broth. The name 'ramen' was derived from the pronunciation of the Chinese word 'lamian' (pulled noodles). Ramen is typically classified by broth flavor, with three especially common categories: shoyu (soy sauce), shio (salt), and miso.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/5f6a4feb8f0b49198e11fd62fd6e0801.jpg?mw=1300",
-    "restaurants": [ "Ramen Danbo" ]
+    "restaurants": [ "Ramen Danbo", "Menya Musashi Tsukemen & Ramen" ]
   },
   {
     "id": "sashimi",
@@ -144,7 +144,7 @@
     "name": "KATSUDON",
     "description": "Katsudon is a type of donburi, meaning it's a rice dish served in a bowl topped with simmered ingredients. In this case, the topping is another Japanese favorite — tonkatsu — a deep-fried and crumbed pork cutlet, but here it is simmered together with vegetables in a seasoned sauce bound with eggs.",
     "img": "https://cdn.tasteatlas.com//Images/Dishes/15c022c3864e4ea6ab92c6f0a017f39d.jpg?w=905&h=510",
-    "restaurants": []
+    "restaurants": [ "Menya Musashi Tsukemen & Ramen" ]
   },
   {
     "id": "kaisendon",
