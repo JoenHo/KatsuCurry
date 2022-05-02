@@ -21,6 +21,20 @@ namespace UnitTests.Pages.Product.Create
 
         #endregion TestSetup
 
+        [Test]
+        public void Create_New_Restaurant() 
+        { 
+            // Arrange
+
+            // Act
+                      
+            // Assert
+            
+        }
+
+
+
+
 
     }
 }
