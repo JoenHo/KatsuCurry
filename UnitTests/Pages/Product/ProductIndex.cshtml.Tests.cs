@@ -8,6 +8,11 @@ using ContosoCrafts.WebSite.Pages.Product;
 
 namespace UnitTests.Pages.Product.Index
 {
+    /// <summary>
+    /// This class is for unit testing ProductIndexModel class
+    /// The tests cover the following methods:
+    /// - OnGet()
+    /// </summary>
     public class IndexTests
     {
         #region TestSetup
@@ -15,6 +20,9 @@ namespace UnitTests.Pages.Product.Index
 
         public static ProductIndexModel pageModel;
 
+        /// <summary>
+        /// Setting up the test environment
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -26,6 +34,10 @@ namespace UnitTests.Pages.Product.Index
         #endregion TestSetup
 
         #region OnGet
+        /// <summary>
+        /// ModelState.IsValid should return true when OnGet is called with a valid restaurant id
+        /// A list of products should be returned when tolist is called
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
