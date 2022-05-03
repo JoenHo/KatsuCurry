@@ -29,11 +29,11 @@ namespace UnitTests.Pages.Product.Update
             // Arrange
 
             // Act
-            pageModel.OnGet("selinazawacki-shirt");
+            pageModel.OnGet("kamonegi");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Floppy Crop", pageModel.Product.Title);
+            Assert.AreEqual("Kamonegi", pageModel.Product.Name);
         }
         #endregion OnGet
 
@@ -42,13 +42,16 @@ namespace UnitTests.Pages.Product.Update
         public void OnPostAsync_Valid_Should_Return_Products()
         {
             // Arrange
-            pageModel.Product = new ProductModel
+            string[] hours = {"11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM"};
+            pageModel.Product = new ContosoCrafts.WebSite.Models.Product
             {
-                Id = "selinazawacki-moon",
-                Title = "title",
-                Description = "description",
-                Url = "url",
-                Image = "image"
+                Id = "bogus",
+                Name = "bogus",
+                Phone = "bogus",
+                Address = "bogus",
+                Url = "bogus",
+                Image = "bougs",
+                Hours = hours
             };
 
             // Act
@@ -63,13 +66,16 @@ namespace UnitTests.Pages.Product.Update
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
-            pageModel.Product = new ProductModel
+            string[] hours = {"11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM"};
+            pageModel.Product = new ContosoCrafts.WebSite.Models.Product
             {
                 Id = "bogus",
-                Title = "bogus",
-                Description = "bogus",
+                Name = "bogus",
+                Phone = "bogus",
+                Address = "bogus",
                 Url = "bogus",
-                Image = "bougs"
+                Image = "bougs",
+                Hours = hours
             };
 
             // Force an invalid error state
