@@ -34,10 +34,8 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public void OnGet()
         {
             Products = ProductService.GetProducts();
+            Food = ProductService.GetFood();
         }
-
-
-        
     }
 }
 
