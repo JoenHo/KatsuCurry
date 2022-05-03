@@ -5,24 +5,25 @@
 }
 
 <div class="container">
-
-    <a asp-page="Create" class="btn btn-link">+ Create</a>
-
-    <table class="table table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var product in Model.Products)
-            {
+    <div id="restaurant_index" class="" runat="server">
+        <a asp-page="Create" class="btn btn-link">+ Create</a>
+        <table class="table table-bordered table-striped">
+            <thead>
                 <tr>
-                    <td>@product.Name</td>
-                    <td><a asp-page="Read" asp-route-id="@product.Id">Read</a></td>
+                    <th>Title</th>
+                    <th>Action</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var product in Model.Products)
+                {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td><a asp-page="Read" asp-route-id="@product.Id">Read</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>
+
