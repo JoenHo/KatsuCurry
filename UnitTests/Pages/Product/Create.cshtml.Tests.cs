@@ -1,16 +1,17 @@
-﻿using ContosoCrafts.WebSite.Pages.Product;
+﻿using System.Linq;
+
 using NUnit.Framework;
+
+using ContosoCrafts.WebSite.Pages.Product;
+
 
 namespace UnitTests.Pages.Product.Create
 {
-    class CreateTest
+    public class CreateTests
     {
         #region TestSetup
         public static CreateModel pageModel;
 
-        /// <summary>
-        /// Setting up the test environment
-        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -21,11 +22,20 @@ namespace UnitTests.Pages.Product.Create
 
         #endregion TestSetup
 
-       
+        #region OnGet
+        [Test]
+        public void OnGet_Valid_Should_Return_Products()
+        {
+            // Arrange
+            var oldCount = TestHelper.ProductService.GetAllData().Count();
 
+            // Act
+            pageModel.OnGet();
 
-
-
-
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual(oldCount+1, TestHelper.ProductService.GetAllData().Count());
+        }
+        #endregion OnGet
     }
 }
