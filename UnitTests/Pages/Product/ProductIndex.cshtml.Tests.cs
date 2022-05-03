@@ -13,12 +13,12 @@ namespace UnitTests.Pages.Product.Index
         #region TestSetup
         public static PageContext pageContext;
 
-        public static IndexModel pageModel;
+        public static ProductIndexModel pageModel;
 
         [SetUp]
         public void TestInitialize()
         {
-            pageModel = new IndexModel(TestHelper.ProductService)
+            pageModel = new ProductIndexModel(TestHelper.ProductService)
             {
             };
         }
