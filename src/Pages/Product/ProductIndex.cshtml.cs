@@ -22,8 +22,11 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // Data Service
         public JsonFileProductService ProductService { get; }
 
-        // Collection of the Data
+        // Collection of the Restaurant Data
         public IEnumerable<ContosoCrafts.WebSite.Models.Product> Products { get; private set; }
+
+        // Collection of the Food Data
+        public IEnumerable<ContosoCrafts.WebSite.Models.Food> Food { get; private set; }
 
         /// <summary>
         /// REST OnGet, return all data
@@ -32,6 +35,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         {
             Products = ProductService.GetProducts();
         }
+
+
+        
     }
 }
 
