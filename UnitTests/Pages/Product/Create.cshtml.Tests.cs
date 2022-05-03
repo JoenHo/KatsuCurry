@@ -7,11 +7,19 @@ using ContosoCrafts.WebSite.Pages.Product;
 
 namespace UnitTests.Pages.Product.Create
 {
+    /// <summary>
+    /// This class is for unit testing CreateModel class
+    /// The tests cover the following methods:
+    /// - OnGet()
+    /// </summary>
     public class CreateTests
     {
         #region TestSetup
         public static CreateModel pageModel;
 
+        /// <summary>
+        /// Setting up the test environment
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -23,6 +31,10 @@ namespace UnitTests.Pages.Product.Create
         #endregion TestSetup
 
         #region OnGet
+        /// <summary>
+        /// ModelState.IsValid should return true when OnGet is called to create a new restaurant
+        /// There should be one more product than before after creating a new restaurant
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
