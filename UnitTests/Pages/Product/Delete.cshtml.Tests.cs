@@ -31,11 +31,11 @@ namespace UnitTests.Pages.Product.Delete
             // Arrange
 
             // Act
-            pageModel.OnGet("selinazawacki-shirt");
+            pageModel.OnGet("kamonegi");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Floppy Crop", pageModel.Product.Title);
+            Assert.AreEqual("Kamonegi", pageModel.Product.Name);
         }
         #endregion OnGet
 
@@ -47,7 +47,7 @@ namespace UnitTests.Pages.Product.Delete
 
             // First Create the product to delete
             pageModel.Product = TestHelper.ProductService.CreateData();
-            pageModel.Product.Title = "Example to Delete";
+            pageModel.Product.Name = "Example to Delete";
             TestHelper.ProductService.UpdateData(pageModel.Product);
 
             // Act
@@ -58,20 +58,24 @@ namespace UnitTests.Pages.Product.Delete
             Assert.AreEqual(true, result.PageName.Contains("Index"));
 
             // Confirm the item is deleted
-            Assert.AreEqual(null, TestHelper.ProductService.GetAllData().FirstOrDefault(m=>m.Id.Equals(pageModel.Product.Id)));
+            Assert.AreEqual(null, TestHelper.ProductService.GetProducts().FirstOrDefault(m=>m.Id.Equals(pageModel.Product.Id)));
         }
 
         [Test]
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
-            pageModel.Product = new ProductModel
+            string[] hours = {"11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM"};
+
+            pageModel.Product = new ContosoCrafts.WebSite.Models.Product
             {
                 Id = "bogus",
-                Title = "bogus",
-                Description = "bogus",
+                Name = "bogus",
+                Phone = "bogus",
+                Address = "bogus",
                 Url = "bogus",
-                Image = "bougs"
+                Image = "bougs",
+                Hours = hours
             };
 
             // Force an invalid error state
