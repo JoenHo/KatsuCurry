@@ -11,8 +11,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
     {
         // service for acuiring data
         public JsonFileProductService ProductService { get; }
-        // restaurant data
-        public Models.Product restaurants;
         // food data
         public Models.Food foods;
 
@@ -31,7 +29,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id">item id</param>
         public void OnGet(string id)
         {
-            restaurants = ProductService.GetProducts().FirstOrDefault(m => m.Id.Equals(id));
             foods = ProductService.GetFood().FirstOrDefault(m => m.Id.Equals(id));
         }
     }
