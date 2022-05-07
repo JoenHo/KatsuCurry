@@ -13,9 +13,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public JsonFileProductService ProductService { get; }
         // restaurant data
         public Models.Product restaurants;
-        // food data
-        public Models.Food foods;
-
+      
         /// <summary>
         /// Construtor
         /// </summary>
@@ -32,7 +30,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public void OnGet(string id)
         {
             restaurants = ProductService.GetProducts().FirstOrDefault(m => m.Id.Equals(id));
-            foods = ProductService.GetFood().FirstOrDefault(m => m.Id.Equals(id));
         }
     }
 }
