@@ -7,7 +7,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
     /// <summary>
     /// This class defines the pgae model of Privacy page 
     /// </summary>
-    public class ReadModel : PageModel
+    public class ReadFoodModel : PageModel
     {
         // service for acuiring data
         public JsonFileProductService ProductService { get; }
@@ -20,7 +20,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// Construtor
         /// </summary>
         /// <param name="productService"></param>
-        public ReadModel(JsonFileProductService productService)
+        public ReadFoodModel(JsonFileProductService productService)
         {
             ProductService = productService;
         }
