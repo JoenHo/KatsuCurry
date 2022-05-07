@@ -35,9 +35,10 @@
             <tbody>
                 @foreach (var food in Model.Food)
                 {
-                    <tr>
-                        <td>@food.Name</td>
-                    </tr>
+                <tr>
+                    <td>@food.Name</td>
+                    <td><a asp-page="Read" asp-route-id="@food.Id">Read</a></td>
+                </tr>
                 }
             </tbody>
         </table>
