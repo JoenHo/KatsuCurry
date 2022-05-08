@@ -17,6 +17,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // service for acuiring data
         public JsonFileProductService ProductService { get; }
 
+        // Bind the data for the post
+        [BindProperty]
+        public Food Food { get; set; }
+
         /// <summary>
         /// Construtor
         /// </summary>
@@ -31,6 +35,20 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// </summary>
         public void OnGet()
         {
+        }
+
+        /// <summary>
+        /// This function is called when POST requested
+        /// </summary>
+        /// <returns>index page</returns>
+        public IActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+            Food = ProductService.CreateFoodData(Food);
+            return RedirectToPage("./ProductIndex");
         }
     }
 }
