@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -16,6 +17,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // service for acuiring data
         public JsonFileProductService ProductService { get; }
 
+        // Bind the data for the post
+        [BindProperty]
+        public Food Food { get; set; }
+
         /// <summary>
         /// Construtor
         /// </summary>
@@ -28,8 +33,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <summary>
         /// This function is called when GET requested
         /// </summary>
-        public void OnGet()
+        public void OnGet(string id)
         {
+            Food = ProductService.GetFood().FirstOrDefault(m => m.Id.Equals(id));
         }
     }
 }
