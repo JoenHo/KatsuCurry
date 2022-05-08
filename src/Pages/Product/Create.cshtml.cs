@@ -12,6 +12,11 @@ namespace ContosoCrafts.WebSite.Pages.Product
     {
         // Data middle tier
         public JsonFileProductService ProductService { get; }
+
+        // Bind the data for the post
+        [BindProperty]
+        public Models.Product Product { get; set; }
+
         /// <summary>
         /// Defualt Construtor
         /// </summary>
@@ -21,9 +26,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
         {
             ProductService = productService;
         }
-
-        // The data to show
-        public ContosoCrafts.WebSite.Models.Product Product;
 
         // <summary>
         /// REST Get request
