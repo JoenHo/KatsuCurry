@@ -115,6 +115,30 @@ namespace ContosoCrafts.WebSite.Services
         }
 
         /// <summary>
+        /// Creates a food record
+        /// </summary>
+        /// <returns>food data created</returns>
+        public Food CreateFoodData()
+        {
+            var data = new Food()
+            {
+                Id = System.Guid.NewGuid().ToString(),
+                Name = "Enter Title",
+                Description = "Enter Description",
+                Image = "",
+            };
+
+            // Get the current set, and append the new record to it becuase
+            // IEnumerable does not have Add
+            var dataSet = GetFood();
+            dataSet = dataSet.Append(data);
+
+            SaveFoodData(dataSet);
+
+            return data;
+        }
+
+        /// <summary>
         /// Serialize restaurant objects to JSON file
         /// </summary>
         /// <param name="products">restaurant obj to serialize</param>
