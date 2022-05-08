@@ -166,7 +166,7 @@ namespace ContosoCrafts.WebSite.Services
         /// <param name="foods">food objs to serialize</param>
         private void SaveFoodData(IEnumerable<Food> foods)
         {
-            using (var outputStream = File.Create(JsonFileRestaurantName))
+            using (var outputStream = File.Create(JsonFileFoodName))
             {
                 JsonSerializer.Serialize<IEnumerable<Food>>
                 (
