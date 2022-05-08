@@ -208,6 +208,31 @@ namespace ContosoCrafts.WebSite.Services
         }
 
         /// <summary>
+        /// Find the data record
+        /// Update the fields
+        /// Save to the data store
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns>food data updated</returns>
+        public Food UpdateFoodData(Food data)
+        {
+            var foods = GetFood();
+            var foodData = foods.FirstOrDefault(x => x.Id.Equals(data.Id));
+            if (foodData == null)
+            {
+                return null;
+            }
+
+            foodData.Name = data.Name;
+            foodData.Description = data.Description;
+            foodData.Image = data.Image;
+
+            SaveFoodData(foods);
+
+            return foodData;
+        }
+
+        /// <summary>
         /// Remove the item from the system
         /// </summary>
         /// <returns></returns>
