@@ -27,15 +27,25 @@ namespace ContosoCrafts.WebSite.Pages.Product
             ProductService = productService;
         }
 
-        // <summary>
-        /// REST Get request
+        /// <summary>
+        /// This function is called when GET requested
         /// </summary>
-        /// <param name="id"></param>
-        public IActionResult OnGet()
+        public void OnGet()
         {
-            Product = ProductService.CreateData();
+        }
 
-            return RedirectToPage("./Update", new { Id = Product.Id });
+        /// <summary>
+        /// This function is called when POST requested
+        /// </summary>
+        /// <returns>index page</returns>
+        public IActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+            Product = ProductService.CreateData(Product);
+            return RedirectToPage("./ProductIndex");
         }
     }
 }
