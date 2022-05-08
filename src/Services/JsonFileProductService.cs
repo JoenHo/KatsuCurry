@@ -118,14 +118,14 @@ namespace ContosoCrafts.WebSite.Services
         /// Creates a food record
         /// </summary>
         /// <returns>food data created</returns>
-        public Food CreateFoodData()
+        public Food CreateFoodData(Food food)
         {
             var data = new Food()
             {
                 Id = System.Guid.NewGuid().ToString(),
-                Name = "Enter Title",
-                Description = "Enter Description",
-                Image = "",
+                Name = food.Name,
+                Description = food.Description,
+                Image = food.Image,
             };
 
             // Get the current set, and append the new record to it becuase
