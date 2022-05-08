@@ -37,6 +37,25 @@ namespace ContosoCrafts.WebSite.Pages.Product
         {
             Food = ProductService.GetFood().FirstOrDefault(m => m.Id.Equals(id));
         }
+
+        /// <summary>
+        /// Post the model back to the page
+        /// The model is in the class variable Food
+        /// Call the data layer to Update that data
+        /// Then return to the index page
+        /// </summary>
+        /// <returns>index page</returns>
+        public IActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            ProductService.UpdateFoodData(Food);
+
+            return RedirectToPage("./ProductIndex");
+        }
     }
 }
 
