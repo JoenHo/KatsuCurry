@@ -136,6 +136,26 @@ namespace ContosoCrafts.WebSite.Services
             }
         }
 
+        /// <summary>
+        /// Serialize food objects to JSON file
+        /// </summary>
+        /// <param name="foods">food objs to serialize</param>
+        private void SaveFoodData(IEnumerable<Food> foods)
+        {
+            using (var outputStream = File.Create(JsonFileRestaurantName))
+            {
+                JsonSerializer.Serialize<IEnumerable<Food>>
+                (
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                    foods
+                );
+            }
+        }
+
 
         /// <summary>
         /// Find the data record
