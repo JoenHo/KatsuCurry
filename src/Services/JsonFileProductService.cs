@@ -88,6 +88,10 @@ namespace ContosoCrafts.WebSite.Services
             );
         }
 
+        /// <summary>
+        /// Creates a restaurant record
+        /// </summary>
+        /// <returns></returns>
         public ContosoCrafts.WebSite.Models.Product CreateData()
         {
             var data = new ContosoCrafts.WebSite.Models.Product()
@@ -110,6 +114,10 @@ namespace ContosoCrafts.WebSite.Services
 
         }
 
+        /// <summary>
+        /// Serialize restaurant objects to JSON file
+        /// </summary>
+        /// <param name="products">restaurant obj to serialize</param>
         private void SaveData(IEnumerable<ContosoCrafts.WebSite.Models.Product>
             products)
         {
