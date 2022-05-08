@@ -92,14 +92,16 @@ namespace ContosoCrafts.WebSite.Services
         /// Creates a restaurant record
         /// </summary>
         /// <returns></returns>
-        public ContosoCrafts.WebSite.Models.Product CreateData()
+        public ContosoCrafts.WebSite.Models.Product CreateData(Product restaurant)
         {
             var data = new ContosoCrafts.WebSite.Models.Product()
             {
                 Id = System.Guid.NewGuid().ToString(),
-                Name = "Enter Title",
-                Url = "Enter URL",
-                Image = "",
+                Name = restaurant.Name,
+                Phone = restaurant.Phone,
+                Address = restaurant.Address,
+                Url = restaurant.Url,
+                Image = restaurant.Image,
             };
 
             // Get the current set, and append the new record to it becuase
