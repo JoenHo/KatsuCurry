@@ -23,10 +23,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public JsonFileProductService ProductService { get; }
 
         // Collection of the Restaurant Data
-        public IEnumerable<ContosoCrafts.WebSite.Models.Product> Products { get; private set; }
+        public IEnumerable<ContosoCrafts.WebSite.Models.Product> Products { get; private set; } = default!;
 
         // Collection of the Food Data
-        public IEnumerable<ContosoCrafts.WebSite.Models.Food> Food { get; private set; }
+        public IEnumerable<ContosoCrafts.WebSite.Models.Food> Food { get; private set; } = default!;
 
         /// <summary>
         /// REST OnGet, return all data
