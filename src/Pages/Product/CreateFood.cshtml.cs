@@ -19,7 +19,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
         // Bind the data for the post
         [BindProperty]
-        public Food Food { get; set; }
+        public Food Food { get; set; } = default!;
 
         /// <summary>
         /// Construtor
