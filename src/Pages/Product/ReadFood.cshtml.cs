@@ -12,7 +12,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // service for acuiring data
         public JsonFileProductService ProductService { get; }
         // food data
-        public Models.Food foods;
+        public Models.Food foods {get; set;} = default!;
 
         /// <summary>
         /// Construtor
