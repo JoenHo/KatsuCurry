@@ -28,7 +28,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
         // The data to show, bind to it for the post
         [BindProperty]
-        public ContosoCrafts.WebSite.Models.Product Product { get; set; } = default!;
+        public ContosoCrafts.WebSite.Models.Food Food { get; set; } = default!;
 
         /// <summary>
         /// REST Get request
@@ -39,6 +39,19 @@ namespace ContosoCrafts.WebSite.Pages.Product
         {
             Product = ProductService.GetProducts().FirstOrDefault(m => m.Id.Equals(id));
         }
-    }
+
+        /// <summary>
+        /// Post the model back to the page
+        /// The model is in the class variable Product
+        /// Call the data layer to Delete that data
+        /// Then return to the index page
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult OnPost()
+        {
+
+        }
+
+        }
 }
 
