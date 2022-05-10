@@ -26,6 +26,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
             ProductService = productService;
         }
 
+        // The data to show, bind to it for the post
+        [BindProperty]
+        public ContosoCrafts.WebSite.Models.Product Product { get; set; } = default!;
+
         public void OnGet()
         {
         }
