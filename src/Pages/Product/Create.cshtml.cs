@@ -15,7 +15,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
         // Bind the data for the post
         [BindProperty]
-        public Models.Product Product { get; set; }
+        public Models.Product Product { get; set; } = default!;
 
         /// <summary>
         /// Defualt Construtor
