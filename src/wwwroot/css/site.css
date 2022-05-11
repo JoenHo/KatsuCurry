@@ -209,3 +209,7 @@ input:checked + .slider:before {
 .hide {
     display:none;
 }
+
+.search-bar {
+    padding-left: 30px; 
+}
