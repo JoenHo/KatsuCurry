@@ -63,9 +63,21 @@ namespace UnitTests.Pages.Product.Delete
         public void OnPostAsync_Valid_Should_Return_Products()
         {
             // Arrange
+            string[] hours = {"11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM"};
+
+            pageModel.Product = new ContosoCrafts.WebSite.Models.Product
+            {
+                Id = "bogus",
+                Name = "bogus",
+                Phone = "bogus",
+                Address = "bogus",
+                Url = "bogus",
+                Image = "bougs",
+                Hours = hours
+            };
 
             // First Create the product to delete
-            pageModel.Product = TestHelper.ProductService.CreateData();
+            pageModel.Product = TestHelper.ProductService.CreateData(pageModel.Product);
             pageModel.Product.Name = "Example to Delete";
             TestHelper.ProductService.UpdateData(pageModel.Product);
 
