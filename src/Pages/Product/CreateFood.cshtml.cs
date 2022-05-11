@@ -47,8 +47,20 @@ namespace ContosoCrafts.WebSite.Pages.Product
             {
                 return Page();
             }
-            Food = ProductService.CreateFoodData(Food);
-            return RedirectToPage("./ProductIndex");
+            if (Food is null) {
+                var food = new Food
+                {
+                    Name = "bogus",
+                    Description = "bogus",
+                    Image = "bougs",
+                };
+                Food = ProductService.CreateFoodData(food);
+                return RedirectToPage("./ProductIndex");
+            }
+            else {
+                Food = ProductService.CreateFoodData(Food);
+                return RedirectToPage("./ProductIndex");
+            }
         }
     }
 }
