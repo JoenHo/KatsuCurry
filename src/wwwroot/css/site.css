@@ -210,3 +210,7 @@ input:checked + .slider:before {
 .search-bar {
     padding-left: 30px; 
 }
+
+#nav-back {
+    background: #598B2C;
+}
