@@ -1,7 +1,7 @@
-﻿using ContosoCrafts.WebSite.Pages.Product;
+using ContosoCrafts.WebSite.Pages.Product;
 using NUnit.Framework;
 
-namespace UnitTests.Pages.Product.Read
+namespace UnitTests.Pages.Product.ReadFood
 {
     /// <summary>
     /// This class is for unit testing ReadModel class
@@ -11,7 +11,7 @@ namespace UnitTests.Pages.Product.Read
     public class ReadTests
     {
         #region TestSetup
-        public static ReadModel pageModel;
+        public static ReadFoodModel pageModel;
 
         /// <summary>
         /// Setting up the test environment
@@ -19,7 +19,7 @@ namespace UnitTests.Pages.Product.Read
         [SetUp]
         public void TestInitialize()
         {
-            pageModel = new ReadModel(TestHelper.ProductService)
+            pageModel = new ReadFoodModel(TestHelper.ProductService)
             {
             };
         }
@@ -29,19 +29,19 @@ namespace UnitTests.Pages.Product.Read
         #region OnGet
         /// <summary>
         /// ModelState.IsValid should return true when OnGet is called with a valid restaurant id
-        /// PageModel should be able to obtain the correct attributes of requested data
+        /// PageModel should be able to obtain the correct attributes of food data
         /// </summary>
         [Test]
-        public void OnGet_Valid_Should_Be_Able_To_Read_Restaurant()
+        public void OnGet_Valid_Should_Be_Able_To_Read_Food()
         {
             // Arrange
 
             // Act
-            pageModel.OnGet("kamonegi");
+            pageModel.OnGet("soba");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Kamonegi", pageModel.restaurants.Name);
+            Assert.AreEqual("SOBA", pageModel.foods.Name);
         }
         #endregion OnGet
     }
