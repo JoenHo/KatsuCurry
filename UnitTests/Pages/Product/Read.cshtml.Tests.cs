@@ -43,23 +43,6 @@ namespace UnitTests.Pages.Product.Read
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("Kamonegi", pageModel.restaurants.Name);
         }
-
-        /// <summary>
-        /// ModelState.IsValid should return true when OnGet is called with a valid restaurant id
-        /// PageModel should be able to obtain the correct attributes of food data
-        /// </summary>
-        [Test]
-        public void OnGet_Valid_Should_Be_Able_To_Read_Food()
-        {
-            // Arrange
-
-            // Act
-            pageModel.OnGet("soba");
-
-            // Assert
-            Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("SOBA", pageModel.foods.Name);
-        }
         #endregion OnGet
     }
 }
