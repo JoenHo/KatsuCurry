@@ -214,3 +214,8 @@ input:checked + .slider:before {
 #nav-back {
     background: #598B2C;
 }
+
+#font-size {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
