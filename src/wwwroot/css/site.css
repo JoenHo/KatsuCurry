@@ -148,7 +148,7 @@ ul {
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin: auto 16px;
+    margin: auto 8px;
 }
 
     /* Hide default HTML checkbox */
@@ -208,4 +208,8 @@ input:checked + .slider:before {
     }
 .hide {
     display:none;
+}
+
+.search-bar {
+    padding-left: 30px; 
 }
