@@ -44,8 +44,24 @@ namespace ContosoCrafts.WebSite.Pages.Product
             {
                 return Page();
             }
-            Product = ProductService.CreateData(Product);
-            return RedirectToPage("./ProductIndex");
+            if (Product is null) {
+                string[] hours = {"11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM"};
+                var restaurant = new Models.Product
+                {
+                    Name = "bogus",
+                    Phone = "bogus",
+                    Address = "bogus",
+                    Url = "bogus",
+                    Image = "bougs",
+                    Hours = hours
+                };
+                Product = ProductService.CreateData(restaurant);
+                return RedirectToPage("./ProductIndex");
+            }
+            else {
+                Product = ProductService.CreateData(Product);
+                return RedirectToPage("./ProductIndex");
+            }
         }
     }
 }
