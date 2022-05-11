@@ -42,7 +42,7 @@ namespace UnitTests.Pages.Product.Create
             var oldCount = TestHelper.ProductService.GetProducts().Count();
 
             // Act
-            pageModel.OnGet();
+            pageModel.OnPost();
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
