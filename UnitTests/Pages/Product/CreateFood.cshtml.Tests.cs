@@ -39,14 +39,14 @@ namespace UnitTests.Pages.Product.CreateFood
         public void OnGet_Valid_Should_Return_Products()
         {
             // Arrange
-            var oldCount = TestHelper.ProductService.GetProducts().Count();
+            var oldCount = TestHelper.ProductService.GetFood().Count();
 
             // Act
             pageModel.OnPost();
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual(oldCount + 1, TestHelper.ProductService.GetProducts().Count());
+            Assert.AreEqual(oldCount + 1, TestHelper.ProductService.GetFood().Count());
         }
         #endregion OnGet
     }
