@@ -111,3 +111,17 @@
         </div>
     </form>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    <!-- define behavior for open/close checkbox -->
+    $(".closedcheck").on("click", function (e) {
+        if (this.checked) {
+            $(this).closest(".weekday").find(".hours").val("Closed");
+            $(this).closest(".weekday").find(".hours").prop("readonly", true);
+        } else {
+            $(this).closest(".weekday").find(".hours").val("");
+            $(this).closest(".weekday").find(".hours").prop("readonly", false);
+        }
+    });
+</script>
