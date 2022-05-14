@@ -16,17 +16,17 @@
 
         <div class="form-group">
             <label asp-for="Product.Name" class="control-label"></label>
-            <input asp-for="Product.Name" class="form-control" />
+            <input asp-for="Product.Name" class="form-control" readonly/>
             <span asp-validation-for="Product.Name" class="text-danger"></span>
         </div>
         <div class="form-group">
             <label asp-for="Product.Phone" class="control-label"></label>
-            <input asp-for="Product.Phone" class="form-control" />
+            <input asp-for="Product.Phone" class="form-control" readonly/>
             <span asp-validation-for="Product.Phone" class="text-danger"></span>
         </div>
         <div class="form-group">
             <label asp-for="Product.Address" class="control-label"></label>
-            <input asp-for="Product.Address" class="form-control" />
+            <input asp-for="Product.Address" class="form-control" readonly/>
             <span asp-validation-for="Product.Address" class="text-danger"></span>
         </div>
         <div class="form-group">
@@ -42,76 +42,76 @@
                     <tr class="weekday">
                         <td>Monday</td>
                         <td>
-                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[0]" />
+                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[0]" disabled readonly/>
                             <span asp-validation-for="Product.Hours" class="text-danger"></span>
                         </td>
-                        <td><center><input type="checkbox" class="closedcheck" /></center></td>
+                        <td><center><input type="checkbox" class="closedcheck" disabled readonly/></center></td>
                     </tr>
                     <tr class="weekday">
                         <td>Tuesday</td>
                         <td>
-                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[1]" />
+                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[1]" disabled readonly/>
                             <span asp-validation-for="Product.Hours" class="text-danger"></span>
                         </td>
-                        <td><center><input type="checkbox" class="closedcheck" /></center></td>
+                        <td><center><input type="checkbox" class="closedcheck" disabled readonly/></center></td>
                     </tr>
                     <tr class="weekday">
                         <td>Wednesday</td>
                         <td>
-                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[2]" />
+                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[2]" disabled readonly/>
                             <span asp-validation-for="Product.Hours" class="text-danger"></span>
                         </td>
-                        <td><center><input type="checkbox" class="closedcheck" /></center></td>
+                        <td><center><input type="checkbox" class="closedcheck" disabled readonly/></center></td>
                     </tr>
                     <tr class="weekday">
                         <td>Thursday</td>
                         <td>
-                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[3]" />
+                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[3]" disabled readonly/>
                             <span asp-validation-for="Product.Hours" class="text-danger"></span>
                         </td>
-                        <td><center><input type="checkbox" class="closedcheck" /></center></td>
+                        <td><center><input type="checkbox" class="closedcheck" disabled readonly/></center></td>
                     </tr>
                     <tr class="weekday">
                         <td>Friday</td>
                         <td>
-                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[4]" />
+                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[4]" disabled readonly/>
                             <span asp-validation-for="Product.Hours" class="text-danger"></span>
                         </td>
-                        <td><center><input type="checkbox" class="closedcheck" /></center></td>
+                        <td><center><input type="checkbox" class="closedcheck" disabled readonly/></center></td>
                     </tr>
                     <tr class="weekday">
                         <td>Saturday</td>
                         <td>
-                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[5]" />
+                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[5]" disabled readonly/>
                             <span asp-validation-for="Product.Hours" class="text-danger"></span>
                         </td>
-                        <td><center><input type="checkbox" class="closedcheck" /></center></td>
+                        <td><center><input type="checkbox" class="closedcheck" disabled readonly/></center></td>
                     </tr>
                     <tr class="weekday">
                         <td>Sunday</td>
                         <td>
-                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[6]" />
+                            <input asp-for="Product.Hours" class="form=control hours" value="@Model.Product.Hours?[6]" disabled readonly/>
                             <span asp-validation-for="Product.Hours" class="text-danger"></span>
                         </td>
-                        <td><center><input type="checkbox" class="closedcheck" /></center></td>
+                        <td><center><input type="checkbox" class="closedcheck" disabled readonly/></center></td>
                     </tr>
                 </table>
             </div>
         </div>
         <div class="form-group">
             <label asp-for="Product.Url" class="control-label"></label>
-            <input asp-for="Product.Url" class="form-control" />
+            <input asp-for="Product.Url" class="form-control" readonly/>
             <span asp-validation-for="Product.Url" class="text-danger"></span>
         </div>
         <div class="form-group">
             <label asp-for="Product.Image" class="control-label"></label>
-            <input asp-for="Product.Image" class="form-control" />
+            <input asp-for="Product.Image" class="form-control" readonly/>
             <span asp-validation-for="Product.Image" class="text-danger"></span>
         </div>
 
         <h1>Confirm Delete of this item</h1>
         <div class="form-group">
-            <input type="submit" value="Delete" class="btn btn-primary" />
+            <input type="submit" value="Delete" class="btn btn-primary" readonly/>
         </div>
     </form>
 
