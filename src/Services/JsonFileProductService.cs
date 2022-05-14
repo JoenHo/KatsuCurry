@@ -63,7 +63,7 @@ namespace ContosoCrafts.WebSite.Services
             // Get information of the restaurant
             var products = GetProducts();
 
-            var data = products.First(x => x.Id == productId);
+            var data = products.FirstOrDefault(x => x.Id == productId);
             
             if (data == null) {
                 return false;
