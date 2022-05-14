@@ -102,6 +102,7 @@ namespace ContosoCrafts.WebSite.Services
                 Address = restaurant.Address,
                 Url = restaurant.Url,
                 Image = restaurant.Image,
+                Hours = restaurant.Hours,
             };
 
             // Get the current set, and append the new record to it becuase
