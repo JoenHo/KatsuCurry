@@ -53,39 +53,39 @@ namespace ContosoCrafts.WebSite.Services
         /// </summary>
         /// <param name="productId"></param> restaurant Id
         /// <param name="rating"></param> stars as rating
-        public void AddRating(string productId, int rating)
+        public bool AddRating(string productId, int rating)
         {
+
+            if (string.IsNullOrEmpty(productId)) {
+                return false;
+            }
+
             // Get information of the restaurant
             var products = GetProducts();
 
-            if (products.First(x => x.Id == productId).Ratings == null)
-            {
-                products.First(x => x.Id == productId).Ratings = new int[]
-                {
-                    rating
-                };
+            var data = products.First(x => x.Id == productId);
+            
+            if (data == null) {
+                return false;
             }
-            else
-            {
-                var ratings =
-                    products.First(x => x.Id == productId).Ratings.ToList();
-                ratings.Add(rating);
-                products.First(x => x.Id == productId).Ratings =
-                    ratings.ToArray();
+            if (rating < 0) {
+                return false;
+            }
+            if (rating > 5) {
+                return false;
             }
 
-            // Update client's rating to restaurant
-            using var outputRestaurantStream =
-                File.OpenWrite(JsonFileRestaurantName);
+            if (data.Ratings == null) {
+                data.Ratings = new int[] { };
+            }
 
-            JsonSerializer.Serialize<IEnumerable<Product>>(
-                new Utf8JsonWriter(outputRestaurantStream, new JsonWriterOptions
-                {
-                    SkipValidation = true,
-                    Indented = true
-                }),
-                products
-            );
+            var ratings = data.Ratings.ToList();
+            ratings.Add(rating);
+            data.Ratings = ratings.ToArray();
+
+            SaveData(products);
+
+            return true;
         }
 
         /// <summary>
