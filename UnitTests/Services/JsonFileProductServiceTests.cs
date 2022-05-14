@@ -21,7 +21,7 @@ namespace UnitTests.Pages.Product.AddRating
         #endregion TestSetup
 
         #region AddRating
-        /*[Test]
+        [Test]
         public void AddRating_InValid_Product_Null_Should_Return_False()
         {
             // Arrange
@@ -53,12 +53,12 @@ namespace UnitTests.Pages.Product.AddRating
             // Arrange
 
             // Get the First data item
-            var data = TestHelper.ProductService.GetAllData().First();
+            var data = TestHelper.ProductService.GetProducts().First();
             var countOriginal = data.Ratings.Length;
 
             // Act
             var result = TestHelper.ProductService.AddRating(data.Id, 5);
-            var dataNewList = TestHelper.ProductService.GetAllData().First();
+            var dataNewList = TestHelper.ProductService.GetProducts().First();
 
             // Assert
             Assert.AreEqual(true, result);
@@ -90,7 +90,7 @@ namespace UnitTests.Pages.Product.AddRating
         public void AddRating_Invalid_Rating_High()
         {
             // Arrange
-            var data = TestHelper.ProductService.GetAllData().First();
+            var data = TestHelper.ProductService.GetProducts().First();
 
             // Act
             var result = TestHelper.ProductService.AddRating(data.Id, 6);
@@ -103,7 +103,7 @@ namespace UnitTests.Pages.Product.AddRating
         public void AddRating_Invalid_Rating_Low()
         {
             // Arrange
-            var data = TestHelper.ProductService.GetAllData().First();
+            var data = TestHelper.ProductService.GetProducts().First();
 
             // Act
             var result = TestHelper.ProductService.AddRating(data.Id, -1);
@@ -116,7 +116,7 @@ namespace UnitTests.Pages.Product.AddRating
         public void Ratings_Empty_Return_True()
         {
             // Arrange
-            var dataId = "jenlooper-light";
+            var dataId = "ten sushi";
 
             // Act
             var result = TestHelper.ProductService.AddRating(dataId, 1);
@@ -124,9 +124,7 @@ namespace UnitTests.Pages.Product.AddRating
             // Assert
             Assert.AreEqual(true, result);
 
-        }*/
-
-// Students will do any others that are required
+        }
 
         #endregion AddRating
     }
