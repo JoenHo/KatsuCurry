@@ -204,6 +204,9 @@ namespace ContosoCrafts.WebSite.Services
             productData.Name = data.Name;
             productData.Url = data.Url;
             productData.Image = data.Image;
+            productData.Address = data.Address;
+            productData.Phone = data.Phone;
+            productData.Hours = data.Hours;
 
             SaveData(products);
 
