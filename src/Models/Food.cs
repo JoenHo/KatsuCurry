@@ -13,7 +13,7 @@ namespace ContosoCrafts.WebSite.Models
         // followings are the properties of Food data
         public string? Id { get; set; }
 
-        
+        [Required(ErrorMessage = "Food Name is required")]
         public string? Name { get; set; }
         public string? Description { get; set; }
         [JsonPropertyName("img")]
