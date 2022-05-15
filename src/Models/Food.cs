@@ -16,7 +16,7 @@ namespace ContosoCrafts.WebSite.Models
         [Required(ErrorMessage = "Food Name is required")]
         public string? Name { get; set; }
 
-        [Required(ErrorMessage = "Food Name is required")]
+        [Required(ErrorMessage = "Food Description is required")]
         public string? Description { get; set; }
         [JsonPropertyName("img")]
         public string? Image { get; set; }
