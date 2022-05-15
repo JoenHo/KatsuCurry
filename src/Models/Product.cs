@@ -12,6 +12,8 @@ namespace ContosoCrafts.WebSite.Models
 
         // followings are the properties of Product
         public string? Id { get; set; }
+
+        [Required(ErrorMessage = "Restaurant Name is required")]
         public string? Name { get; set; }
         public string? Phone { get; set; }
         public string? Address { get; set; }
