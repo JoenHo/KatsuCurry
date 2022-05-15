@@ -100,3 +100,16 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    <!-- define behavior for dropdown list -->
+     $(".selectoption").change(function (e) {
+         var rest_id = $(this).val();
+         $(this).closest(".suggestion").find(".selected-option").val(rest_id);
+    });
+    $(document).ready(()=>{
+        $("#select1").val($("#selected1").val());
+        $("#select2").val($("#selected2").val());
+        $("#select3").val($("#selected3").val());
+    });
+</script>
