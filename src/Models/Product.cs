@@ -15,7 +15,10 @@ namespace ContosoCrafts.WebSite.Models
 
         [Required(ErrorMessage = "Restaurant Name is required")]
         public string? Name { get; set; }
+
+        [Required(ErrorMessage = "Phone number is required")]
         public string? Phone { get; set; }
+
         public string? Address { get; set; }
         [JsonPropertyName("website")]
         public string? Url { get; set; }
