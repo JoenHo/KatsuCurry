@@ -28,7 +28,7 @@
                     <td>@Model.foods.Name</td>
                 </tr>
                 <tr>
-                    <td><b>Description</b></td>
+                    <td><b>DESCRIPTION</b></td>
                     <td>@Model.foods.Description</td>
                 </tr>
                 <tr>
@@ -36,7 +36,32 @@
                     <td>@Model.foods.Image</td>
                 </tr>
             </tbody>
-
+        </table>
+        <table cellPadding=10>
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td><b>SUGGESTION</b></td>
+                    @if (Model.foods.Restaurants != null)
+                    {
+                        @foreach (var restaurant in Model.foods.Restaurants)
+                        {
+                            @foreach (var product in Model.Products)
+                            {
+                                @if (product.Id == restaurant)
+                                {
+                                    <td>
+                                        <figure>
+                                            <img style="border:5px solid #FFF" src=@product.Image alt="restaurant image" width="130" height="130">
+                                            <figcaption align="center"><a href="@product.Url" target="_blank">@product.Name </a></figcaption>
+                                        </figure>
+                                    </td>
+                                }
+                            }
+                        }
+                    }
+                </tr>
+            </tbody>
         </table>
     </div>
 
