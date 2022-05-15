@@ -1,5 +1,6 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.ComponentModel.DataAnnotations;
 
 namespace ContosoCrafts.WebSite.Models
 {
@@ -11,6 +12,8 @@ namespace ContosoCrafts.WebSite.Models
 
         // followings are the properties of Food data
         public string? Id { get; set; }
+
+        
         public string? Name { get; set; }
         public string? Description { get; set; }
         [JsonPropertyName("img")]
