@@ -86,3 +86,11 @@
         </div>
     </form>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    <!-- define behavior for dropdown list -->
+     $(".selectoption").change(function (e) {
+         var rest_id = $(this).val();
+         $(this).closest(".suggestion").find(".selected-option").val(rest_id);
+    });
+</script>
