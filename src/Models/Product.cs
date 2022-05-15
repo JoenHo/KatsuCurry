@@ -22,7 +22,7 @@ namespace ContosoCrafts.WebSite.Models
         [Required(ErrorMessage = "Address is required")]
         public string? Address { get; set; }
 
-
+        [Required(ErrorMessage = "Url input is required")]
         [JsonPropertyName("website")]
         public string? Url { get; set; }
         [JsonPropertyName("img")]
