@@ -25,6 +25,63 @@
             <span asp-validation-for="Food.Image" class="text-danger"></span>
         </div>
         <div class="form-group">
+            <label asp-for="Food.Restaurants" class="control-label">Restaurant Suggestion</label>
+            <table id="RestaurantTable">
+                <thead></thead>
+                <tbody id="TextBoxContainer">
+                    <tr class="suggestion">
+                        <td><center>&nbsp; #1 &nbsp;</center></td>
+                        <td>
+                            <select id="select1" class="form-control selectoption">
+                                <option value=""> -- select -- </option>
+                                @foreach (var restaurant in Model.Products)
+                                {
+                                    <option value="@restaurant.Id">@restaurant.Name</option>
+                                }
+                            </select>
+                        </td>
+                        <td>
+                            <input id="selected1" asp-for="Food.Restaurants" class="form-control selected-option" hidden />
+                            <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
+                        </td>
+                    </tr>
+                    <tr class="suggestion">
+                        <td><center>&nbsp; #2 &nbsp;</center></td>
+                        <td>
+                            <select id="select2" class="form-control selectoption">
+                                <option value=""> -- select -- </option>
+                                @foreach (var restaurant in Model.Products)
+                                {
+                                    <option value="@restaurant.Id">@restaurant.Name</option>
+                                }
+                            </select>
+                        </td>
+                        <td>
+                            <input id="selected2" asp-for="Food.Restaurants" class="form-control selected-option" hidden />
+                            <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
+                        </td>
+                    </tr>
+                    <tr class="suggestion">
+                        <td><center>&nbsp; #3 &nbsp;</center></td>
+                        <td>
+                            <select id="select3" class="form-control selectoption">
+                                <option value=""> -- select -- </option>
+                                @foreach (var restaurant in Model.Products)
+                                {
+                                    <option value="@restaurant.Id">@restaurant.Name</option>
+                                }
+                            </select>
+                        </td>
+                        <td>
+                            <input id="selected3" asp-for="Food.Restaurants" class="form-control selected-option" hidden />
+                            <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+        <div class="form-group">
             <input type="submit" value="Save" class="btn btn-primary" />
         </div>
     </form>
