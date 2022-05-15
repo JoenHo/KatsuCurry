@@ -29,6 +29,9 @@ namespace ContosoCrafts.WebSite.Models
 
         [JsonPropertyName("website")]
         [Required(ErrorMessage = "Url input is required")]
+        [RegularExpression(@"^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])
+                        *(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&%\$#_]*)?$",
+            ErrorMessage = "Please Enter a valid address!")]
         public string? Url { get; set; }
 
         [JsonPropertyName("img")]
