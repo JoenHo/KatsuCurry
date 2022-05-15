@@ -232,6 +232,7 @@ namespace ContosoCrafts.WebSite.Services
             foodData.Name = data.Name;
             foodData.Description = data.Description;
             foodData.Image = data.Image;
+            foodData.Restaurants = data.Restaurants;
 
             SaveFoodData(foods);
 
