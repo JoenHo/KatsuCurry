@@ -58,7 +58,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
                 return Page();
             }
 
-            ProductService.DeleteData(Food.Id);
+            ProductService.DeleteFoodData(Food.Id);
 
             return RedirectToPage("./ProductIndex");
         }
