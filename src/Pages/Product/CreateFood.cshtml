@@ -36,7 +36,10 @@
                                 <option value=""> -- select -- </option>
                                 @foreach (var restaurant in Model.Products)
                                 {
-                                    <option value="@restaurant.Id">@restaurant.Name</option>
+                                    if (restaurant.Name != null)
+                                    {
+                                        <option value="@restaurant.Id">@restaurant.Name</option>
+                                    }
                                 }
                             </select>
                         </td>
