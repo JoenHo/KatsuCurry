@@ -30,6 +30,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         [BindProperty]
         public ContosoCrafts.WebSite.Models.Food Food { get; set; } = default!;
 
+        // Collection of the Restaurant Data
+        public IEnumerable<Models.Product> Products { get; private set; } = default!;
+
         /// <summary>
         /// REST Get request
         /// Loads the Data
@@ -38,6 +41,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public void OnGet(string id)
         {
             Food = ProductService.GetFood().FirstOrDefault(m => m.Id.Equals(id));
+            Products = ProductService.GetProducts();
         }
 
         /// <summary>
