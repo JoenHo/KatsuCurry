@@ -30,8 +30,11 @@ namespace ContosoCrafts.WebSite.Models
         [Required(ErrorMessage = "Image is required")]
         public string? Image { get; set; }
 
+        [Required(ErrorMessage = "Restaurant Hour is required")]
         public string[]? Hours { get; set; }
+
         public string[]? Dishes { get; set; }
+
         public int[]? Ratings { get; set; }
  
 
