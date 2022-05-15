@@ -255,5 +255,22 @@ namespace ContosoCrafts.WebSite.Services
 
             return data;
         }
+
+        /// <summary>
+        /// Remove the item from the system
+        /// </summary>
+        /// <returns></returns>
+        public Food DeleteFoodData(string id)
+        {
+            // Get the current set, and append the new record to it
+            var dataSet = GetFood();
+            var data = dataSet.FirstOrDefault(m => m.Id.Equals(id));
+
+            var newDataSet = GetFood().Where(m => m.Id.Equals(id) == false);
+
+            SaveFoodData(newDataSet);
+
+            return data;
+        }
     }
 }
