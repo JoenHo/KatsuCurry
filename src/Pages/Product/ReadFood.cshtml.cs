@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -13,6 +14,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public JsonFileProductService ProductService { get; }
         // food data
         public Models.Food foods {get; set;} = default!;
+
+        // Collection of the Restaurant Data
+        public IEnumerable<Models.Product> Products { get; private set; } = default!;
 
         /// <summary>
         /// Construtor
@@ -30,6 +34,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public void OnGet(string id)
         {
             foods = ProductService.GetFood().FirstOrDefault(m => m.Id.Equals(id));
+            Products = ProductService.GetProducts();
         }
     }
 }
