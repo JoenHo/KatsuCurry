@@ -129,6 +129,7 @@ namespace ContosoCrafts.WebSite.Services
                 Name = food.Name,
                 Description = food.Description,
                 Image = food.Image,
+                Restaurants = food.Restaurants,
             };
 
             // Get the current set, and append the new record to it becuase
