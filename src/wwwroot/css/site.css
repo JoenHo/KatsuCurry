@@ -225,3 +225,11 @@ input:checked + .slider:before {
     width:45px;
     height:45px;
 }
+
+.img-frame {
+    border: 5px solid #FFF;
+    border-radius: 4px;
+    padding: 0px;
+    width: 130px;
+    height: 130px;
+}
