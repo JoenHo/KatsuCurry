@@ -220,3 +220,8 @@ input:checked + .slider:before {
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
 }
+
+#logo-image {
+    width:45px;
+    height:45px;
+}
