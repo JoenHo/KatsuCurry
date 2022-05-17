@@ -22,7 +22,6 @@ namespace ContosoCrafts.WebSite.Models
         public string? Phone { get; set; }
 
         [Required(ErrorMessage = "Address is required")]
-        //^[#.0-9a-zA-Z\s,-]+$
         [RegularExpression(@"^[#.0-9a-zA-Z\s,-]+$",
             ErrorMessage = "Please Enter a valid address!")]
         public string? Address { get; set; }
@@ -33,7 +32,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? Url { get; set; }
 
         [JsonPropertyName("img")]
-        [Required(ErrorMessage = "Image is required")]
+        [Required(ErrorMessage = "Image url is required")]
         public string? Image { get; set; }
 
         [Required(ErrorMessage = "Restaurant Hour is required")]
