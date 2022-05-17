@@ -42,6 +42,7 @@ namespace UnitTests.Pages.Product.ReadFood
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("SOBA", pageModel.Food.Name);
+            Assert.NotNull(pageModel.Products);
         }
         #endregion OnGet
     }
