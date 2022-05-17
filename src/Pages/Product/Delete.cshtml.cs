@@ -37,9 +37,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id"></param>
         public void OnGet(string id)
         {
-            var check = ProductService.GetProducts().FirstOrDefault(m => m.Id.Equals(id));
-            if (check is not null) {
-                Product = check;
+            var checknull = ProductService.GetProducts().FirstOrDefault(m => m.Id.Equals(id));
+            if (checknull is not null) {
+                Product = checknull;
             }
         }
 
