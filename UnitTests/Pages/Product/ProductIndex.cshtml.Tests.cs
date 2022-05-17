@@ -50,6 +50,18 @@ namespace UnitTests.Pages.Product.Index
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual(true, pageModel.Products.ToList().Any());
         }
+
+        public void OnGet_Valid_Should_Return_Food()
+        {
+            // Arrange
+
+            // Act
+            pageModel.OnGet();
+
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual(true, pageModel.Food.ToList().Any());
+        }
         #endregion OnGet
     }
 }
