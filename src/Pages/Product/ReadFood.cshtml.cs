@@ -13,7 +13,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // service for acuiring data
         public JsonFileProductService ProductService { get; }
         // food data
-        public Models.Food foods {get; set;} = default!;
+        public Models.Food Food {get; set;} = default!;
 
         // Collection of the Restaurant Data
         public IEnumerable<Models.Product> Products { get; private set; } = default!;
@@ -33,7 +33,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id">item id</param>
         public void OnGet(string id)
         {
-            foods = ProductService.GetFood().FirstOrDefault(m => m.Id.Equals(id));
+            var checknull = ProductService.GetFood().FirstOrDefault(m => m.Id.Equals(id));
+            if (checknull is not null) {
+                Food = checknull;
+            }
             Products = ProductService.GetProducts();
         }
     }
