@@ -3,73 +3,76 @@
 @{
 }
 
-<div id="food_read" class="" runat="server">
-    <br />
-    <h2 align="center"><b>@Model.foods.Name</b></h2>
+<body>
 
-    <div class="content">
-        <img class="card-img" src='@Model.foods.Image' alt='Image for @Model.foods.Name'>
-    </div>
+    <div id="food_read" class="" runat="server">
+        <br />
+        <h2 align="center"><b>@Model.foods.Name</b></h2>
 
-    <br />
-    <br />
+        <div class="content">
+            <img class="card-img" src='@Model.foods.Image' alt='Image for @Model.foods.Name'>
+        </div>
 
-    <div>
-        <table cellPadding=10>
-            <thead>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><b>ID</b></td>
-                    <td>@Model.foods.Id</td>
-                </tr>
-                <tr>
-                    <td><b>NAME</b></td>
-                    <td>@Model.foods.Name</td>
-                </tr>
-                <tr>
-                    <td><b>DESCRIPTION</b></td>
-                    <td>@Model.foods.Description</td>
-                </tr>
-                <tr>
-                    <td><b>IMAGE</b></td>
-                    <td>@Model.foods.Image</td>
-                </tr>
-            </tbody>
-        </table>
-        <table cellPadding=10>
-            <thead></thead>
-            <tbody>
-                <tr>
-                    <td><b>SUGGESTION</b></td>
-                    @if (Model.foods.Restaurants != null)
-                    {
-                        @foreach (var restaurant in Model.foods.Restaurants)
+        <br />
+        <br />
+
+        <div>
+            <table cellPadding=10>
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>ID</b></td>
+                        <td>@Model.foods.Id</td>
+                    </tr>
+                    <tr>
+                        <td><b>NAME</b></td>
+                        <td>@Model.foods.Name</td>
+                    </tr>
+                    <tr>
+                        <td><b>DESCRIPTION</b></td>
+                        <td>@Model.foods.Description</td>
+                    </tr>
+                    <tr>
+                        <td><b>IMAGE</b></td>
+                        <td>@Model.foods.Image</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table cellPadding=10>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td><b>SUGGESTION</b></td>
+                        @if (Model.foods.Restaurants != null)
                         {
-                            @foreach (var product in Model.Products)
+                            @foreach (var restaurant in Model.foods.Restaurants)
                             {
-                                @if (product.Id == restaurant)
+                                @foreach (var product in Model.Products)
                                 {
-                                    <td>
-                                        <figure>
-                                            <img style="border:5px solid #FFF" src=@product.Image alt="restaurant image" width="130" height="130">
-                                            <figcaption align="center"><a href="@product.Url" target="_blank">@product.Name </a></figcaption>
-                                        </figure>
-                                    </td>
+                                    @if (product.Id == restaurant)
+                                    {
+                                        <td>
+                                            <figure>
+                                                <img style="border:5px solid #FFF" src=@product.Image alt="restaurant image" width="130" height="130">
+                                                <figcaption align="center"><a href="@product.Url" target="_blank">@product.Name </a></figcaption>
+                                            </figure>
+                                        </td>
+                                    }
                                 }
                             }
                         }
-                    }
-                </tr>
-            </tbody>
-        </table>
-    </div>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <br />
-    <br />
+        <br />
+        <br />
 
-    <div class="row">
-        <a asp-page="UpdateFood" asp-route-id="@Model.foods.Id" class="btn btn-primary">Update</a> &nbsp; &nbsp;
-        <a asp-page="DeleteFood" asp-route-id="@Model.foods.Id" class="btn btn-danger">Delete</a>
+        <div class="row">
+            <a asp-page="UpdateFood" asp-route-id="@Model.foods.Id" class="btn btn-primary">Update</a> &nbsp; &nbsp;
+            <a asp-page="DeleteFood" asp-route-id="@Model.foods.Id" class="btn btn-danger">Delete</a>
+        </div>
     </div>
-</div>
+</body>
