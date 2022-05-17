@@ -30,22 +30,31 @@ namespace ContosoCrafts.WebSite.Services
         public IEnumerable<Product> GetProducts()
         {
             using var jsonFileReader = File.OpenText(JsonFileRestaurantName);
-            return JsonSerializer.Deserialize<Product[]>
+
+            var productlist = JsonSerializer.Deserialize<Product[]>
                 (jsonFileReader.ReadToEnd(), new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
                 });
+            if (productlist is null) {
+                productlist = new Product[]{};
+            }
+            return productlist;
         }
 
         /// Get the json text and convert it to list
         public IEnumerable<Food> GetFood()
         {
             using var jsonFileReader = File.OpenText(JsonFileFoodName);
-            return JsonSerializer.Deserialize<Food[]>
+            var foodlist = JsonSerializer.Deserialize<Food[]>
                 (jsonFileReader.ReadToEnd(), new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
                 });
+            if (foodlist is null) {
+                foodlist = new Food[]{};
+            }
+            return foodlist;
         }
 
         /// <summary>
