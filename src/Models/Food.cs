@@ -21,7 +21,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? Description { get; set; }
 
         [JsonPropertyName("img")]
-        [Required(ErrorMessage = "Food picture url is required")]
+        [Required(ErrorMessage = "Image url is required")]
         [Url(ErrorMessage = "url provided is not valid, try again...")]
         public string? Image { get; set; }
         public string[]? Restaurants { get; set; }
