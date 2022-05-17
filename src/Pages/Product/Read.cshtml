@@ -4,74 +4,78 @@
     ViewData["Title"] = "Read Page";
 }
 
-<div id="restaurant_read" class="" runat="server">
-    <br />
-    <h2 align="center"><b>@Model.restaurants.Name</b></h2>
+<body>
 
-    <div class="content">
-        <img class="card-img" src='@Model.restaurants.Image' alt='Image for @Model.restaurants.Name'>
-    </div>
+    <div id="restaurant_read" class="" runat="server">
+        <br />
+        <h2 align="center"><b>@Model.restaurants.Name</b></h2>
 
-    <br />
-    <br />
+        <div class="content">
+            <img class="card-img" src='@Model.restaurants.Image' alt='Image for @Model.restaurants.Name'>
+        </div>
 
-    <div>
-        <table cellPadding=10>
-            <thead>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><b>ID</b></td>
-                    <td>@Model.restaurants.Id</td>
-                </tr>
-                <tr>
-                    <td><b>NAME</b></td>
-                    <td>@Model.restaurants.Name</td>
-                </tr>
-                <tr>
-                    <td><b>PHONE</b></td>
-                    <td>@Model.restaurants.Phone</td>
-                </tr>
-                <tr>
-                    <td><b>ADDRESS</b></td>
-                    <td>@Model.restaurants.Address</td>
-                </tr>
-                <tr>
-                    <td><b>HOURS</b></td>
-                    @if (Model.restaurants.Hours != null)
-                    {
-                        @if (Model.restaurants.Hours.Length >= 7)
+        <br />
+        <br />
+
+        <div>
+            <table cellPadding=10>
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>ID</b></td>
+                        <td>@Model.restaurants.Id</td>
+                    </tr>
+                    <tr>
+                        <td><b>NAME</b></td>
+                        <td>@Model.restaurants.Name</td>
+                    </tr>
+                    <tr>
+                        <td><b>PHONE</b></td>
+                        <td>@Model.restaurants.Phone</td>
+                    </tr>
+                    <tr>
+                        <td><b>ADDRESS</b></td>
+                        <td>@Model.restaurants.Address</td>
+                    </tr>
+                    <tr>
+                        <td><b>HOURS</b></td>
+                        @if (Model.restaurants.Hours != null)
                         {
-                            <td>
-                                MON: @Model.restaurants.Hours[0]<br />
-                                TUE: @Model.restaurants.Hours[1]<br />
-                                WED: @Model.restaurants.Hours[2]<br />
-                                THU: @Model.restaurants.Hours[3]<br />
-                                FRI: @Model.restaurants.Hours[4]<br />
-                                SAT: @Model.restaurants.Hours[5]<br />
-                                SUN: @Model.restaurants.Hours[6]<br />
-                            </td>
+                            @if (Model.restaurants.Hours.Length >= 7)
+                            {
+                                <td>
+                                    MON: @Model.restaurants.Hours[0]<br />
+                                    TUE: @Model.restaurants.Hours[1]<br />
+                                    WED: @Model.restaurants.Hours[2]<br />
+                                    THU: @Model.restaurants.Hours[3]<br />
+                                    FRI: @Model.restaurants.Hours[4]<br />
+                                    SAT: @Model.restaurants.Hours[5]<br />
+                                    SUN: @Model.restaurants.Hours[6]<br />
+                                </td>
+                            }
                         }
-                    }
-                </tr>
-                <tr>
-                    <td><b>IMAGE</b></td>
-                    <td>@Model.restaurants.Image</td>
-                </tr>
-                <tr>
-                    <td><b>WEBSITE</b></td>
-                    <td>@Model.restaurants.Url</td>
-                </tr>
-            </tbody>
+                    </tr>
+                    <tr>
+                        <td><b>IMAGE</b></td>
+                        <td>@Model.restaurants.Image</td>
+                    </tr>
+                    <tr>
+                        <td><b>WEBSITE</b></td>
+                        <td>@Model.restaurants.Url</td>
+                    </tr>
+                </tbody>
 
-        </table>
+            </table>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="row">
+            <a asp-page="Update" asp-route-id="@Model.restaurants.Id" class="btn btn-primary">Update</a> &nbsp; &nbsp;
+            <a asp-page="Delete" asp-route-id="@Model.restaurants.Id" class="btn btn-danger">Delete</a>
+        </div>
     </div>
 
-    <br />
-    <br />
-
-    <div class="row">
-        <a asp-page="Update" asp-route-id="@Model.restaurants.Id" class="btn btn-primary">Update</a> &nbsp; &nbsp;
-        <a asp-page="Delete" asp-route-id="@Model.restaurants.Id" class="btn btn-danger">Delete</a>
-    </div>
-</div>
+</body>
