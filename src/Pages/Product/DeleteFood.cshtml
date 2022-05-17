@@ -9,107 +9,108 @@
 
 <h1>Delete</h1>
 
-<div class="container">
-    <form method="post">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        @Html.HiddenFor(x => x.Food.Id)
+<body>
 
-        <div class="form-group">
-            <label asp-for="Food.Name" class="control-label"></label>
-            <input asp-for="Food.Name" class="form-control" />
-            <span asp-validation-for="Food.Name" class="text-danger"></span>
-        </div>
+    <div class="container">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @Html.HiddenFor(x => x.Food.Id)
 
-        <div class="form-group">
-            <label asp-for="Food.Description" class="control-label"></label>
-            <textarea asp-for="Food.Description" class="form-control" rows="4"></textarea>
-            <span asp-validation-for="Food.Description" class="text-danger"></span>
-        </div>
+            <div class="form-group">
+                <label asp-for="Food.Name" class="control-label"></label>
+                <input asp-for="Food.Name" class="form-control" />
+                <span asp-validation-for="Food.Name" class="text-danger"></span>
+            </div>
 
-        <div class="form-group">
-            <label asp-for="Food.Image" class="control-label"></label>
-            <input asp-for="Food.Image" class="form-control" />
-            <span asp-validation-for="Food.Image" class="text-danger"></span>
-        </div>
+            <div class="form-group">
+                <label asp-for="Food.Description" class="control-label"></label>
+                <textarea asp-for="Food.Description" class="form-control" rows="4"></textarea>
+                <span asp-validation-for="Food.Description" class="text-danger"></span>
+            </div>
 
-        <div class="form-group">
-            <label asp-for="Food.Restaurants" class="control-label">Restaurant Suggestion</label>
-            <table id="RestaurantTable">
-                <thead></thead>
-                <tbody id="TextBoxContainer">
-                    <tr class="suggestion">
-                        <td><center>&nbsp; #1 &nbsp;</center></td>
-                        <td>
-                            <select id="select1" class="form-control selectoption">
-                                <option value=""> -- select -- </option>
-                                @foreach (var restaurant in Model.Products)
-                                {
-                                    <option value="@restaurant.Id">@restaurant.Name</option>
-                                }
-                            </select>
-                        </td>
-                        <td>
-                            <input id="selected1" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants.ElementAtOrDefault(0)" hidden />
-                            <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
-                        </td>
-                    </tr>
-                    <tr class="suggestion">
-                        <td><center>&nbsp; #2 &nbsp;</center></td>
-                        <td>
-                            <select id="select2" class="form-control selectoption">
-                                <option value=""> -- select -- </option>
-                                @foreach (var restaurant in Model.Products)
-                                {
-                                    <option value="@restaurant.Id">@restaurant.Name</option>
-                                }
-                            </select>
-                        </td>
-                        <td>
-                            <input id="selected2" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants.ElementAtOrDefault(1)" hidden />
-                            <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
-                        </td>
-                    </tr>
-                    <tr class="suggestion">
-                        <td><center>&nbsp; #3 &nbsp;</center></td>
-                        <td>
-                            <select id="select3" class="form-control selectoption">
-                                <option value=""> -- select -- </option>
-                                @foreach (var restaurant in Model.Products)
-                                {
-                                    <option value="@restaurant.Id">@restaurant.Name</option>
-                                }
-                            </select>
-                        </td>
-                        <td>
-                            <input id="selected3" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants.ElementAtOrDefault(2)" hidden />
-                            <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
-                        </td>
-                    </tr>
-                </tbody>
-                <tfoot></tfoot>
-            </table>
-        </div>
+            <div class="form-group">
+                <label asp-for="Food.Image" class="control-label"></label>
+                <input asp-for="Food.Image" class="form-control" />
+                <span asp-validation-for="Food.Image" class="text-danger"></span>
+            </div>
 
-        <h1>Confirm Delete of this item</h1>
-        <div class="form-group">
-            <input type="submit" value="Delete" class="btn btn-primary" />
-        </div>
-    </form>
-</div>
+            <div class="form-group">
+                <label asp-for="Food.Restaurants" class="control-label">Restaurant Suggestion</label>
+                <table id="RestaurantTable">
+                    <thead></thead>
+                    <tbody id="TextBoxContainer">
+                        <tr class="suggestion">
+                            <td><center>&nbsp; #1 &nbsp;</center></td>
+                            <td>
+                                <select id="select1" class="form-control selectoption">
+                                    <option value=""> -- select -- </option>
+                                    @foreach (var restaurant in Model.Products)
+                                    {
+                                        <option value="@restaurant.Id">@restaurant.Name</option>
+                                    }
+                                </select>
+                            </td>
+                            <td>
+                                <input id="selected1" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants.ElementAtOrDefault(0)" hidden />
+                                <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
+                            </td>
+                        </tr>
+                        <tr class="suggestion">
+                            <td><center>&nbsp; #2 &nbsp;</center></td>
+                            <td>
+                                <select id="select2" class="form-control selectoption">
+                                    <option value=""> -- select -- </option>
+                                    @foreach (var restaurant in Model.Products)
+                                    {
+                                        <option value="@restaurant.Id">@restaurant.Name</option>
+                                    }
+                                </select>
+                            </td>
+                            <td>
+                                <input id="selected2" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants.ElementAtOrDefault(1)" hidden />
+                                <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
+                            </td>
+                        </tr>
+                        <tr class="suggestion">
+                            <td><center>&nbsp; #3 &nbsp;</center></td>
+                            <td>
+                                <select id="select3" class="form-control selectoption">
+                                    <option value=""> -- select -- </option>
+                                    @foreach (var restaurant in Model.Products)
+                                    {
+                                        <option value="@restaurant.Id">@restaurant.Name</option>
+                                    }
+                                </select>
+                            </td>
+                            <td>
+                                <input id="selected3" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants.ElementAtOrDefault(2)" hidden />
+                                <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-    <!-- define behavior for dropdown list -->
-     $(".selectoption").change(function (e) {
-         var rest_id = $(this).val();
-         $(this).closest(".suggestion").find(".selected-option").val(rest_id);
-    });
-    $(document).ready(()=>{
-        $("#select1").val($("#selected1").val());
-        $("#select2").val($("#selected2").val());
-        $("#select3").val($("#selected3").val());
-    });
-</script>
+            <h1>Confirm Delete of this item</h1>
+            <div class="form-group">
+                <input type="submit" value="Delete" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script><!--    define behavior for dropdown list-- >
+            $(".selectoption").change(function (e) {
+                var rest_id = $(this).val();
+                $(this).closest(".suggestion").find(".selected-option").val(rest_id);
+            });
+            $(document).ready(() => {
+                $("#select1").val($("#selected1").val());
+                $("#select2").val($("#selected2").val());
+                $("#select3").val($("#selected3").val());
+            });</script>
+</body>
