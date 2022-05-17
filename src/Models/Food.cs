@@ -14,6 +14,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? Id { get; set; }
 
         [Required(ErrorMessage = "Food Name is required")]
+        [StringLength(50)]
         public string? Name { get; set; }
 
         [Required(ErrorMessage = "Food Description is required")]
