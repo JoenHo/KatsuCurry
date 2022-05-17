@@ -53,6 +53,11 @@ namespace ContosoCrafts.WebSite.Pages.Product
         {
             if (!ModelState.IsValid)
             {
+                if (Products == null)
+                {
+                    Products = ProductService.GetProducts();
+                }
+                 
                 return Page();
             }
 
