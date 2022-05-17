@@ -7,10 +7,10 @@
 
     <div id="food_read" class="" runat="server">
         <br />
-        <h2 align="center"><b>@Model.foods.Name</b></h2>
+        <h2 align="center"><b>@Model.Food.Name</b></h2>
 
         <div class="content">
-            <img class="card-img" src='@Model.foods.Image' alt='Image for @Model.foods.Name'>
+            <img class="card-img" src='@Model.Food.Image' alt='Image for @Model.Food.Name'>
         </div>
 
         <br />
@@ -23,19 +23,19 @@
                 <tbody>
                     <tr>
                         <td><b>ID</b></td>
-                        <td>@Model.foods.Id</td>
+                        <td>@Model.Food.Id</td>
                     </tr>
                     <tr>
                         <td><b>NAME</b></td>
-                        <td>@Model.foods.Name</td>
+                        <td>@Model.Food.Name</td>
                     </tr>
                     <tr>
                         <td><b>DESCRIPTION</b></td>
-                        <td>@Model.foods.Description</td>
+                        <td>@Model.Food.Description</td>
                     </tr>
                     <tr>
                         <td><b>IMAGE</b></td>
-                        <td>@Model.foods.Image</td>
+                        <td>@Model.Food.Image</td>
                     </tr>
                 </tbody>
             </table>
@@ -44,9 +44,9 @@
                 <tbody>
                     <tr>
                         <td><b>SUGGESTION</b></td>
-                        @if (Model.foods.Restaurants != null)
+                        @if (Model.Food.Restaurants != null)
                         {
-                            @foreach (var restaurant in Model.foods.Restaurants)
+                            @foreach (var restaurant in Model.Food.Restaurants)
                             {
                                 @foreach (var product in Model.Products)
                                 {
@@ -71,8 +71,8 @@
         <br />
 
         <div class="row">
-            <a asp-page="UpdateFood" asp-route-id="@Model.foods.Id" class="btn btn-primary">Update</a> &nbsp; &nbsp;
-            <a asp-page="DeleteFood" asp-route-id="@Model.foods.Id" class="btn btn-danger">Delete</a>
+            <a asp-page="UpdateFood" asp-route-id="@Model.Food.Id" class="btn btn-primary">Update</a> &nbsp; &nbsp;
+            <a asp-page="DeleteFood" asp-route-id="@Model.Food.Id" class="btn btn-danger">Delete</a>
         </div>
     </div>
 </body>
