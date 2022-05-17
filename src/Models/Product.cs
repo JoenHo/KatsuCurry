@@ -11,7 +11,7 @@ namespace ContosoCrafts.WebSite.Models
     {
 
         // followings are the properties of Product
-        public string? Id { get; set; }
+        public string Id { get; set; } = default!;
 
         [Required(ErrorMessage = "Restaurant Name is required")]
         [StringLength(100)]
