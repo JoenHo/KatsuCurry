@@ -50,6 +50,7 @@ namespace UnitTests.Pages.Product.DeleteFood
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("SOBA", pageModel.Food.Name);
+            Assert.AreEqual(true, pageModel.Products.ToList().Any());
         }
         #endregion OnGet
 
