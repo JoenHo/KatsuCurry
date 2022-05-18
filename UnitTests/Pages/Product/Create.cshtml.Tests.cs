@@ -32,11 +32,28 @@ namespace UnitTests.Pages.Product.Create
 
         #region OnGet
         /// <summary>
+        /// ModelState.IsValid should return true when OnGet is called with a valid restaurant id
+        /// </summary>
+        [Test]
+        public void OnGet_Valid_Should_Return_Products()
+        {
+            // Arrange
+
+            // Act
+            pageModel.OnGet();
+
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+        }
+        #endregion OnGet
+
+        #region OnPostAsync
+        /// <summary>
         /// ModelState.IsValid should return true when OnGet is called to create a new restaurant
         /// There should be one more product than before after creating a new restaurant
         /// </summary>
         [Test]
-        public void OnGet_Valid_Should_Return_Products()
+        public void OnPostAsync_Null_Product_Should_Make_New_Product()
         {
             // Arrange
             var oldCount = TestHelper.ProductService.GetProducts().Count();
@@ -48,6 +65,38 @@ namespace UnitTests.Pages.Product.Create
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual(oldCount+1, TestHelper.ProductService.GetProducts().Count());
         }
-        #endregion OnGet
+
+        /// <summary>
+        /// PageModel should still be valid after a delete.
+        /// The page should change to Index when a restaurant is deleted
+        /// The restaurant that has been deleted should return null
+        /// </summary>
+        [Test]
+        public void OnPostAsync_Valid_Product_Should_Make_New_Product()
+        {
+            // Arrange
+            string[] hours = {"11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM"};
+
+            pageModel.Product = new ContosoCrafts.WebSite.Models.Product
+            {
+                Id = "bogus",
+                Name = "bogus",
+                Phone = "bogus",
+                Address = "bogus",
+                Url = "bogus",
+                Image = "bougs",
+                Hours = hours
+            };
+
+            var oldCount = TestHelper.ProductService.GetProducts().Count();
+
+            // Act
+            pageModel.OnPost();
+
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual(oldCount+1, TestHelper.ProductService.GetProducts().Count());
+        }
+        #endregion OnPostAsync
     }
 }
