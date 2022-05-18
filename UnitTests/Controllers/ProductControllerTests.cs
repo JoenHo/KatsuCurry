@@ -47,10 +47,23 @@ namespace UnitTests.Controllers
             request.ProductId = "kamonegi";
             request.Rating = 5;
 
-            pageModel.Patch(request);
+            var response = pageModel.Patch(request);
 
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.IsInstanceOf<Microsoft.AspNetCore.Mvc.OkResult>(response);
+        }
 
+        [Test]
+        public void Patch_Null_Rating_Patch_Should_Return_BadRequest()
+        {
+            var request = new ProductsController.RatingRequest();
+            request.ProductId = null;
+            request.Rating = 5;
+
+            var response = pageModel.Patch(request);
+
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.IsInstanceOf<Microsoft.AspNetCore.Mvc.BadRequestResult>(response);
         }
 
         #endregion Patch
