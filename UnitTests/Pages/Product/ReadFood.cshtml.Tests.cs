@@ -44,6 +44,24 @@ namespace UnitTests.Pages.Product.ReadFood
             Assert.AreEqual("SOBA", pageModel.Food.Name);
             Assert.NotNull(pageModel.Products);
         }
+
+        /// <summary>
+        /// ModelState.IsValid should return true when OnGet is called with a valid restaurant id
+        /// PageModel should be able to obtain the correct attributes of requested data
+        /// </summary>
+        [Test]
+        public void OnGet_Valid_ToString_Should_Return_Correct_String()
+        {
+            // Arrange
+
+            // Act
+            pageModel.OnGet("soba");
+            var validstringslice = "{\"Id\":\"soba\",\"Na";
+
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual(validstringslice, pageModel.Food.ToString().Substring(0, 16));
+        }
         #endregion OnGet
     }
 }
