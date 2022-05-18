@@ -4,12 +4,21 @@ using NUnit.Framework;
 namespace UnitTests.Controllers
 {
 
+    /// <summary>
+    /// This class is for unit testing ProductsController class
+    /// The tests cover the following methods:
+    /// - Get()
+    /// - Patch()
+    /// </summary>
     class ProductsControllerTest
     {
         #region TestSetup
         //Instance of Model
         public static ProductsController pageModel;
 
+        /// <summary>
+        /// Setting up the test environment
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -19,7 +28,9 @@ namespace UnitTests.Controllers
         #endregion TestSetup
 
         #region Get
-
+        /// <summary>
+        /// ModelState.IsValid should return true after Get is called
+        /// </summary>
         [Test]
         public void Get_Valid_Should_Return_Products()
         {
@@ -28,6 +39,9 @@ namespace UnitTests.Controllers
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
         }
 
+        /// <summary>
+        /// ModelState.IsValid should return true after GetFoodData is called
+        /// </summary>
         [Test]
         public void GetFoodData_Valid_Should_Return_Food()
         {
@@ -39,7 +53,10 @@ namespace UnitTests.Controllers
         #endregion Get
 
         #region Patch
-
+        /// <summary>
+        /// ModelState.IsValid should return true after GetFoodData is called
+        /// The response should be ok with a valid rating request
+        /// </summary>
         [Test]
         public void Patch_Valid_Rating_Patch_Should_Return_Ok()
         {
@@ -53,6 +70,10 @@ namespace UnitTests.Controllers
             Assert.IsInstanceOf<Microsoft.AspNetCore.Mvc.OkResult>(response);
         }
 
+        /// <summary>
+        /// ModelState.IsValid should return true after GetFoodData is called
+        /// The response should be bad with a null rating request
+        /// </summary>
         [Test]
         public void Patch_Null_Rating_Patch_Should_Return_BadRequest()
         {
