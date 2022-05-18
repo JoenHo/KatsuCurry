@@ -1,7 +1,4 @@
 using ContosoCrafts.WebSite.Controllers;
-using System.Diagnostics;
-using ContosoCrafts.WebSite.Pages;
-using Microsoft.Extensions.Logging;
 using NUnit.Framework;
 
 namespace UnitTests.Controllers
@@ -21,16 +18,42 @@ namespace UnitTests.Controllers
 
         #endregion TestSetup
 
-        #region OnGet
+        #region Get
 
         [Test]
-        public void OnGet_Valid_Should_Return_Products()
+        public void Get_Valid_Should_Return_Products()
         {
             pageModel.Get();
+
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
         }
 
-        #endregion OnGet
+        [Test]
+        public void GetFoodData_Valid_Should_Return_Food()
+        {
+            pageModel.GetFoodData();
+            
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+        }
+
+        #endregion Get
+
+        #region Patch
+
+        [Test]
+        public void Patch_Valid_Rating_Patch_Should_Return_Ok()
+        {
+            var request = new ProductsController.RatingRequest();
+            request.ProductId = "kamonegi";
+            request.Rating = 5;
+
+            pageModel.Patch(request);
+
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+
+        }
+
+        #endregion Patch
 
     }
 
