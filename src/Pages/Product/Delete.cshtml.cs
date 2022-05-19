@@ -59,7 +59,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
                 ProductService.DeleteData(Product.Id);
             }
 
-            return RedirectToPage("./ProductIndex");
+            return RedirectToPage("./ProductIndex", new { id = "restaurant" });
         }
     }
 }
