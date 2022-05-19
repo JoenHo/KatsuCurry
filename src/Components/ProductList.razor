@@ -153,18 +153,21 @@
                                 <b class="card-text">RESTAURANT SUGGESTION</b><br />
                                 <table>
                                     <tr>
-                                    @foreach (var restaurant in selectedFood.Restaurants)
+                                    @if(selectedFood.Restaurants != null)
                                     {
-                                        @foreach (var product in ProductService.GetProducts())
+                                        @foreach (var restaurant in selectedFood.Restaurants)
                                         {
-                                            @if (product.Id == restaurant)
+                                            @foreach (var product in ProductService.GetProducts())
                                             {
-                                                <td>
-                                                    <figure>
-                                                        <img class="img-frame" src=@product.Image alt="restaurant image">
-                                                        <figcaption align="center"><a href="@product.Url" target="_blank">@product.Name </a></figcaption>
-                                                    </figure>
-                                                </td>
+                                                @if (product.Id == restaurant)
+                                                {
+                                                    <td>
+                                                        <figure>
+                                                            <img class="img-frame" src=@product.Image alt="restaurant image">
+                                                            <figcaption align="center"><a href="@product.Url" target="_blank">@product.Name </a></figcaption>
+                                                        </figure>
+                                                    </td>
+                                                }
                                             }
                                         }
                                     }
