@@ -53,7 +53,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
             ProductService.UpdateData(Product);
 
-            return RedirectToPage("./ProductIndex");
+            return RedirectToPage("./ProductIndex", new { id = "restaurant" });
         }
     }
 }
