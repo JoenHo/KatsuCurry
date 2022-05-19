@@ -34,7 +34,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id"></param>
         public void OnGet(string id)
         {
-            var checknull = ProductService.GetProducts().FirstOrDefault(m => m.Id.Equals(id));
+            var checknull = ProductService.GetProducts().FirstOrDefault(m => m.Id != null && m.Id.Equals(id));
             if (checknull is not null) {
                 Product = checknull;
             }
@@ -54,7 +54,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
                 return Page();
             }
 
-            ProductService.DeleteData(Product.Id);
+            if (Product.Id is not null)
+            {
+                ProductService.DeleteData(Product.Id);
+            }
 
             return RedirectToPage("./ProductIndex");
         }
