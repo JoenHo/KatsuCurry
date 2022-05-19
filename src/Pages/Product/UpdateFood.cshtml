@@ -46,7 +46,7 @@
                                 </select>
                             </td>
                             <td>
-                                <input id="selected1" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants.ElementAtOrDefault(0)" hidden />
+                                <input id="selected1" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants?.ElementAtOrDefault(0)" hidden />
                                 <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
                             </td>
                         </tr>
@@ -62,7 +62,7 @@
                                 </select>
                             </td>
                             <td>
-                                <input id="selected2" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants.ElementAtOrDefault(1)" hidden />
+                                <input id="selected2" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants?.ElementAtOrDefault(1)" hidden />
                                 <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
                             </td>
                         </tr>
@@ -78,7 +78,7 @@
                                 </select>
                             </td>
                             <td>
-                                <input id="selected3" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants.ElementAtOrDefault(2)" hidden />
+                                <input id="selected3" asp-for="Food.Restaurants" class="form-control selected-option" value="@Model.Food.Restaurants?.ElementAtOrDefault(2)" hidden />
                                 <span asp-validation-for="Food.Restaurants" class="test-danger"></span>
                             </td>
                         </tr>
