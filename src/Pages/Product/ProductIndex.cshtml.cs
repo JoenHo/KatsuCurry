@@ -24,13 +24,17 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // Collection of the Food Data
         public IEnumerable<ContosoCrafts.WebSite.Models.Food> Food { get; private set; } = default!;
 
+        // id passed into this page
+        public string RouteId { get; set; } = default!;
+
         /// <summary>
         /// REST OnGet, return all data
         /// </summary>
-        public void OnGet()
+        public void OnGet(string id)
         {
             Products = ProductService.GetProducts();
             Food = ProductService.GetFood();
+            RouteId = id;
         }
     }
 }
