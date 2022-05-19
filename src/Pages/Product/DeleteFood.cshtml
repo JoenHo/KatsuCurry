@@ -18,19 +18,19 @@
 
             <div class="form-group">
                 <label asp-for="Food.Name" class="control-label"></label>
-                <input asp-for="Food.Name" class="form-control" />
+                <input asp-for="Food.Name" class="form-control" readonly/>
                 <span asp-validation-for="Food.Name" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="Food.Description" class="control-label"></label>
-                <textarea asp-for="Food.Description" class="form-control" rows="4"></textarea>
+                <textarea asp-for="Food.Description" class="form-control" rows="4" readonly></textarea>
                 <span asp-validation-for="Food.Description" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="Food.Image" class="control-label"></label>
-                <input asp-for="Food.Image" class="form-control" />
+                <input asp-for="Food.Image" class="form-control" readonly/>
                 <span asp-validation-for="Food.Image" class="text-danger"></span>
             </div>
 
@@ -42,7 +42,7 @@
                         <tr class="suggestion">
                             <td><center>&nbsp; #1 &nbsp;</center></td>
                             <td>
-                                <select id="select1" class="form-control selectoption">
+                                <select id="select1" class="form-control selectoption" disabled>
                                     <option value=""> -- select -- </option>
                                     @foreach (var restaurant in Model.Products)
                                     {
@@ -58,7 +58,7 @@
                         <tr class="suggestion">
                             <td><center>&nbsp; #2 &nbsp;</center></td>
                             <td>
-                                <select id="select2" class="form-control selectoption">
+                                <select id="select2" class="form-control selectoption" disabled>
                                     <option value=""> -- select -- </option>
                                     @foreach (var restaurant in Model.Products)
                                     {
@@ -74,7 +74,7 @@
                         <tr class="suggestion">
                             <td><center>&nbsp; #3 &nbsp;</center></td>
                             <td>
-                                <select id="select3" class="form-control selectoption">
+                                <select id="select3" class="form-control selectoption" disabled>
                                     <option value=""> -- select -- </option>
                                     @foreach (var restaurant in Model.Products)
                                     {
