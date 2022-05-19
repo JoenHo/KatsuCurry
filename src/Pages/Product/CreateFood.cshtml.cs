@@ -61,12 +61,11 @@ namespace ContosoCrafts.WebSite.Pages.Product
                     Image = "bougs",
                 };
                 Food = ProductService.CreateFoodData(food);
-                return RedirectToPage("./ProductIndex");
             }
             else {
                 Food = ProductService.CreateFoodData(Food);
-                return RedirectToPage("./ProductIndex");
             }
+            return RedirectToPage("./ProductIndex", new {id = "food"});
         }
     }
 }
