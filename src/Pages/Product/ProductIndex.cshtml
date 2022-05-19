@@ -46,7 +46,17 @@
         </table>
     </div>
 </div>
+
+@if (Model.RouteId == "food")
+{
+    <script type="text/javascript">{
+        document.getElementById("restaurant_index").classList.toggle('hide');
+        document.getElementById("food_index").classList.toggle('hide');
+        document.getElementById("toggle_btn").checked = true;
+    }</script>
+}
+
 <script type="text/javascript">document.getElementById("testslider").addEventListener('click', () => {
         document.getElementById("restaurant_index").classList.toggle('hide');
         document.getElementById("food_index").classList.toggle('hide');
-        });</script>
+    });</script>
