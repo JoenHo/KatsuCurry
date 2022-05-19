@@ -64,7 +64,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
             ProductService.UpdateFoodData(Food);
 
-            return RedirectToPage("./ProductIndex");
+            return RedirectToPage("./ProductIndex", new { id = "food" });
         }
     }
 }
