@@ -56,12 +56,11 @@ namespace ContosoCrafts.WebSite.Pages.Product
                     Hours = hours
                 };
                 Product = ProductService.CreateData(restaurant);
-                return RedirectToPage("./ProductIndex");
             }
             else {
                 Product = ProductService.CreateData(Product);
-                return RedirectToPage("./ProductIndex");
             }
+            return RedirectToPage("./ProductIndex", new {id = "restaurant"});
         }
     }
 }
