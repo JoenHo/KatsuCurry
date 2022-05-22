@@ -32,6 +32,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// </summary>
         public void OnGet()
         {
+            Product = ProductService.CreateData();
         }
 
         /// <summary>
@@ -44,22 +45,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
             {
                 return Page();
             }
-            if (Product is null) {
-                string[] hours = {"11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM"};
-                var restaurant = new Models.Product
-                {
-                    Name = "bogus",
-                    Phone = "bogus",
-                    Address = "bogus",
-                    Url = "bogus",
-                    Image = "bougs",
-                    Hours = hours
-                };
-                Product = ProductService.CreateData(restaurant);
-            }
-            else {
-                Product = ProductService.CreateData(Product);
-            }
+            Product = ProductService.AppendData(Product);
             return RedirectToPage("./ProductIndex", new {id = "restaurant"});
         }
     }
