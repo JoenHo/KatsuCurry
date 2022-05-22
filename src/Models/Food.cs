@@ -11,7 +11,7 @@ namespace ContosoCrafts.WebSite.Models
     {
 
         // followings are the properties of Food data
-        public string? Id { get; set; }
+        public string Id { get; set; } = default!;
 
         [Required(ErrorMessage = "Food Name is required")]
         [StringLength(50)]
