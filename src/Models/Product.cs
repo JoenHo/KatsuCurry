@@ -19,11 +19,13 @@ namespace ContosoCrafts.WebSite.Models
 
         [Required(ErrorMessage = "Phone number is required")]
         [Phone(ErrorMessage = "Not a valid phone number")]
+        [StringLength(10)]
         public string? Phone { get; set; }
 
         [Required(ErrorMessage = "Address is required")]
         [RegularExpression(@"^[#.0-9a-zA-Z\s,-]+$",
             ErrorMessage = "Please Enter a valid address!")]
+        [StringLength(80)]
         public string? Address { get; set; }
 
         [JsonPropertyName("website")]
