@@ -101,25 +101,12 @@ namespace ContosoCrafts.WebSite.Services
         /// Creates a restaurant record
         /// </summary>
         /// <returns></returns>
-        public ContosoCrafts.WebSite.Models.Product CreateData(Product restaurant)
+        public ContosoCrafts.WebSite.Models.Product CreateData()
         {
             var data = new ContosoCrafts.WebSite.Models.Product()
             {
                 Id = System.Guid.NewGuid().ToString(),
-                Name = restaurant.Name,
-                Phone = restaurant.Phone,
-                Address = restaurant.Address,
-                Url = restaurant.Url,
-                Image = restaurant.Image,
-                Hours = restaurant.Hours,
             };
-
-            // Get the current set, and append the new record to it becuase
-            // IEnumerable does not have Add
-            var dataSet = GetProducts();
-            dataSet = dataSet.Append(data);
-
-            SaveData(dataSet);
 
             return data;
 
@@ -130,25 +117,48 @@ namespace ContosoCrafts.WebSite.Services
         /// Creates a food record
         /// </summary>
         /// <returns>food data created</returns>
-        public Food CreateFoodData(Food food)
+        public Food CreateFoodData()
         {
             var data = new Food()
             {
-                Id = System.Guid.NewGuid().ToString(),
-                Name = food.Name,
-                Description = food.Description,
-                Image = food.Image,
-                Restaurants = food.Restaurants,
+                Id = System.Guid.NewGuid().ToString()
             };
 
+            return data;
+        }
+
+        /// <summary>
+        /// Adds restaurant record to dataset
+        /// </summary>
+        /// <returns> restaurant data added</returns>
+        public Product AppendData(Product restaurant)
+        {
+            
+            // Get the current set, and append the new record to it becuase
+            // IEnumerable does not have Add
+            var dataSet = GetProducts();
+            dataSet = dataSet.Append(restaurant);
+
+            SaveData(dataSet);
+
+            return restaurant;
+        }
+
+        /// <summary>
+        /// Adds food record to dataset
+        /// </summary>
+        /// <returns> food data added</returns>
+        public Food AppendFoodData(Food food)
+        {
+            
             // Get the current set, and append the new record to it becuase
             // IEnumerable does not have Add
             var dataSet = GetFood();
-            dataSet = dataSet.Append(data);
+            dataSet = dataSet.Append(food);
 
             SaveFoodData(dataSet);
 
-            return data;
+            return food;
         }
 
         /// <summary>
