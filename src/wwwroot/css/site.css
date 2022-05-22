@@ -242,6 +242,32 @@ input:checked + .slider:before {
     color: #e1e1e1;
 }
 
+#home-title1 {
+    font-family: 'Limelight', cursive;
+    font-size: 38px;
+    color: #3b3434;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+
+#home-title2 {
+    font-family: 'Limelight', cursive;
+    font-size: 60px;
+    color: #3b3434;
+    position: absolute;
+    top: 49%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+
 #logo-image {
     width:45px;
     height:45px;
