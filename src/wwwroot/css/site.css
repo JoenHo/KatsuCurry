@@ -280,3 +280,55 @@ input:checked + .slider:before {
     width: 130px;
     height: 130px;
 }
+
+/* -- style for sakura icon -- */
+.sakura {
+    content: url(../data/sakura.png);
+    max-height: 80px;
+    max-width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 100;
+}
+
+.sakura-fill {
+    content: url(../data/sakura-fill.png);
+    max-height: 80px;
+    max-width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+}
+
+.sakura:hover {
+    opacity: 0;
+}
+
+.sakura-fill:hover {
+    opacity: 100;
+}
+
+.animation_rotate {
+    animation: rotation 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+/* -- style for sakura icon -- */
