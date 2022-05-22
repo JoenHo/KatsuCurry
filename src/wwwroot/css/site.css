@@ -114,6 +114,19 @@ body {
     background: #e9e9e9;
 }
 
+body.index {
+    margin-bottom: 50px;
+    background: url(../data/dango.png) no-repeat center center fixed;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+}
+
 p {
     font-family: 'Nunito', sans-serif;
 }
