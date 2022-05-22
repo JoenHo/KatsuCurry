@@ -36,6 +36,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public void OnGet()
         {
             Products = ProductService.GetProducts();
+            Food = ProductService.CreateFoodData();
         }
 
         /// <summary>
@@ -53,18 +54,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
                 return Page();
             }
-            if (Food is null) {
-                var food = new Food
-                {
-                    Name = "bogus",
-                    Description = "bogus",
-                    Image = "bougs",
-                };
-                Food = ProductService.CreateFoodData(food);
-            }
-            else {
-                Food = ProductService.CreateFoodData(Food);
-            }
+            Food = ProductService.AppendFoodData(Food);
             return RedirectToPage("./ProductIndex", new {id = "food"});
         }
     }
