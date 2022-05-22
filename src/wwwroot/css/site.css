@@ -1,4 +1,7 @@
-﻿.checked {
+﻿/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Limelight&family=Reenie+Beanie&family=Reggae+One&display=swap');
+
+.checked {
     color: orange;
 }
 
@@ -59,7 +62,6 @@ a {
     background-color: #1b6ec2;
     border-color: #1861ac;
 }
-
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
     background-color: #1b6ec2;
