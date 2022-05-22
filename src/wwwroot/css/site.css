@@ -219,8 +219,9 @@ input:checked + .slider:before {
 }
 
 #font-size {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
+    font-family: 'Reggae One', cursive;
+    font-size: 25px;
+    color: #e1e1e1;
 }
 
 #logo-image {
