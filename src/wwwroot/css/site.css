@@ -332,3 +332,109 @@ input:checked + .slider:before {
     }
 }
 /* -- style for sakura icon -- */
+/* -- style for about us page -- */
+.abouttext {
+    position: relative;
+    padding: 30px;
+    width: 1000px;
+    font: 18px 'crimson text', serif;
+    text-align: justify;
+}
+
+.abouttext i {
+    font: 18px 'crimson text', serif;
+    font-style: italic;
+}
+
+img.about {
+    width: 200px;
+    height: 240px;
+}
+
+.caption {
+    font-family: "Reenie Beanie", sans-serif;
+    font-size: 2em;
+    padding: 8px 10px 10px;
+}
+
+h2 {
+    font-family: 'Limelight', cursive;
+}
+
+.description {
+    font-family: "crimson text", serif;
+    font-size: 15px;
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+}
+
+.about_container {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 3%;
+}
+
+    .about_container:hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+.about_container, .front, .back {
+    width: 200px;
+    height: 300px;
+}
+
+.flipper {
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    background-color: #F1EEE9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+#content {
+    text-align: center;
+}
+
+#teamlogo {
+    content: url(../data/katsucurry.png);
+    max-height: 60px;
+    max-width: 90px;
+}
+
+#jh {
+    content: url(../data/jh.png);
+    max-height: 240px;
+    max-width: 200px;
+}
+
+#oc {
+    content: url(../data/oc.png);
+    max-height: 240px;
+    max-width: 200px;
+}
+
+#sb {
+    content: url(../data/sb.png);
+    max-height: 240px;
+    max-width: 200px;
+}
+
+#tc {
+    content: url(../data/tc.png);
+    max-height: 240px;
+    max-width: 200px;
+}
+/* -- style for about us page -- */
