@@ -19,7 +19,7 @@ namespace ContosoCrafts.WebSite.Models
 
         [Required(ErrorMessage = "Phone number is required")]
         [Phone(ErrorMessage = "Not a valid phone number")]
-        [StringLength(10)]
+        [StringLength(14)]
         public string? Phone { get; set; }
 
         [Required(ErrorMessage = "Address is required")]
