@@ -210,11 +210,11 @@ namespace ContosoCrafts.WebSite.Services
         /// Save to the data store
         /// </summary>
         /// <param name="data"></param>
-        public ContosoCrafts.WebSite.Models.Product? UpdateData(
+        public ContosoCrafts.WebSite.Models.Product UpdateData(
             ContosoCrafts.WebSite.Models.Product data)
         {
             var products = GetProducts();
-            var productData = products.FirstOrDefault(x => x.Id != null && x.Id.Equals(data.Id));
+            var productData = products.FirstOrDefault(x => x.Id.Equals(data.Id));
             if (productData == null)
             {
                 return null;
@@ -239,10 +239,10 @@ namespace ContosoCrafts.WebSite.Services
         /// </summary>
         /// <param name="data"></param>
         /// <returns>food data updated</returns>
-        public Food? UpdateFoodData(Food data)
+        public Food UpdateFoodData(Food data)
         {
             var foods = GetFood();
-            var foodData = foods.FirstOrDefault(x => x.Id != null && x.Id.Equals(data.Id));
+            var foodData = foods.FirstOrDefault(x => x.Id.Equals(data.Id));
             if (foodData == null)
             {
                 return null;
@@ -262,13 +262,13 @@ namespace ContosoCrafts.WebSite.Services
         /// Remove the item from the system
         /// </summary>
         /// <returns></returns>
-        public ContosoCrafts.WebSite.Models.Product? DeleteData(string id)
+        public ContosoCrafts.WebSite.Models.Product DeleteData(string id)
         {
             // Get the current set, and append the new record to it
             var dataSet = GetProducts();
-            var data = dataSet.FirstOrDefault(m => m.Id != null && m.Id.Equals(id));
+            var data = dataSet.FirstOrDefault(m => m.Id.Equals(id));
 
-            var newDataSet = GetProducts().Where(m => m.Id != null && m.Id.Equals(id) == false);
+            var newDataSet = GetProducts().Where(m => m.Id.Equals(id) == false);
             
             SaveData(newDataSet);
 
@@ -279,13 +279,13 @@ namespace ContosoCrafts.WebSite.Services
         /// Remove the item from the system
         /// </summary>
         /// <returns></returns>
-        public Food? DeleteFoodData(string id)
+        public Food DeleteFoodData(string id)
         {
             // Get the current set, and append the new record to it
             var dataSet = GetFood();
-            var data = dataSet.FirstOrDefault(m => m.Id != null && m.Id.Equals(id));
+            var data = dataSet.FirstOrDefault(m => m.Id.Equals(id));
 
-            var newDataSet = GetFood().Where(m => m.Id != null && m.Id.Equals(id) == false);
+            var newDataSet = GetFood().Where(m => m.Id.Equals(id) == false);
 
             SaveFoodData(newDataSet);
 
