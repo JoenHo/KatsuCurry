@@ -38,7 +38,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id"></param>
         public void OnGet(string id)
         {
-            var checknull = ProductService.GetFood().FirstOrDefault(m => m.Id != null && m.Id.Equals(id));
+            var checknull = ProductService.GetFood().FirstOrDefault(m => m.Id.Equals(id));
             if (checknull is not null) {
                 Food = checknull;
             } else {
@@ -62,10 +62,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
                 return Page();
             }
 
-            if(Food.Id is not null)
-            {
-                ProductService.DeleteFoodData(Food.Id);
-            }
+            ProductService.DeleteFoodData(Food.Id);
 
             return RedirectToPage("./ProductIndex", new { id = "food" });
         }
