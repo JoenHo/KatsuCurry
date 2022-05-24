@@ -41,9 +41,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
             var checknull = ProductService.GetFood().FirstOrDefault(m => m.Id.Equals(id));
             if (checknull is not null) {
                 Food = checknull;
-            } else {
-                // redirect to error page
-
             }
             Products = ProductService.GetProducts();
         }
