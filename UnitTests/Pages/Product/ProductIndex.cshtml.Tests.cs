@@ -44,7 +44,7 @@ namespace UnitTests.Pages.Product.Index
             // Arrange
 
             // Act
-            pageModel.OnGet();
+            pageModel.OnGet("restaurant");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
@@ -56,7 +56,7 @@ namespace UnitTests.Pages.Product.Index
             // Arrange
 
             // Act
-            pageModel.OnGet();
+            pageModel.OnGet("food");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
