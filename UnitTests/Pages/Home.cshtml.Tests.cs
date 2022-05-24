@@ -43,7 +43,7 @@ namespace UnitTests.Pages.Home
         /// With valid activity, Products should contain items
         /// </summary>
         [Test]
-        public void OnGet_Valid_Should_Return_Page()
+        public void OnGet_Valid_Should_Return_Products()
         {
             // Arrange
 
@@ -52,6 +52,7 @@ namespace UnitTests.Pages.Home
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual(true, pageModel.Products.ToList().Any());
         }
         #endregion OnGet
     }
