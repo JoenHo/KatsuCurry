@@ -95,10 +95,6 @@ namespace UnitTests.Pages.Product.Create
             // Act
             pageModel.OnPost();
 
-            foreach (var product in TestHelper.ProductService.GetProducts().ToList()) {
-                TestContext.WriteLine(product);
-            }
-
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual(oldCount+1, TestHelper.ProductService.GetProducts().Count());
