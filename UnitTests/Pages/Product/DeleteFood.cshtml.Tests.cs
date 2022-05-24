@@ -73,7 +73,7 @@ namespace UnitTests.Pages.Product.DeleteFood
             };
 
             // First Create the product to delete
-            pageModel.Food = TestHelper.ProductService.CreateFoodData(pageModel.Food);
+            pageModel.Food = TestHelper.ProductService.AppendFoodData(pageModel.Food);
             pageModel.Food.Name = "Example to Delete";
             TestHelper.ProductService.UpdateFoodData(pageModel.Food);
 
