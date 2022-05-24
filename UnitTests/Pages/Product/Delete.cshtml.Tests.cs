@@ -77,7 +77,7 @@ namespace UnitTests.Pages.Product.Delete
             };
 
             // First Create the product to delete
-            pageModel.Product = TestHelper.ProductService.CreateData(pageModel.Product);
+            pageModel.Product = TestHelper.ProductService.AppendData(pageModel.Product);
             pageModel.Product.Name = "Example to Delete";
             TestHelper.ProductService.UpdateData(pageModel.Product);
 
