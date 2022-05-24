@@ -30,7 +30,7 @@ namespace UnitTests.Pages.Index
         {
             var MockLoggerDirect = Mock.Of<ILogger<IndexModel>>();
 
-            pageModel = new IndexModel(MockLoggerDirect, TestHelper.ProductService)
+            pageModel = new IndexModel(MockLoggerDirect)
             {
             };
         }
