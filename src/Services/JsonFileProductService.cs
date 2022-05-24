@@ -36,9 +36,9 @@ namespace ContosoCrafts.WebSite.Services
                 {
                     PropertyNameCaseInsensitive = true
                 });
-            if (productlist is null) {
+            /*if (productlist is null) {
                 productlist = new Product[]{};
-            }
+            }*/
             return productlist;
         }
 
@@ -51,9 +51,9 @@ namespace ContosoCrafts.WebSite.Services
                 {
                     PropertyNameCaseInsensitive = true
                 });
-            if (foodlist is null) {
+            /*if (foodlist is null) {
                 foodlist = new Food[]{};
-            }
+            }*/
             return foodlist;
         }
 
