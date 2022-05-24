@@ -40,10 +40,10 @@ namespace UnitTests.Pages.Index
         #region OnGet
         /// <summary>
         /// ModelState.IsValid should return true after OnGet is called
-        /// With valid activity, Products should contain items
+        /// With valid activity, Page
         /// </summary>
         [Test]
-        public void OnGet_Valid_Should_Return_Products()
+        public void OnGet_Valid_Should_Return_Page()
         {
             // Arrange
 
@@ -52,7 +52,6 @@ namespace UnitTests.Pages.Index
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual(true, pageModel.Products.ToList().Any());
         }
         #endregion OnGet
     }
