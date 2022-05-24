@@ -61,6 +61,7 @@ namespace UnitTests.Pages.Product.Index
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual(true, pageModel.Food.ToList().Any());
+            Assert.AreEqual("food", pageModel.RouteId);
         }
         #endregion OnGet
     }
