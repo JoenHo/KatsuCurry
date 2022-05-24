@@ -16,16 +16,10 @@ namespace ContosoCrafts.WebSite.Pages
         // then post it and display to homepage for viewing
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger,
-            JsonFileProductService productService)
+        public IndexModel(ILogger<IndexModel> logger) => _logger = logger;
+
+        public void OnGet()
         {
-            _logger = logger;
-            ProductService = productService;
         }
-
-        public JsonFileProductService ProductService { get; }
-        public IEnumerable<ContosoCrafts.WebSite.Models.Product>? Products { get; private set; }
-
-        public void OnGet() => Products = ProductService.GetProducts();
     }
 }
