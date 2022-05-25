@@ -4,7 +4,7 @@
 }
 <h1>Create Food</h1>
 
-<body onload="togglefunc()">
+<body>
 
     <div class="container">
         <form method="post">
@@ -105,11 +105,3 @@
             $(this).closest(".suggestion").find(".selected-option").val(rest_id);
         });</script>
 </body>
-
-<script>
-        function togglefunc() {
-            document.getElementById("RestaurantLabel").classList.toggle('hide');
-            document.getElementById("FoodLabel").classList.toggle('hide');
-            document.getElementById("toggle").classList.toggle('hide');
-        }
-</script>
