@@ -5,6 +5,20 @@
     ViewData["Title"] = "Home page";
 }
 
+<label class="d-inline ToggleLabel" id="RestaurantLabel">Restaurant</label>
+<div class="d-inline" id="toggle" runat=”server”>
+    <!--The swithc button function-->
+
+    <label class="switch" runat=”server”>
+
+        <input id="toggle_btn" type="checkbox" runat=”server”>
+        <span id="testslider" class="slider round"></span>
+
+    </label>
+
+</div>
+<label class="d-inline ToggleLabel" id="FoodLabel">Food</label>
+
 @(await Html.RenderComponentAsync<ProductList>(RenderMode.ServerPrerendered))
 
 <script src="_framework/blazor.server.js"></script>
