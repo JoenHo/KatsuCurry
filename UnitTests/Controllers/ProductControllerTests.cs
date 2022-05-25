@@ -34,8 +34,12 @@ namespace UnitTests.Controllers
         [Test]
         public void Get_Valid_Should_Return_Products()
         {
+            // Arrange
+
+            // Act
             pageModel.Get();
 
+            // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
         }
 
@@ -45,8 +49,12 @@ namespace UnitTests.Controllers
         [Test]
         public void GetFoodData_Valid_Should_Return_Food()
         {
+            // Arrange
+
+            // Act
             pageModel.GetFoodData();
             
+            // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
         }
 
@@ -60,12 +68,15 @@ namespace UnitTests.Controllers
         [Test]
         public void Patch_Valid_Rating_Patch_Should_Return_Ok()
         {
+            // Arrange
             var request = new ProductsController.RatingRequest();
             request.ProductId = "kamonegi";
             request.Rating = 5;
 
+            // Act
             var response = pageModel.Patch(request);
 
+            // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.IsInstanceOf<Microsoft.AspNetCore.Mvc.OkResult>(response);
         }
@@ -77,12 +88,15 @@ namespace UnitTests.Controllers
         [Test]
         public void Patch_Null_Rating_Patch_Should_Return_BadRequest()
         {
+            // Arrange
             var request = new ProductsController.RatingRequest();
             request.ProductId = null;
             request.Rating = 5;
 
+            // Act
             var response = pageModel.Patch(request);
 
+            // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.IsInstanceOf<Microsoft.AspNetCore.Mvc.BadRequestResult>(response);
         }
