@@ -35,6 +35,7 @@ namespace UnitTests.Components
             Assert.AreEqual(true, result.Contains("Momiji Capitol Hill"));
         }
 
+        
         #region SelectProduct
         [Test]
         public void SelectProduct_Valid_ID_kamonegi_Should_Return_Content()
@@ -59,6 +60,31 @@ namespace UnitTests.Components
 
             // Assert
             Assert.AreEqual(true, pageMarkup.Contains("1054 N 39TH STREET, SEATTLE, WA 98103"));
+        }
+
+        [Test]
+        public void SelectFood_Valid_ID_soba_Should_Return_Content()
+        {
+            // Arrange
+            Services.AddSingleton<JsonFileProductService>(TestHelper.ProductService);
+            var id = "MoreInfoButton_soba";
+
+            var page = RenderComponent<ProductList>();
+
+            // Find the Buttons (more info)
+            var buttonList = page.FindAll("Button");
+
+            // Find the one that matches the ID looking for and click it
+            var button = buttonList.First(m => m.OuterHtml.Contains(id));
+
+            // Act
+            button.Click();
+
+            // Get the markup to use for the assert
+            var pageMarkup = page.Markup;
+
+            // Assert
+            Assert.AreEqual(true, pageMarkup.Contains("Soba is the Japanese term for buckwheat,"));
         }
         #endregion SelectProduct
 
