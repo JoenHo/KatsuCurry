@@ -460,4 +460,10 @@ input[type=text]:focus {
 .items {
     display: list-item;
 }
+
+#toggle_placement {
+    margin-bottom: 20px;
+}
+
+
 /* -- style for search bar-- */
