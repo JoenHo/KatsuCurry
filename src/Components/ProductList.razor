@@ -15,11 +15,11 @@
             </div>
             <div class="card-footer">
                 <small class="text-muted">
-                    <button @onclick="(e => SelectProduct(product?.Id ?? string.Empty))" id="MoreInfoButton_@product.Id"
+                    <button @onclick="(e => SelectProduct(product.Id))" id="MoreInfoButton_@product.Id"
                             data-toggle="modal" data-target="#productModal" class="btn btn-primary">
                         More Info
                     </button>
-                    <button @onclick="(e => SelectProduct(product?.Id ?? string.Empty))" id="QuickLinkButton_@product.Id"
+                    <button @onclick="(e => SelectProduct(product.Id))" id="QuickLinkButton_@product.Id"
                             data-toggle="modal" data-target="#productModal" class="btn btn-primary">
                         Quick Link
                     </button>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">
-                        <button @onclick="(e => SelectFood(food?.Id ?? string.Empty))" id="MoreInfoButton_@food.Id"
+                        <button @onclick="(e => SelectFood(food.Id))" id="MoreInfoButton_@food.Id"
                                 data-toggle="modal" data-target="#FoodModal" class="btn btn-primary">
                             More Info
                         </button>
