@@ -208,7 +208,7 @@
 
     void GetCurrentRating()
     {
-        if (selectedProduct?.Ratings == null)
+        if (selectedProduct.Ratings == null)
         {
             currentRating = 0;
             voteCount = 0;
@@ -219,12 +219,12 @@
             voteLabel = voteCount > 1 ? "Votes" : "Vote";
             currentRating = selectedProduct.Ratings.Sum() / voteCount;
         }
-        System.Console.WriteLine($"Current rating for {selectedProduct?.Id}: {currentRating}");
+        //System.Console.WriteLine($"Current rating for {selectedProduct?.Id}: {currentRating}");
     }
 
     void SubmitRating(int rating)
     {
-        System.Console.WriteLine($"Rating received for {selectedProduct?.Id}: {rating}");
+        //System.Console.WriteLine($"Rating received for {selectedProduct?.Id}: {rating}");
         /*if (selectedProductId == null)
             return;*/
         ProductService.AddRating(selectedProductId, rating);
