@@ -120,7 +120,7 @@
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">
-                        <button @onclick="(e => SelectFood(food?.Id ?? string.Empty))"
+                        <button @onclick="(e => SelectFood(food?.Id ?? string.Empty))" id="MoreInfoButton_@food.Id"
                                 data-toggle="modal" data-target="#FoodModal" class="btn btn-primary">
                             More Info
                         </button>
