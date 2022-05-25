@@ -457,6 +457,7 @@ input[type=text]:focus {
     width: 70%;
 }
 
-
-
+.items {
+    display: list-item;
+}
 /* -- style for search bar-- */
