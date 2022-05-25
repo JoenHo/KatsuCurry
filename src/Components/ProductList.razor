@@ -3,181 +3,183 @@
 @using Microsoft.AspNetCore.Components.Web
 @inject JsonFileProductService ProductService
 
-<div id="restaurant_page" class="restaurant_page" runat="server">
-<div class="card-columns">
-    @foreach (var product in ProductService.GetProducts())
-    {
-        <div class="card">
-            <div class="card-img" style="background-image: url('@product.Image');">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">@product.Name</h5>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">
-                    <button @onclick="(e => SelectProduct(product.Id))" id="MoreInfoButton_@product.Id"
-                            data-toggle="modal" data-target="#productModal" class="btn btn-primary">
-                        More Info
-                    </button>
-                    <button @onclick="(e => SelectProduct(product.Id))" id="QuickLinkButton_@product.Id"
-                            data-toggle="modal" data-target="#productModal" class="btn btn-primary">
-                        Quick Link
-                    </button>
-                </small>
-            </div>
-        </div>
-    }
-</div>
-
-
-<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        @if (selectedProduct != null)
-        {
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="productTitle">@selectedProduct.Name</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="card">
-                        <div class="card-img" style="background-image: url('@selectedProduct.Image');">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text"><b>LOCATION:</b> @selectedProduct.Address</p>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text"><b>PHONE:</b> @selectedProduct.Phone</p>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <b>HOURS:</b> <br />
-                                @if (selectedProduct.Hours != null)
-                                {
-                                    @if (selectedProduct.Hours.Length >= 7)
-                                    {
-                                        <table>
-                                            <tr><td>Monday</td><td>@selectedProduct.Hours[0]</td></tr>
-                                            <tr><td>Tuesday</td><td>@selectedProduct.Hours[1]</td></tr>
-                                            <tr><td>Wednesday</td><td>@selectedProduct.Hours[2]</td></tr>
-                                            <tr><td>Thursday</td><td>@selectedProduct.Hours[3]</td></tr>
-                                            <tr><td>Friday</td><td>@selectedProduct.Hours[4]</td></tr>
-                                            <tr><td>Saturday</td><td>@selectedProduct.Hours[5]</td></tr>
-                                            <tr><td>Sunday</td><td>@selectedProduct.Hours[6]</td></tr>
-                                        </table>
-                                    }
-                                }
-                            </p>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <b>WEBSITE:</b> <a href="@selectedProduct.Url" target="_blank">
-                                    @selectedProduct.Url
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    @if (voteCount == 0)
-                    {
-                        <span>Be the first to vote!</span>
-                    }
-                    else
-                    {
-                        <span>@voteCount @voteLabel</span>
-                    }
-                    @for (int i = 1; i < 6; i++)
-                    {
-                        var currentStar = i;
-                        if (i <= currentRating)
-                        {
-                            <span class="fa fa-star checked" @onclick="(e => SubmitRating(currentStar))"></span>
-                        }
-                        else
-                        {
-                            <span class="fa fa-star" @onclick="(e => SubmitRating(currentStar))"></span>
-                        }
-                    }
-                </div>
-            </div>
-        }
-    </div>
-</div>
-</div>
-
-<div id="food_page" class="hide" runat="server">
-    <div class="card-columns">
-        @foreach (var food in ProductService.GetFood())
-        {
-            <div class="card">
-                <div class="card-img" style="background-image: url('@food.Image');">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">@food.Name</h5>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">
-                        <button @onclick="(e => SelectFood(food.Id))" id="MoreInfoButton_@food.Id"
-                                data-toggle="modal" data-target="#FoodModal" class="btn btn-primary">
-                            More Info
-                        </button>
-                    </small>
-                </div>
-            </div>
-        }
-    </div>
-
-    <div class="modal fade" id="FoodModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            @if (selectedFood != null)
+<div class="d-inline-block" style="margin-right:0px;">
+    <div id="restaurant_page" class="restaurant_page" runat="server">
+        <div class="card-columns">
+            @foreach (var product in ProductService.GetProducts())
             {
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="productTitle">@selectedFood.Name</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('@product.Image');">
                     </div>
-                    <div class="modal-body">
-                        <div class="card">
-                            <div class="card-img" style="background-image: url('@selectedFood.Image');">
-                            </div>
-                            <div class="card-body">
-                                <b class="card-text">@selectedFood.Name</b><br />
-                                <p class="card-text">@selectedFood.Description</p>
-                            </div>
-                            <div class="card-body">
-                                <b class="card-text">RESTAURANT SUGGESTION</b><br />
-                                <table>
-                                    <tr>
-                                    @if(selectedFood.Restaurants != null)
-                                    {
-                                        @foreach (var restaurant in selectedFood.Restaurants)
-                                        {
-                                            @foreach (var product in ProductService.GetProducts())
-                                            {
-                                                @if (product.Id == restaurant)
-                                                {
-                                                    <td>
-                                                        <figure>
-                                                            <img class="img-frame" src=@product.Image alt="restaurant image">
-                                                            <figcaption align="center"><a href="@product.Url" target="_blank">@product.Name </a></figcaption>
-                                                        </figure>
-                                                    </td>
-                                                }
-                                            }
-                                        }
-                                    }
-                                    </tr>
-                                </table>
-                             </div>
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            <button @onclick="(e => SelectProduct(product.Id))" id="MoreInfoButton_@product.Id"
+                                    data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                                More Info
+                            </button>
+                            <button @onclick="(e => SelectProduct(product.Id))" id="QuickLinkButton_@product.Id"
+                                    data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                                Quick Link
+                            </button>
+                        </small>
                     </div>
                 </div>
             }
+        </div>
+
+
+        <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                @if (selectedProduct != null)
+                {
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productTitle">@selectedProduct.Name</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card">
+                                <div class="card-img" style="background-image: url('@selectedProduct.Image');">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><b>LOCATION:</b> @selectedProduct.Address</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><b>PHONE:</b> @selectedProduct.Phone</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <b>HOURS:</b> <br />
+                                        @if (selectedProduct.Hours != null)
+                                        {
+                                            @if (selectedProduct.Hours.Length >= 7)
+                                            {
+                                                <table>
+                                                    <tr><td>Monday</td><td>@selectedProduct.Hours[0]</td></tr>
+                                                    <tr><td>Tuesday</td><td>@selectedProduct.Hours[1]</td></tr>
+                                                    <tr><td>Wednesday</td><td>@selectedProduct.Hours[2]</td></tr>
+                                                    <tr><td>Thursday</td><td>@selectedProduct.Hours[3]</td></tr>
+                                                    <tr><td>Friday</td><td>@selectedProduct.Hours[4]</td></tr>
+                                                    <tr><td>Saturday</td><td>@selectedProduct.Hours[5]</td></tr>
+                                                    <tr><td>Sunday</td><td>@selectedProduct.Hours[6]</td></tr>
+                                                </table>
+                                            }
+                                        }
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <b>WEBSITE:</b> <a href="@selectedProduct.Url" target="_blank">
+                                            @selectedProduct.Url
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            @if (voteCount == 0)
+                            {
+                                <span>Be the first to vote!</span>
+                            }
+                            else
+                            {
+                                <span>@voteCount @voteLabel</span>
+                            }
+                            @for (int i = 1; i < 6; i++)
+                            {
+                                var currentStar = i;
+                                if (i <= currentRating)
+                                {
+                                    <span class="fa fa-star checked" @onclick="(e => SubmitRating(currentStar))"></span>
+                                }
+                                else
+                                {
+                                    <span class="fa fa-star" @onclick="(e => SubmitRating(currentStar))"></span>
+                                }
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div id="food_page" class="hide" runat="server">
+        <div class="card-columns">
+            @foreach (var food in ProductService.GetFood())
+            {
+                <div class="card">
+                    <div class="card-img" style="background-image: url('@food.Image');">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@food.Name</h5>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            <button @onclick="(e => SelectFood(food.Id))" id="MoreInfoButton_@food.Id"
+                                    data-toggle="modal" data-target="#FoodModal" class="btn btn-primary">
+                                More Info
+                            </button>
+                        </small>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="modal fade" id="FoodModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                @if (selectedFood != null)
+                {
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productTitle">@selectedFood.Name</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card">
+                                <div class="card-img" style="background-image: url('@selectedFood.Image');">
+                                </div>
+                                <div class="card-body">
+                                    <b class="card-text">@selectedFood.Name</b><br />
+                                    <p class="card-text">@selectedFood.Description</p>
+                                </div>
+                                <div class="card-body">
+                                    <b class="card-text">RESTAURANT SUGGESTION</b><br />
+                                    <table>
+                                        <tr>
+                                            @if (selectedFood.Restaurants != null)
+                                            {
+                                                @foreach (var restaurant in selectedFood.Restaurants)
+                                                {
+                                                    @foreach (var product in ProductService.GetProducts())
+                                                    {
+                                                        @if (product.Id == restaurant)
+                                                        {
+                                                            <td>
+                                                                <figure>
+                                                                    <img class="img-frame" src=@product.Image alt="restaurant image">
+                                                                    <figcaption align="center"><a href="@product.Url" target="_blank">@product.Name </a></figcaption>
+                                                                </figure>
+                                                            </td>
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
         </div>
     </div>
 </div>
