@@ -438,3 +438,11 @@ h2 {
     max-width: 200px;
 }
 /* -- style for about us page -- */
+/* -- style for search bar-- */
+#searchbar {
+    margin-left: 15%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* -- style for search bar-- */
