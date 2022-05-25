@@ -71,6 +71,16 @@
     let input = document.getElementById('searchbar').value;
     input = input.toLowerCase();
 
+    let x = document.getElementsByClassName('product_items');
 
+    for (i = 0; i < x.length; i++) {
+
+        if (!x[i].id.toLowerCase().includes(input)) {
+            x[i].classList.add("hide");
+        }
+        else {
+            x[i].classList.remove("hide");
+        }
+    }
 
 }</script>
