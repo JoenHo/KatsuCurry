@@ -440,9 +440,8 @@ h2 {
 /* -- style for about us page -- */
 /* -- style for search bar-- */
 #searchbar {
-    margin-left: 15%;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 input[type=text] {
