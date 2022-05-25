@@ -5,6 +5,11 @@
 }
 
 <div class="container">
+    <div>
+        <div>
+            <input id="searchbar" type="text" name="search" placeholder="Search .." onkeyup="Search_Item()">
+        </div>
+    </div>
     <div id="restaurant_index" class="" runat="server">
         <a asp-page="Create" class="btn btn-link">+ Create</a>
         <table class="table table-bordered table-striped">
@@ -37,10 +42,10 @@
             <tbody>
                 @foreach (var food in Model.Food)
                 {
-                <tr>
-                    <td>@food.Name</td>
-                    <td><a asp-page="ReadFood" asp-route-id="@food.Id">Read</a></td>
-                </tr>
+                    <tr>
+                        <td>@food.Name</td>
+                        <td><a asp-page="ReadFood" asp-route-id="@food.Id">Read</a></td>
+                    </tr>
                 }
             </tbody>
         </table>
