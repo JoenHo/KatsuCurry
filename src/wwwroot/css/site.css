@@ -454,7 +454,12 @@ h2 {
     margin-bottom: 20px;
 }
 
-.ToggleLabel {
-    margin-top: 5px;
+.restaurant_icon {
+    content: url(../data/restaurant-icon.png);
+    max-height: 35px;
+}
+.food_icon {
+    content: url(../data/food-icon.png);
+    max-height: 35px;
 }
 /* -- style for search bar-- */
