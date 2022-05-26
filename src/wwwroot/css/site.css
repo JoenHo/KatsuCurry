@@ -440,24 +440,14 @@ h2 {
 /* -- style for about us page -- */
 /* -- style for search bar-- */
 #searchbar {
-    padding: 15px;
+    padding: 5px;
     border-radius: 8px;
-}
-
-input[type=text] {
-    width: 30%;
+    width: 25%;
     -webkit-transition: width 0.15s ease-in-out;
     transition: width 0.15s ease-in-out;
 }
-
-/* When the input field gets focus,
-change its width to 100% */
-input[type=text]:focus {
-    width: 70%;
-}
-
-.items {
-    display: list-item;
+#searchbar:focus {
+    width: 25%;
 }
 
 #toggle_placement {
