@@ -184,7 +184,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 4px;
-    background-color: #ccc;
+    background-color: #8a983c;
     -webkit-transition: .4s;
     transition: .4s;
     margin: auto auto;
@@ -203,11 +203,11 @@ ul {
     }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #e0969b;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #4c4c4e;
 }
 
 input:checked + .slider:before {
