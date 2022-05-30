@@ -354,6 +354,10 @@ input:checked + .slider:before {
     transition: transform .2s;
 }
 
+.return_icon:hover {
+    transform: scale(1.3);
+}
+
 .return {
     margin-right:50px; 
 }
