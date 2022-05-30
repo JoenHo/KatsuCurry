@@ -281,6 +281,7 @@
   },
   {
     "id": "yakisoba",
+    "type": "noodle",
     "name": "YAKISOBA",
     "description": "Yakisoba is the Japanese variety of fried noodles. Originating from the Chinese chow main, these noodles are usually mixed with a variety of meat and vegetables. Japanese favorites are usually pork, cabbage, onions, and carrots. The most common noodle varieties used in the dish are ramen noodles or soba noodles.",
     "img": "https://cdn.tasteatlas.com/images/dishrestaurants/4207db3c1db447389d5f06b5bf655325.jpg?mw=1300",
@@ -288,6 +289,7 @@
   },
   {
     "id": "miso_supu",
+    "type": "soup",
     "name": "MISO SUPU",
     "description": "Miso soup is a traditional Japanese soy-based soup made from a stock called dashi, miso paste, and various additional ingredients such as seaweed or tofu. It is estimated that more than 70% of Japeanese people consume the soup for breakfast, although it is commonly available at any time of the day.",
     "img": "https://www.tasteatlas.com/images/recipes/77041455f08045cda88da71197ee11d7.jpg?mw=910",
@@ -295,6 +297,7 @@
   },
   {
     "id": "shabu_shabu",
+    "type": "nabemono",
     "name": "SHABU SHABU",
     "description": "Shabu-shabu is a popular Japanese dish consisting of thinly sliced meat and vegetables cooked in water. The dish is an evolved version of the traditional Mongolian nabemono (one-pot) cooking. Roughly translated to swish-swish, its name is referring to the sound that is made when the sliced pieces of meat go through the water.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/61779255e7b145dfab54ed8c517102c4.jpg?mw=1300",
