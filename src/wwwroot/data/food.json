@@ -257,6 +257,7 @@
   },
   {
     "id": "teriyaki",
+    "type": "grilled",
     "name": "TERIYAKI",
     "description": "Teriyaki is a Japanese cooking technique in which the ingredients are broiled, roasted, or grilled after they have been marinated in teriyaki sauce, consisting of soy sauce, mirin, and sugar. The word teriyaki is a combination of two words: teri, meaning luster, and yaki, meaning to grill or broil.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/905d84056e564d9f8d8bcbb175b6c38c.jpg?mw=1300",
