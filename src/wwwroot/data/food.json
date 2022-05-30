@@ -145,6 +145,7 @@
   },
   {
     "id": "chawanmushi",
+    "type": "snack",
     "name": "CHAWANMUSHI",
     "description": "Chawanmushi is a delicate custard-soup, its name meaning steamed in a tea cup. The custard usually consists of an egg mixture that can be flavored with numerous ingredients such as dashi (Japanese stock), soy sauce, mushrooms, tofu, ginko nut, or steamed shrimp.",
     "img": "https://cdn.tasteatlas.com//Images/Dishes/6d45d3340a464fcfa472a303c8c43e9b.jpg?w=905&h=510",
