@@ -13,6 +13,7 @@
   },
   {
     "id": "ten sushi",
+    "type": "sushi",
     "name": "Ten Sushi",
     "phone": "(206) 453-3881",
     "address": "500 Mercer St #2b, Seattle, WA 98109, United States",
