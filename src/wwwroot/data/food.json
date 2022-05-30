@@ -161,6 +161,7 @@
   },
   {
     "id": "katsudon",
+    "type": "rice-dish",
     "name": "KATSUDON",
     "description": "Katsudon is a type of donburi, meaning it's a rice dish served in a bowl topped with simmered ingredients. In this case, the topping is another Japanese favorite — tonkatsu — a deep-fried and crumbed pork cutlet, but here it is simmered together with vegetables in a seasoned sauce bound with eggs.",
     "img": "https://cdn.tasteatlas.com//Images/Dishes/15c022c3864e4ea6ab92c6f0a017f39d.jpg?w=905&h=510",
