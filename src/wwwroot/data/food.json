@@ -97,6 +97,7 @@
   },
   {
     "id": "takoyaki",
+    "type": "snack",
     "name": "TAKOYAKI",
     "description": "The small, round takoyaki are one of the most famous Japanese snacks, made with a simple egg batter that is enriched with diced octopus pieces. Sliced scallions, pickled ginger, crispy fried tenkasu pieces, and dried fish flakes are often incorporated to elevate the flavors of the dish.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/450a5eb503694d07a9499261daeac10e.jpg?mw=1300",
