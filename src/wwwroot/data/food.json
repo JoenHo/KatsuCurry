@@ -329,6 +329,7 @@
   },
   {
     "id": "shogayaki",
+    "type": "rice-dish",
     "name": "SHOGAYAKI",
     "description": "Shogayaki is one of the most common pork dishes in Japan. It consists of lean cuts of pork that are thinly sliced and braised in a flavorful mixture of soy sauce, mirin, and grated ginger. In Japan, shogayaki is a popular lunch or dinner choice and even though it is commonly prepared in many Japanese households, it is also a staple restaurant item.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/751b7ee08a134b0bbed0849fc17dc622.jpg?mw=1300",
