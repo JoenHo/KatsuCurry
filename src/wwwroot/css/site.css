@@ -346,6 +346,10 @@ input:checked + .slider:before {
     font-style: italic;
 }
 
+.return {
+    margin-right:50px;
+}
+
 img.about {
     width: 200px;
     height: 240px;
