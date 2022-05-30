@@ -17,7 +17,7 @@
   },
   {
     "id": "sushi",
-    "type": "sushi",
+    "type": "Japanese-delicacy",
     "name": "SUSHI",
     "description": "Sushi is Japan's most famous culinary representative, typically made with rice and fillings which have been rolled inside a a sheet of dry seaweed. However, the term sushi is actually an umbrella term covering a wide range of subvarieties which can be made with a myriad of different ingredients and in as many forms and presentations.",
     "img": "https://cdn.tasteatlas.com/images/dishes/f3abe602fe794beba2f00deee03dee9e.jpg?mw=1300",
@@ -33,6 +33,7 @@
   },
   {
     "id": "sashimi",
+    "type": "Japanese-delicacy",
     "name": "SASHIMI",
     "description": "Sashimi is a Japanese delicacy consisting of thinly sliced raw fish or shellfish (or even meat) served with soy sauce and other ingredients such as wasabi or ginger paste. Most common ingredients used in the preparation of sashimi are tuna, squid, scallop, whale, and octopus. It is usually served as an appetizer, decorated with shiso leaves, cucumbers, and seaweed.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/17f54b4244a94d048fb0ed14098803a9.jpg?mw=1300",
