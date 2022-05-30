@@ -241,6 +241,7 @@
   },
   {
     "id": "yakitori",
+    "type": "grilled",
     "name": "YAKI TORI",
     "description": "Yakitori refers to Japanese grilled chicken where pieces of chicken meat are skewered with a particular type of skewer called kushi (which can be made from either steel or bamboo) and are then traditionally grilled over a charcoal fire.",
     "img": "https://cdn.tasteatlas.com/images/dishes/fb0b075d5fce489ca4abcbb85824003b.jpg?mw=1300",
