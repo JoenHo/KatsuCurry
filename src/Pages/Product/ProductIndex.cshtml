@@ -43,7 +43,7 @@
                 @foreach (var product in Model.Products)
                 {
                     <tr class = "product_items" id="@product.Name">
-                        <td><a asp-page="Read" asp-route-id="@product.Id">Read</a></td>
+                        <td><a asp-page="Read" asp-route-id="@product.Id">@product.Name</a></td>
                     </tr>
                 }
             </tbody>
