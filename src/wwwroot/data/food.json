@@ -385,6 +385,7 @@
   },
   {
     "id": "motsunabe",
+    "type": "nabenomno",
     "name": "MOTSUNABE",
     "description": "Motsunabe is a variety of nabemono, the versatile and hearty Japanese one-pot dishes. It consists of various pork, chicken, or beef offal cooked in the flavorful soy sauce or miso broth alongside cabbage, garlic chives, and occasionally other ingredients.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/a16cffa83ce7403cb020f6a61eb9ce2f.jpg?mw=1300",
@@ -392,6 +393,7 @@
   },
   {
     "id": "hoto",
+
     "name": "HOTO",
     "description": "Usually regarded as a variety of the popular udon, hōtō is a comforting Japanese dish which consists of flat noodles cooked in a flavorful miso broth alongside various seasonal vegetables such as squash, potatoes, taro roots, or carrots.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/29d1dbcba0d4412ab8b8c46c9b28efe1.jpg?mw=1300",
