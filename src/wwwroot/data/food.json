@@ -409,6 +409,7 @@
   },
   {
     "id": "teppanyaki",
+    "type": "grilled",
     "name": "TEPPANYAKI",
     "description": "Teppanyaki is a Japanese technique of grilling a variety of ingredients on an iron plate. Its name is derived from two words: teppan or an iron plate, and yaki, meaning grilled or broiled. Teppanyaki refers to a variety of dishes cooked in the aforementioned way.",
     "img": "https://cdn.tasteatlas.com/images/dishrestaurants/d7b771f846d6450e9302691ce7c24bb1.jpg?mw=1300",
