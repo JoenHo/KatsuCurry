@@ -153,6 +153,7 @@
   },
   {
     "id": "okonomiyaki",
+    "type": "snack",
     "name": "OKONOMIYAKI",
     "description": "okonomiyaki is an immensely popular Japanese dish. The batter is made with eggs, flour, water, grated yam, and shredded cabbage. Additional ingredients such as fish, seafood, meat, vegetables or cheese are also occasionally added to the mix. The dish is eaten everywhere in Japan, but it is usually associated with the Kansai region.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/b20ff263631e4b7c9e40ff32bc6d9723.jpg?mw=1300",
