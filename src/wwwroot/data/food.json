@@ -105,6 +105,7 @@
   },
   {
     "id": "oyakodon",
+    "type": "rice-dish",
     "name": "OYAKODON",
     "description": "Oyakodon is a poetically named dish meaning father and child, referring to the fact that both the chicken and the egg are used in the dish. It consists of a bowl of white rice that is topped with chicken, eggs, and chopped scallions. The eggs are poured over the rice before they have completely cooked, and the cooked rice finishes the job and helps the eggs to solidify.",
     "img": "https://cdn.tasteatlas.com/images/dishrestaurants/d679dd71e53b43dc805b7b88f69228d0.jpg?mw=1300",
