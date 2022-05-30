@@ -193,6 +193,7 @@
   },
   {
     "id": "dango",
+    "type": "snack",
     "name": "DANGO",
     "description": "Dango is a traditional Japanese sweet treat, presented as rice flour and sugar dumplings skewered on a bamboo stick. Some region-specific versions use other types of flour (such as potato or millet flour) or different ingredients such as green tea or azuki bean paste.",
     "img": "https://cdn.tasteatlas.com//Images/Dishes/993e6e1c97b443ccb07bb62bbfdfa2d8.jpg?w=905&h=510",
