@@ -49,6 +49,7 @@
   },
   {
     "id": "Ramen Danbo",
+    "type": "ramen",
     "name": "Ramen Danbo",
     "phone": "(206) 566-5479",
     "address": "1222 E Pine St, Seattle, WA 98122",
