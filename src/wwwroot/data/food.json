@@ -337,6 +337,7 @@
   },
   {
     "id": "omurice",
+    "type": "rice-dish",
     "name": "OMURICE",
     "description": "Omurice is a short form of omelet and rice, the two essential ingredients of this Japanese fusion dish. The rice is usually pan-fried together with chicken and ketchup, then wrapped in a thin omelet sheet. Finally, the dish is generously covered with ketchup.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/48988155789e441c851397cdf3bcd3b6.jpg?mw=1300",
