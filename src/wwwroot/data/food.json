@@ -121,7 +121,7 @@
   },
   {
     "id": "chankonabe",
-    "type": "hotpot",
+    "type": "nabemono",
     "name": "CHANKO NABE",
     "description": "A highly caloric staple of the sumo wrestlers' diet, chankonabe is a rich stew consisting of dashi, sake, chicken or fish, and vegetables such as daikon and bok choy, although the dish has no fixed recipe and usually contains readily available ingredients that are full of protein.",
     "img": "https://cdn.tasteatlas.com/images/dishrestaurants/e2ac40c5a13542e292ca5ba17e5b3674.jpg?mw=1300",
@@ -265,6 +265,7 @@
   },
   {
     "id": "oden",
+    "type": "nabemono",
     "name": "ODEN",
     "description": "Best known as a food cart meal intended for relaxing after a day of hard work, oden is a one-pot dish with numerous ingredients such as fish balls, fish cakes, konnyaku, deep-fried tofu, eggs, and vegetables, simmered in a light, soy sauce-based broth.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/ed77bb45812547149540b7b314230738.jpg?mw=1300",
@@ -272,6 +273,7 @@
   },
   {
     "id": "sukiyaki",
+    "type": "nabemono",
     "name": "SUKIYAKI",
     "description": "Sukiyaki is the Japanese sweet and salty hot-pot meal. It is usually prepared tableside on a portable gas stove, in a traditional shallow iron pan. This popular Japanese dish is usually made with beef. Other ingredients in sukiyaki include sliced Chinese cabbage, mushrooms, leeks, gelatinous konnyaku noodles, and shungiku leaves.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/9747a3cbe6614ba3b2a6b4d76564e665.jpg?mw=1300",
