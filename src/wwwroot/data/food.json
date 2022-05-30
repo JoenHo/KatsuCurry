@@ -457,6 +457,7 @@
   },
   {
     "id": "sakuramochi",
+    "type": "snack",
     "name": "SAKURAMOCHI",
     "description": "Sakuramochi is a traditional Japanese dessert that is made to depict sakura (cherry blossom), so the rice cake is usually pink in color. Most of the times, sakuramochi contains red bean paste and it is covered with a salty cherry blossom leaf, which some people consume together with the rice cake, and some don't.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/d7fc79b9bdc64984a2dd74356b18ccf8.jpg?mw=1300",
