@@ -497,6 +497,7 @@
   },
   {
     "id": "wagashi",
+    "type": "snack",
     "name": "WAGASHI",
     "description": "Wagashi are traditional Japanese sweets that are usually made from natural, plant-based ingredients such as grains and azuki beans. The sweet treats are typically served with tea and are classified into three categories: namagashi (fresh confectionery), han namagashi (half-dry confectionery), and higashi (dry confectionery).",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/c2f662d5258347ea834e49059431f30f.jpg?mw=1300",
