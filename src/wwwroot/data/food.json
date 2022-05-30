@@ -249,6 +249,7 @@
   },
   {
     "id": "gyudon",
+    "type": "rice-dish",
     "name": "GYUDON",
     "description": "Gyūdon is one of the most popular and inexpensive fast food dishes in Japan. Its name can be literally translated to beef bowl. The dish consists of beef and onions served over a bowl of rice. Beef and onions are cooked in a combination of mirin, sugar, sake, and soy sauce, imparting a salty-sweet flavor to the dish.",
     "img": "https://cdn.tasteatlas.com/Images/DishRestaurants/458c1582a83c421d86412b20d034d2c8.jpg?mw=1300",
