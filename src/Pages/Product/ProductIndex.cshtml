@@ -61,7 +61,6 @@
                 @foreach (var food in Model.Food)
                 {
                     <tr class="product_items" id="@food.Name">
-                        <td>@food.Name</td>
                         <td><a asp-page="ReadFood" asp-route-id="@food.Id">Read</a></td>
                     </tr>
                 }
