@@ -357,6 +357,13 @@ input:checked + .slider:before {
     max-width: 30px;
 }
 
+.read_ind.return_icon {
+    margin-left: 20px;
+    margin-top: 5px;
+    max-height: 30px;
+    max-width: 30px;
+}
+
 .return_icon {
     content: url(../data/return-button.png);
     max-height: 35px;
