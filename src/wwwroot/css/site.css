@@ -346,6 +346,10 @@ input:checked + .slider:before {
     font-style: italic;
 }
 
+.prod_ind.return_icon {
+    padding-bottom: 5px;
+}
+
 .return_icon {
     content: url(../data/return-button.png);
     max-height: 35px;
