@@ -449,6 +449,7 @@
   },
   {
     "id": "taiyaki",
+    "type": "snack",
     "name": "TAIYAKI",
     "description": "Taiyaki is a Japanese fish-shaped cake that is often consumed as a snack, made from flour and filled with azuki sweet bean paste. It is usually served warm and is often found at most taiyaki stands at any winter festival in Japan.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/87bb69432adb49d0aa6e0a028d40942d.jpg?mw=1300",
