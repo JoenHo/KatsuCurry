@@ -97,6 +97,7 @@
   },
   {
     "id": "Tsukushinbo",
+    "type": "multi-type", 
     "name": "Tsukushinbo",
     "phone": "(206) 467-4004",
     "address": "515 South Main St, Seattle, WA 98104",
