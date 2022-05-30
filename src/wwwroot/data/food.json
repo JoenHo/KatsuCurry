@@ -305,6 +305,7 @@
   },
   {
     "id": "gyoza",
+    "type": "snack",
     "name": "GYOZA",
     "description": "The famous Japanese gyoza are crescent-shaped dumplings that have originated from the traditional Chinese jiaozi dumplings. The recipe was slightly altered to accommodate the Japanese taste, and gyoza soon became one of the favorite Japanese meals.",
     "img": "https://cdn.tasteatlas.com//Images/Dishes/3c16ad904018488f8c363413d356cacc.jpg?w=905&h=510",
