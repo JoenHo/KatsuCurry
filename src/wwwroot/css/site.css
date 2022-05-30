@@ -350,6 +350,13 @@ input:checked + .slider:before {
     padding-bottom: 5px;
 }
 
+.create_ind.return_icon {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-height: 30px;
+    max-width: 30px;
+}
+
 .return_icon {
     content: url(../data/return-button.png);
     max-height: 35px;
