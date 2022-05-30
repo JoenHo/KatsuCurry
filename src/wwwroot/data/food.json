@@ -369,6 +369,7 @@
   },
   {
     "id": "buri_daikon",
+    "type": "slow-cooked",
     "name": "BURI DAIKON",
     "description": "Buri daikon is a traditional Japanese dish consisting of buri (yellowtail fish) and daikon radish. Other ingredients that are typically used in the dish include ginger, water, sake, sugar, and soy sauce. The fish is simmered in water, sugar, soy sauce, and sake, producing gelatinous dashi.",
     "img": "https://cdn.tasteatlas.com/images/dishes/d82d3bfe059340e8b0df007f885cb968.jpg?mw=1300",
