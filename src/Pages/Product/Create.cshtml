@@ -5,10 +5,8 @@
 @{
     ViewData["Title"] = "Create page";
 }
-<div>
-    <a class="return" asp-page="/Product/ProductIndex"><img class="create_ind return_icon" /></a>
-    <h1 class="d-inline">Create Restaurant</h1>
-</div>
+
+    <h1>Create Restaurant</h1>
 
 
 <body>
@@ -114,6 +112,7 @@
                 <span asp-validation-for="Product.Image" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <a class="return" asp-page="/Product/ProductIndex"><img class="read_ind return_icon" /></a>
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
