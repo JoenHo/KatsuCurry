@@ -57,6 +57,7 @@
   },
   {
     "id": "tonkatsu",
+    "type": "deep-fried",
     "name": "TONKATSU",
     "description": "Tonkatsu is a Japanese dish that consists of a breaded, deep-fried pork cutlet. It involves coating slices of pork with panko, frying them in oil, and then serving with rice and shredded cabbage. The two main types are fillet and loin. Tonkatsu is also the basis of other dishes such as Katsukarē and katsudon.",
     "img": "https://cdn.tasteatlas.com/images/dishrestaurants/2e5afb1b19554396b8f5617e22d055aa.jpg?mw=1300",
