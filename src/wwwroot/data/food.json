@@ -177,6 +177,7 @@
   },
   {
     "id": "tamagoyaki",
+    "type": "snack",
     "name": "TAMAGOYAKI",
     "description": "Tamagoyaki is a Japanese omelet dish made by using a unique cooking method - the eggs are folded into themselves until they are fully cooked. Although the omelette has no fillings, it is usually seasoned with sugar, mirin, and soy sauce. Tamagoyaki can often be found in bento boxes, and it is traditionally served either for breakfast or as a sushi topping.",
     "img": "https://cdn.tasteatlas.com/images/dishes/5314cd22e3d645299879b119698a9e97.jpg?mw=1300",
