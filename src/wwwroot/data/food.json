@@ -225,6 +225,7 @@
   },
   {
     "id": "korokke",
+    "type": "snack",
     "name": "KOROKKE",
     "description": "Korokke is a variety of Japanese deep-fried dishes that are a version of the French dish called croquette. It consists of a combination of mashed potatoes and chopped meat, seafood, or vegetables. The combination of those ingredients is shaped in a patty and rolled in flour, eggs, and breadcrumbs, then deep-fried.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/10804f09634648368780bd8698ca13f5.jpg?mw=1300",
@@ -232,6 +233,7 @@
   },
   {
     "id": "kare_raisu",
+    "type": "rice-dish",
     "name": "KARE RAISU",
     "description": "Japanese curry is an extremely popular dish throughout Japan. Since the curry is almost always served with rice, one can hear the term karē raisu mentioned very often. Curry was brought over to Japan by the British in the 19th century, when Meiji-era Japan welcomed foreigners and their goods.",
     "img": "https://cdn.tasteatlas.com//images/dishes/3cbb3969462848a19cfbf93573dcf64d.jpg?w=905&h=510",
