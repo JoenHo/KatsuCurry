@@ -473,6 +473,7 @@
   },
   {
     "id": "monaka",
+    "type": "snack",
     "name": "MONAKA",
     "description": "Monaka is a type of wagashi (traditional Japanese sweets) consisting of an azuki bean jam filling that is sandwiched between two thin mochi wafers. The wafers are crispy, dry, and neutral in flavor, coming in various shapes, colors, and sizes.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/0d6bcb2f09574fcab4445cc84a04d8f3.jpg?mw=1300",
