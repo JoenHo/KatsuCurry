@@ -73,6 +73,7 @@
   },
   {
     "id": "tamago_kake_gohan",
+    "type": "rice-dish",
     "name": "TAMAGO KAKE GOHAN",
     "description": "Tamago kake gohan is a Japanese dish consisting of cooked rice that is topped with a raw egg. Even though the dish is so simple that some people don't consider its preparation an act of cooking, today there are numerous restaurants in Japan which prepare this dish as their specialty.",
     "img": "https://cdn.tasteatlas.com//Images/Dishes/37ec5e692e024b2b8b67ec2a81a50c16.jpg?w=905&h=510",
