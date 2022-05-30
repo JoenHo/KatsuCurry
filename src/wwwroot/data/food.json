@@ -49,6 +49,7 @@
   },
   {
     "id": "onigiri",
+    "type": "rice-dish",
     "name": "ONIGIRI",
     "description": "Moist, chewy, and hearty, onigiri or omusubi are Japanese rice balls and a favorite picnic food. The stuffings might include salmon, umeboshi plums, grilled or pickled mushrooms, or various vegetables.",
     "img": "https://cdn.tasteatlas.com/Images/Dishes/69f35c5768bc47f386e90a2a145a7230.jpg?mw=1300",
