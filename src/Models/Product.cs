@@ -43,6 +43,8 @@ namespace ContosoCrafts.WebSite.Models
         public string[]? Dishes { get; set; }
 
         public int[]? Ratings { get; set; }
+
+        public string? PlaceID { get; set; }
  
 
         /// <summary>
