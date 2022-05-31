@@ -9,8 +9,10 @@
             @foreach (var product in ProductService.GetProducts())
             {
                 <div class="card">
-                    <div class="card-img" style="background-image: url('@product.Image');">
-                    </div>
+                    <a href="/Product/Read/@product.Id" onclick="">
+                        <div class="card-img" style="background-image: url('@product.Image');">
+                        </div>
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title">@product.Name</h5>
                     </div>
