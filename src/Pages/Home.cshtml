@@ -11,7 +11,7 @@
         Random rand = new Random();
         var random_rest_id = Model.Products.ElementAt(rand.Next(0, Model.Products.Count())).Id;
         var random_food_id = Model.Foods.ElementAt(rand.Next(0, Model.Foods.Count())).Id;
-        <button class="d-inline float-left" id="hungry_dice"
+        <button class="d-inline float-left dice" id="hungry_dice"
                 onclick="Random_Suggestion('@random_rest_id', '@random_food_id')">
             <img id="dice_icon" />
             <lable>I'm Feeling Hungry</lable>
