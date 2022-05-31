@@ -472,6 +472,15 @@ h2 {
     max-width: 200px;
 }
 /* -- style for about us page -- */
+/* -- style for privacy page -- */
+.privacytext {
+    position: relative;
+    padding: 30px;
+    width: 700px;
+    font: 18px 'crimson text', serif;
+    text-align: justify;
+}
+/* -- style for privacy page -- */
 /* -- style for search bar-- */
 #searchbar {
     padding: 5px;
