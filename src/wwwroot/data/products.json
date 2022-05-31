@@ -128,6 +128,19 @@
     "dishes": [ "takoyaki", "tempura", "sashimi" ],
     "Ratings": null,
     "PlaceID": ""
+  },
+  {
+    "id": "Gokan Sushi & Katsu",
+    "type": "multi-type",
+    "name": "Gokan Sushi & Katsu",
+    "phone": "(206) 325-3534",
+    "address": "954 E Union St, Seattle, WA 98122",
+    "hours": [ "Closed", "4:00 PM – 10:00 PM", "4:00 PM – 10:00 PM", "4:00 PM – 10:00 PM", "4:00 PM – 12:00 PM", "4:00 PM – 12:00 PM", "4:00 PM – 10:00 PM" ],
+    "img": "https://user-images.githubusercontent.com/81502009/171295800-4a5fc949-cba2-40ca-b5ec-da84ac7e9c62.jpeg",
+    "website": "https://thegokan.com/",
+    "dishes": [ "takoyaki", "tempura", "karaage", "tonkatsu" ],
+    "Ratings": null,
+    "PlaceID": ""
   }
 
 ]
