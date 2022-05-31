@@ -11,7 +11,7 @@ namespace ContosoCrafts.WebSite.Models
     {
 
         // followings are the properties of Google Places API response
-        public Candidates[] candidates { get; set; }
+        public Candidates[]? candidates { get; set; }
 
         public string? status { get; set; }
 
@@ -24,8 +24,8 @@ namespace ContosoCrafts.WebSite.Models
 
     public class Candidates
     {
-        public string formatted_address { get; set; }
-        public string name { get; set; }
-        public string place_id { get; set; }
+        public string? formatted_address { get; set; }
+        public string? name { get; set; }
+        public string? place_id { get; set; }
     }
 }
