@@ -64,6 +64,19 @@
                         <td><b>WEBSITE</b></td>
                         <td>@Model.restaurants.Url</td>
                     </tr>
+                    <tr>
+                        <td><b>LOCATION</b></td>
+                        <td>
+                            <iframe
+                                width="450"
+                                height="250"
+                                frameborder="0" style="border:0"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src=@("https://www.google.com/maps/embed/v1/place?key=AIzaSyCUkutN1VIQIdgTfs-xbzw1sxL5woLls3Y&q=place_id:" + Model.restaurants.PlaceID)
+                                allowfullscreen>
+                            </iframe>
+                        </td>
+                    </tr>
                 </tbody>
 
             </table>
