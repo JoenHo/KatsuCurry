@@ -105,7 +105,7 @@
   },
   {
     "id": "Tsukushinbo",
-    "type": "multi-type", 
+    "type": "multi-type",
     "name": "Tsukushinbo",
     "phone": "(206) 467-4004",
     "address": "515 South Main St, Seattle, WA 98104",
@@ -115,5 +115,19 @@
     "dishes": [ "tamagoyaki", "ebi_furai", "sashimi" ],
     "Ratings": null,
     "PlaceID": "ChIJnc-QmrtqkFQRlFnDTZSfac8"
+  },
+  {
+    "id": "Maneki",
+    "type": "multi-type",
+    "name": "Maneki",
+    "phone": "(503) 662-2814",
+    "address": "304 6th Ave S, Seattle, WA 98104",
+    "hours": [ "Closed", "5:00 PM – 9:00 PM", "5:00 PM – 9:00 PM", "5:00 PM – 9:00 PM", "5:00 PM – 9:00 PM", "5:00 PM – 9:00 PM", "5:00 PM – 9:00 PM" ],
+    "img": "https://user-images.githubusercontent.com/81502009/171294951-437370f9-3004-4616-8b24-b520adcfe917.jpeg",
+    "website": "https://manekiseattle.com/",
+    "dishes": [ "takoyaki", "tempura", "sashimi" ],
+    "Ratings": null,
+    "PlaceID": ""
   }
+
 ]
