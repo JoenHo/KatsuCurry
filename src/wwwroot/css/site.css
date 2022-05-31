@@ -503,6 +503,10 @@ h2 {
     max-height: 30px;
     padding: 1px 5px;
 }
+.dice_rotate {
+    animation: rotation 1.1s;
+    animation-iteration-count: infinite;
+}
 /* -- style for dice -- */
 /* -- style for hungry button -- */
 #hungry_dice {
