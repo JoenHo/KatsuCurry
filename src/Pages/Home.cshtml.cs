@@ -29,6 +29,7 @@ namespace ContosoCrafts.WebSite.Pages
 
         public JsonFileProductService ProductService { get; }
         public IEnumerable<Models.Product>? Products { get; private set; }
+        public IEnumerable<Models.Food>? Foods { get; private set; }
 
         /// <summary>
         /// Whenever a user makes a GET request to a page, this method is invoked
