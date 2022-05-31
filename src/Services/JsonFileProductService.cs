@@ -140,14 +140,14 @@ namespace ContosoCrafts.WebSite.Services
             // Get the current set, and append the new record to it becuase
             // IEnumerable does not have Add
             var dataSet = GetProducts();
-            
+
             using (var client = new HttpClient())
             {
                 string querystring = restaurant.Name.Replace(" ", "%2C");
                 var response = client.GetStringAsync(String.Format("https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + querystring + "&inputtype=textquery&fields=formatted_address%2Cplace_id%2Cname&key=AIzaSyCUkutN1VIQIdgTfs-xbzw1sxL5woLls3Y")).Result;
                 var result = JsonSerializer.Deserialize<Response>(response);
                 if (result.candidates[0].place_id is null) {
-                    restaurant.PlaceID = ChIJ-bfVTh8VkFQRDZLQnmioK9s;
+                    restaurant.PlaceID = "ChIJ-bfVTh8VkFQRDZLQnmioK9s";
                 }
                 else {
                     restaurant.PlaceID = result.candidates[0].place_id;
