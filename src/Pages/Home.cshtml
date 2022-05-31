@@ -41,11 +41,16 @@
 <script src="_framework/blazor.server.js"></script>
 <script type="text/javascript">function Random_Suggestion(rid, fid)
 {
-    if (document.getElementById("toggle_btn").checked == false) {
-        var url = "/Product/Read/" + rid
-        window.location.assign(url);
-    } else {
-        var url = "/Product/ReadFood/?id=" + fid
-        window.location.assign(url);
-    }
-}</script>
+    setTimeout(function () {
+
+        if (document.getElementById("toggle_btn").checked == false) {
+            var url = "/Product/Read/" + rid
+            window.location.assign(url);
+        } else {
+            var url = "/Product/ReadFood/?id=" + fid
+            window.location.assign(url);
+        } 
+
+    }, 1000);  
+}
+</script>
