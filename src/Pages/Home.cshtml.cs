@@ -34,6 +34,10 @@ namespace ContosoCrafts.WebSite.Pages
         /// <summary>
         /// Whenever a user makes a GET request to a page, this method is invoked
         /// </summary>
-        public void OnGet() => Products = ProductService.GetProducts();
-    }
+        public void OnGet()
+        {
+            Products = ProductService.GetProducts();
+            Foods = ProductService.GetFood();
+        }
+}
 }
