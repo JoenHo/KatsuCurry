@@ -504,3 +504,21 @@ h2 {
     padding: 1px 5px;
 }
 /* -- style for dice -- */
+/* -- style for hungry button -- */
+#hungry_dice {
+    list-style-type: none;
+    border: 1px solid #303134;
+    border-radius: 10px;
+    color: #e8eaed;
+    font-family: 'Limelight', cursive;
+    font-size: 14px;
+    margin: 0px 5px;
+    padding: 0 10px;
+    line-height: 0px;
+    height: 40px;
+    min-width: 170px;
+    text-align: center;
+    cursor: pointer;
+    background: #3c4043;
+}
+/* -- style for hungry button -- */
