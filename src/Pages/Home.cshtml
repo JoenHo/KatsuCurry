@@ -41,6 +41,8 @@
 <script src="_framework/blazor.server.js"></script>
 <script type="text/javascript">function Random_Suggestion(rid, fid)
 {
+    document.getElementById("dice_icon").classList.add("dice_rotate");
+
     setTimeout(function () {
 
         if (document.getElementById("toggle_btn").checked == false) {
