@@ -141,6 +141,19 @@
     "dishes": [ "takoyaki", "tempura", "karaage", "tonkatsu" ],
     "Ratings": null,
     "PlaceID": ""
+  },
+  {
+    "id": "Migoto",
+    "type": "multi-type",
+    "name": "Migoto",
+    "phone": "(206) 329-1112",
+    "address": "514 12th Ave, Seattle, WA 98122",
+    "hours": [ "1:00 PM – 9:00 PM", "1:00 PM – 9:30 PM", "Closed", "1:00 PM – 9:30 PM", "1:00 PM – 9:30 PM", "1:00 PM – 9:30 PM", "1:00 PM – 9:00 PM" ],
+    "img": "https://user-images.githubusercontent.com/81502009/171296383-10254346-36f9-4ae4-a6c8-4845fb9870fa.jpeg",
+    "website": "https://www.gomigoto.com/",
+    "dishes": [ "udon", "gyoza", "karaage", "tonkatsu" ],
+    "Ratings": null,
+    "PlaceID": ""
   }
 
 ]
