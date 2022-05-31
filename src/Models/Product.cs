@@ -22,6 +22,8 @@ namespace ContosoCrafts.WebSite.Models
         [StringLength(14)]
         public string? Phone { get; set; }
 
+        public string? Type { get; set; }
+
         [Required(ErrorMessage = "Address is required")]
         [RegularExpression(@"^[#.0-9a-zA-Z\s,-]+$",
             ErrorMessage = "Please Enter a valid address!")]
