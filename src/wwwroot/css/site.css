@@ -498,6 +498,9 @@ h2 {
 }
 /* -- style for search bar-- */
 /* -- style for dice -- */
+button.dice {
+    outline: none
+}
 #dice_icon {
     content: url(../data/dice.png);
     max-height: 30px;
