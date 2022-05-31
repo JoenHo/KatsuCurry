@@ -497,3 +497,10 @@ h2 {
     max-height: 35px;
 }
 /* -- style for search bar-- */
+/* -- style for dice -- */
+#dice_icon {
+    content: url(../data/dice.png);
+    max-height: 30px;
+    padding: 1px 5px;
+}
+/* -- style for dice -- */
