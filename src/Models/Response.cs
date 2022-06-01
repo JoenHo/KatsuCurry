@@ -24,8 +24,6 @@ namespace ContosoCrafts.WebSite.Models
 
     public class Candidates
     {
-        public string? formatted_address { get; set; }
-        public string? name { get; set; }
         public string? place_id { get; set; }
     }
 }
