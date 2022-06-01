@@ -53,6 +53,7 @@ namespace UnitTests.Pages.Home
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual(true, pageModel.Products.ToList().Any());
+            Assert.AreEqual(true, pageModel.Foods.ToList().Any());
         }
         #endregion OnGet
     }
