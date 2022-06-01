@@ -34,7 +34,7 @@ namespace ContosoCrafts.WebSite
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseExceptionHandler("/Error");
             }
             else
             {
