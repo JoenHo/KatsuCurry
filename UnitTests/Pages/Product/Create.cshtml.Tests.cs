@@ -130,7 +130,7 @@ namespace UnitTests.Pages.Product.Create
             pageModel.Product = new ContosoCrafts.WebSite.Models.Product
             {
                 Id = "test",
-                Name = "test1",
+                Name = "!@#!@#",
                 Phone = "bogus",
                 Address = "bogus",
                 Url = "bogus",
