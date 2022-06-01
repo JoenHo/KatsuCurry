@@ -146,7 +146,6 @@ namespace ContosoCrafts.WebSite.Services
                 string querystring = restaurant.Name.Replace(" ", "%2C");
                 var response = client.GetStringAsync(String.Format("https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=" + querystring + "&inputtype=textquery&fields=place_id&key=AIzaSyCUkutN1VIQIdgTfs-xbzw1sxL5woLls3Y")).Result;
                 var result = JsonSerializer.Deserialize<Response>(response);
-                Console.WriteLine(result.status);
                 if (result.status != "OK") {
                     restaurant.PlaceID = "ChIJ-bfVTh8VkFQRDZLQnmioK9s";
                 }
