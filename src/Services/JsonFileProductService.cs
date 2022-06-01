@@ -286,9 +286,9 @@ namespace ContosoCrafts.WebSite.Services
         {
             // Get the current set, and append the new record to it
             var dataSet = GetProducts();
-            var data = dataSet.FirstOrDefault(m => m is not null && m.Id.Equals(id));
+            var data = dataSet.FirstOrDefault(m => m.Id.Equals(id));
 
-            var newDataSet = GetProducts().Where(m => m is not null &&  m.Id.Equals(id) == false);
+            var newDataSet = GetProducts().Where(m => m.Id.Equals(id) == false);
             
             SaveData(newDataSet);
 
