@@ -50,23 +50,6 @@ namespace UnitTests.Pages.Product.Create
         #endregion OnGet
 
         #region OnPostAsync
-        /// <summary>
-        /// ModelState.IsValid should return true when OnGet is called to create a new restaurant
-        /// There should be one more product than before after creating a new restaurant
-        /// </summary>
-        [Test]
-        public void OnPostAsync_Null_Product_Should_Make_New_Product()
-        {
-            // Arrange
-            var oldCount = TestHelper.ProductService.GetProducts().Count();
-
-            // Act
-            pageModel.OnPost();
-
-            // Assert
-            Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual(oldCount+1, TestHelper.ProductService.GetProducts().Count());
-        }
 
         /// <summary>
         /// PageModel should still be valid after a delete.
