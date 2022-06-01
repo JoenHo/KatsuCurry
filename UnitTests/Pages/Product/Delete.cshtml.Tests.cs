@@ -121,29 +121,6 @@ namespace UnitTests.Pages.Product.Delete
             // Assert
             Assert.AreEqual(false, pageModel.ModelState.IsValid);
         }
-
-        [Test]
-        /// <summary>
-        /// An invalid model should return an invalid page
-        /// </summary>
-        public void OnPostAsync_Null_Model_NotValid_Return_Page()
-        {
-            // Arrange
-            string[] hours = {"11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM"};
-
-            pageModel.Product = new ContosoCrafts.WebSite.Models.Product
-            {
-                Id = null
-            };
-
-            // Force an invalid error state
-
-            // Act
-            var result = pageModel.OnPost() as ActionResult;
-
-            // Assert
-            Assert.AreEqual(true, pageModel.ModelState.IsValid);
-        }
         #endregion OnPostAsync
     }
 }
