@@ -34,6 +34,16 @@ namespace ContosoCrafts.WebSite
         {
             if (env.IsDevelopment())
             {
+                app.Use(async (context, next) =>
+                {
+                    await next();
+                    if (context.Response.StatusCode == 404 || context.Response.StatusCode == 400)
+                    {
+                        context.Request.Path = "/Error";
+                        await next();
+                    }
+                });
+
                 app.UseExceptionHandler("/Error");
             }
             else
