@@ -83,6 +83,72 @@ namespace UnitTests.Pages.Product.Create
             Assert.AreEqual(oldCount+1, TestHelper.ProductService.GetProducts().Count());
         }
 
+        /// <summary>
+        /// PageModel should still be valid after a delete.
+        /// The page should change to Index when a restaurant is deleted
+        /// The restaurant that has been deleted should return null
+        /// </summary>
+        [Test]
+        public void OnPostAsync_inValid_Product_Name_Should_Have_Space_Needle_Place_ID()
+        {
+            // Arrange
+            string[] hours = {"11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM"};
+
+            pageModel.Product = new ContosoCrafts.WebSite.Models.Product
+            {
+                Id = "test",
+                Name = "&inputtype=badquery&key=AIzaSyCUkutN1VIQIdgTfs",
+                Phone = "bogus",
+                Address = "bogus",
+                Url = "bogus",
+                Image = "bougs",
+                Hours = hours
+            };
+
+            var oldCount = TestHelper.ProductService.GetProducts().Count();
+
+            // Act
+            pageModel.OnPost();
+
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual(oldCount+1, TestHelper.ProductService.GetProducts().Count());
+            Assert.AreEqual("ChIJ-bfVTh8VkFQRDZLQnmioK9s", pageModel.Product.PlaceID);
+        }
+
+        /// <summary>
+        /// PageModel should still be valid after a delete.
+        /// The page should change to Index when a restaurant is deleted
+        /// The restaurant that has been deleted should return null
+        /// </summary>
+        [Test]
+        public void OnPostAsync_Zero_Result_Product_Name_Should_Have_Space_Needle_Place_ID()
+        {
+            // Arrange
+            string[] hours = {"11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM", "11:00 AM – 11:00 PM"};
+
+            pageModel.Product = new ContosoCrafts.WebSite.Models.Product
+            {
+                Id = "test",
+                Name = "test1",
+                Phone = "bogus",
+                Address = "bogus",
+                Url = "bogus",
+                Image = "bougs",
+                Hours = hours
+            };
+
+            var oldCount = TestHelper.ProductService.GetProducts().Count();
+
+            // Act
+            pageModel.OnPost();
+
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual(oldCount+1, TestHelper.ProductService.GetProducts().Count());
+            Assert.AreEqual("ChIJ-bfVTh8VkFQRDZLQnmioK9s", pageModel.Product.PlaceID);
+        }
+
         [Test]
         /// <summary>
         /// An invalid model should return an invalid page
