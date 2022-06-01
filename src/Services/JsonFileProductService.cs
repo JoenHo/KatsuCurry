@@ -149,7 +149,7 @@ namespace ContosoCrafts.WebSite.Services
                 if (result.status != "OK") {
                     restaurant.PlaceID = "ChIJ-bfVTh8VkFQRDZLQnmioK9s";
                 }
-                if (result.candidates[0].place_id is null) {
+                else if (result.candidates[0].place_id is null) {
                     restaurant.PlaceID = "ChIJ-bfVTh8VkFQRDZLQnmioK9s";
                 }
                 else {
@@ -234,7 +234,7 @@ namespace ContosoCrafts.WebSite.Services
             ContosoCrafts.WebSite.Models.Product data)
         {
             var products = GetProducts();
-            var productData = products.FirstOrDefault(x => x is not null && x.Id.Equals(data.Id));
+            var productData = products.FirstOrDefault(x => x.Id.Equals(data.Id));
             if (productData == null)
             {
                 return null;
