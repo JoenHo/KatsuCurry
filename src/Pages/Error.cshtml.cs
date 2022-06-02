@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
@@ -17,6 +18,10 @@ namespace ContosoCrafts.WebSite.Pages
         // of the function call request
         public string? RequestId { get; set; }
 
+        public static string? error_str { get; set; } = "default";
+
+        
+
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
         private readonly ILogger<ErrorModel> _logger;
@@ -27,5 +32,6 @@ namespace ContosoCrafts.WebSite.Pages
         // to set the trace id, vice versa
         public void OnGet() =>
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+        
     }
 }
