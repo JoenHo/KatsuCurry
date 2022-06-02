@@ -37,8 +37,9 @@ namespace ContosoCrafts.WebSite
                 app.Use(async (context, next) =>
                 {
                     await next();
-                    if (context.Response.StatusCode == 404 || context.Response.StatusCode == 400)
+                    if (context.Response.StatusCode == 400)
                     {
+                        Pages.ErrorModel.func_error("Error 400");
                         context.Request.Path = "/Error";
                         await next();
                     }
@@ -51,8 +52,9 @@ namespace ContosoCrafts.WebSite
                 app.Use(async (context, next) =>
                 {
                     await next();
-                    if (context.Response.StatusCode == 404 || context.Response.StatusCode == 400)
+                    if (context.Response.StatusCode == 400)
                     {
+                        Pages.ErrorModel.func_error("Error 400");
                         context.Request.Path = "/Error";
                         await next();
                     }
