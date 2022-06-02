@@ -48,6 +48,16 @@ namespace ContosoCrafts.WebSite
             }
             else
             {
+                app.Use(async (context, next) =>
+                {
+                    await next();
+                    if (context.Response.StatusCode == 404 || context.Response.StatusCode == 400)
+                    {
+                        context.Request.Path = "/Error";
+                        await next();
+                    }
+                });
+
                 app.UseExceptionHandler("/Error");
                 // The default HSTS value is 30 days. You may want to change
                 // this for production scenarios,
