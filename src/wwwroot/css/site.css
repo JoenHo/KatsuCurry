@@ -471,6 +471,11 @@ h2 {
     max-height: 240px;
     max-width: 200px;
 }
+
+#error_home {
+
+    text-align:center;
+}
 /* -- style for about us page -- */
 /* -- style for privacy page -- */
 .privacytext {
