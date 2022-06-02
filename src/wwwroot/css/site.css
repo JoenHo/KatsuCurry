@@ -466,6 +466,10 @@ h2 {
     max-width: 200px;
 }
 
+.text-danger {
+    text-align: center;
+}
+
 #tc {
     content: url(../data/tc.png);
     max-height: 240px;
