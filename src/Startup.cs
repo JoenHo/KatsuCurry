@@ -43,6 +43,12 @@ namespace ContosoCrafts.WebSite
                         context.Request.Path = "/Error";
                         await next();
                     }
+                    if (context.Response.StatusCode == 404)
+                    {
+                        Pages.ErrorModel.func_error("Error 404");
+                        context.Request.Path = "/Error";
+                        await next();
+                    }
                 });
 
                 app.UseExceptionHandler("/Error");
@@ -55,6 +61,12 @@ namespace ContosoCrafts.WebSite
                     if (context.Response.StatusCode == 400)
                     {
                         Pages.ErrorModel.func_error("Error 400");
+                        context.Request.Path = "/Error";
+                        await next();
+                    }
+                    if (context.Response.StatusCode == 404)
+                    {
+                        Pages.ErrorModel.func_error("Error 404");
                         context.Request.Path = "/Error";
                         await next();
                     }
