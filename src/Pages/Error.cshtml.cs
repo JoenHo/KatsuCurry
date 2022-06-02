@@ -20,7 +20,10 @@ namespace ContosoCrafts.WebSite.Pages
 
         public static string? error_str { get; set; } = "default";
 
-        
+        public static void func_test(string error_var)
+        {
+            error_str = error_var;
+        }
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
