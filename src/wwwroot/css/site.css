@@ -16,9 +16,15 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .card-columns .card-body {
-    height: 100px;
-    font-family: 'Nunito', sans-serif;
-    background: #fbfafd;
+    height: 75px;
+    font-family: 'Reggae One', cursive;
+    color: #3b3434;
+    text-align: center;
+    background: white;
+}
+
+.card-footer {
+    background: white;
 }
 
 .card-columns .card-img {
