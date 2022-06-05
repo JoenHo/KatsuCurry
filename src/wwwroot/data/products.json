@@ -293,5 +293,131 @@
     ],
     "Ratings": null,
     "PlaceID": "ChIJm2IIKKlrkFQRjMX5VVHr19I"
+  },
+  {
+    "Id": "bc2360fc-1cfe-49e2-bbb8-26c6d073bf66",
+    "Name": "Shiki",
+    "Phone": "(206) 281-1352",
+    "Type": null,
+    "Address": "4 W Roy St, Seattle, WA 98119, United States",
+    "website": "http://www.shikijapaneserestaurant.com/",
+    "img": "https://user-images.githubusercontent.com/33403106/164950144-169c9e69-ed7e-4c8d-bdac-118df8ecd136.png",
+    "Hours": [
+      "Closed",
+      "Closed",
+      "5:00 \u2013 9:00 PM",
+      "5:00 \u2013 9:00 PM",
+      "5:00 \u2013 9:00 PM",
+      "5:00 \u2013 9:00 PM",
+      "5:00 \u2013 9:00 PM"
+    ],
+    "Dishes": null,
+    "Ratings": null,
+    "PlaceID": "ChIJ83vnL0IVkFQRAI20xtnp6do"
+  },
+  {
+    "Id": "93062bad-873d-40fb-99c0-9570ad2e7c72",
+    "Name": "Hurry Curry of Tokyo",
+    "Phone": "(206) 681-9443",
+    "Type": null,
+    "Address": "825 Harrison St, Seattle, WA 98109, United States",
+    "website": "http://www.hurrycurryoftokyo-seattle.com/",
+    "img": "https://user-images.githubusercontent.com/33403106/164950135-2b08b06c-138d-4d8f-9c2e-be83b7d41394.jpg",
+    "Hours": [
+      "10:00 AM \u2013 10:00 PM",
+      "10:00 AM \u2013 10:00 PM",
+      "10:00 AM \u2013 10:00 PM",
+      "10:00 AM \u2013 10:00 PM",
+      "10:00 AM \u2013 10:00 PM",
+      "10:00 AM \u2013 10:00 PM",
+      "10:00 AM \u2013 9:30 PM"
+    ],
+    "Dishes": null,
+    "Ratings": null,
+    "PlaceID": "ChIJR_81-DcVkFQRA45NENHOdPc"
+  },
+  {
+    "Id": "e49275c9-6a11-489a-b2bb-ed27979c68c5",
+    "Name": "Kizuki Ramen \u0026 Izakaya",
+    "Phone": "(425) 553-0867",
+    "Type": null,
+    "Address": "320 E Pine St, Seattle, WA 98122, United States",
+    "website": "https://www.kizuki.com/",
+    "img": "https://user-images.githubusercontent.com/33403106/164950139-37178e59-e21a-475a-8db4-9b321f1fc2cc.jpg",
+    "Hours": [
+      "11:00 AM \u2013 9:30 PM",
+      "11:00 AM \u2013 9:30 PM",
+      "11:00 AM \u2013 9:30 PM",
+      "11:00 AM \u2013 9:30 PM",
+      "11:00 AM \u2013 10:00 PM",
+      "11:00 AM \u2013 10:00 PM",
+      "11:00 AM \u2013 9:30 PM"
+    ],
+    "Dishes": null,
+    "Ratings": null,
+    "PlaceID": "ChIJsaflMstqkFQR5SEdWDIEiGs"
+  },
+  {
+    "Id": "07a41dc4-d50a-4ab9-ba95-76f3c389eddc",
+    "Name": "Itsumono",
+    "Phone": "(206) 682-1828",
+    "Type": null,
+    "Address": "610 S Jackson St, Seattle, WA 98104, United States",
+    "website": "https://itsumonoseattle.wixsite.com/home",
+    "img": "https://user-images.githubusercontent.com/33403106/164950137-cac19696-dcc8-469d-a710-565a1488e991.jpg",
+    "Hours": [
+      "Closed",
+      "5:00 PM \u2013 12:00 AM",
+      "5:00 PM \u2013 12:00 AM",
+      "5:00 PM \u2013 12:00 AM",
+      "5:00 PM \u2013 2:00 AM",
+      "5:00 PM \u2013 2:00 AM",
+      "Closed"
+    ],
+    "Dishes": null,
+    "Ratings": null,
+    "PlaceID": "ChIJ4ddzd7xqkFQR3ysPAKkjWzw"
+  },
+  {
+    "Id": "326dae7c-f331-481b-acfd-2ae677d55512",
+    "Name": "ISSIAN",
+    "Phone": "(206) 632-7010",
+    "Type": null,
+    "Address": "1618 N 45th St, Seattle, WA 98103, United States",
+    "website": "https://issianjapanesestonegrill.weebly.com/",
+    "img": "https://user-images.githubusercontent.com/33403106/164950136-33e90c0d-45c6-4966-8f78-aab4ce8325ab.jpg",
+    "Hours": [
+      "Closed",
+      "Closed",
+      "Closed",
+      "Closed",
+      "Closed",
+      "Closed",
+      "Closed"
+    ],
+    "Dishes": null,
+    "Ratings": null,
+    "PlaceID": "ChIJRU0bzVAUkFQROPiPwuOpPkU"
+  },
+  {
+    "Id": "0bb9b92a-0369-4b23-845a-82d342d10ceb",
+    "Name": "Umi Sake House",
+    "Phone": "(206) 374-8717",
+    "Type": null,
+    "Address": "2230 1st Ave, Seattle, WA 98121, United States",
+    "website": "https://www.umisakehouse.com/",
+    "img": "https://user-images.githubusercontent.com/33403106/164950150-03341740-de61-4f1e-bdb4-8553a733c639.jpg",
+    "Hours": [
+      "4:00 \u2013 11:00 PM",
+      "4:00 \u2013 11:00 PM",
+      "4:00 \u2013 11:00 PM",
+      "4:00 \u2013 11:00 PM",
+      "4:00 PM \u2013 12:00 AM",
+      "4:00 PM \u2013 12:00 AM",
+      "4:00 \u2013 11:00 PM"
+    ],
+    "Dishes": null,
+    "Ratings": null,
+    "PlaceID": "ChIJlwUFuk0VkFQRzdTvH0McgL0"
   }
 ]
