@@ -1,5 +1,29 @@
 [
   {
+    "Id": "kamonegi",
+    "Name": "Kamonegi",
+    "Phone": "(206) 632-0185",
+    "Type": "soba",
+    "Address": "1054 N 39TH STREET, SEATTLE, WA 98103",
+    "website": "https://www.kamonegiseattle.com/",
+    "img": "https://user-images.githubusercontent.com/33403106/163694130-d6f942b5-08bd-4ca8-9a2d-ff5ac7c68ec9.jpg",
+    "Hours": [
+      "Closed",
+      "4:00 \u2013 10:00 PM",
+      "4:00 \u2013 10:00 PM",
+      "4:00 \u2013 10:00 PM",
+      "4:00 \u2013 10:00 PM",
+      "4:00 \u2013 10:00 PM",
+      "Closed"
+    ],
+    "Dishes": [
+      "soba",
+      "tempra"
+    ],
+    "Ratings": null,
+    "PlaceID": "ChIJL3l1VVUUkFQR9DzkOndnea8"
+  },
+  {
     "Id": "ten sushi",
     "Name": "Ten Sushi",
     "Phone": "(206) 453-3881",
