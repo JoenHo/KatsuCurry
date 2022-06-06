@@ -49,14 +49,14 @@
                                 <div class="card-img" style="background-image: url('@selectedProduct.Image');">
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text"><b>LOCATION:</b> @selectedProduct.Address</p>
+                                    <p class="card-text fa-map-pin"><b> LOCATION:</b> @selectedProduct.Address</p>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text"><b>PHONE:</b> @selectedProduct.Phone</p>
+                                    <p class="card-text fa-phone"><b> PHONE:</b> @selectedProduct.Phone</p>
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text">
-                                        <b>HOURS:</b> <br />
+                                        <p class="card-text fa-clock-o"><b> HOURS:</b></p> 
                                         @if (selectedProduct.Hours != null)
                                         {
                                             @if (selectedProduct.Hours.Length >= 7)
@@ -75,8 +75,8 @@
                                     </p>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text">
-                                        <b>WEBSITE:</b> <a href="@selectedProduct.Url" target="_blank">
+                                    <p class="card-text fa-globe">
+                                        <b> WEBSITE:</b> <a href="@selectedProduct.Url" target="_blank">
                                             @selectedProduct.Url
                                         </a>
                                     </p>
