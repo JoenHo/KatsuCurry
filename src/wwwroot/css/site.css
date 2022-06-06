@@ -522,11 +522,11 @@ h2 {
 
 .restaurant_icon {
     content: url(../data/restaurant-icon.png);
-    max-height: 35px;
+    max-height: 40px;
 }
 .food_icon {
     content: url(../data/food-icon.png);
-    max-height: 35px;
+    max-height: 40px;
 }
 /* -- style for search bar-- */
 /* -- style for dice -- */
@@ -535,7 +535,7 @@ button.dice {
 }
 #dice_icon {
     content: url(../data/dice.png);
-    max-height: 30px;
+    max-height: 32px;
     padding: 1px 5px;
 }
 .dice_rotate {
@@ -550,11 +550,11 @@ button.dice {
     border-radius: 10px;
     color: #e8eaed;
     font-family: 'Limelight', cursive;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0px 5px;
     padding: 0 10px;
     line-height: 0px;
-    height: 40px;
+    height: 42px;
     min-width: 170px;
     text-align: center;
     cursor: pointer;
