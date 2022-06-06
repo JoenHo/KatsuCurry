@@ -74,6 +74,24 @@ namespace UnitTests.Pages.Error
             Assert.AreEqual("trace", pageModel.RequestId);
             Assert.AreEqual(true, pageModel.ShowRequestId);
         }
+
+        /// <summary>
+        /// RequestId should be TraceIdentifier "trace" when the Activity is invalid
+        /// ModelState andShowRequestId should return true after OnGet is called
+        /// </summary>
+        [Test]
+        public void OnGet_Error_Code_Should_Be_Stored()
+        {
+            // Arrange
+            ErrorModel.func_error("Error 400");
+            // Act
+            pageModel.OnGet();
+
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual("Error 400", ErrorModel.error_str);
+            Assert.AreEqual(true, pageModel.ShowRequestId);
+        }
         #endregion OnGet
     }
 }
