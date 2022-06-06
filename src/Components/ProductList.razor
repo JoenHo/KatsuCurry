@@ -49,36 +49,44 @@
                                 <div class="card-img" style="background-image: url('@selectedProduct.Image');">
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text fa-map-pin"><b> LOCATION:</b> @selectedProduct.Address</p>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text fa-phone"><b> PHONE:</b> @selectedProduct.Phone</p>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text fa-clock-o"><b> HOURS:</b> 
-                                        @if (selectedProduct.Hours != null)
-                                        {
-                                            @if (selectedProduct.Hours.Length >= 7)
-                                            {
-                                                <table>
-                                                    <tr><td>Monday</td><td>@selectedProduct.Hours[0]</td></tr>
-                                                    <tr><td>Tuesday</td><td>@selectedProduct.Hours[1]</td></tr>
-                                                    <tr><td>Wednesday</td><td>@selectedProduct.Hours[2]</td></tr>
-                                                    <tr><td>Thursday</td><td>@selectedProduct.Hours[3]</td></tr>
-                                                    <tr><td>Friday</td><td>@selectedProduct.Hours[4]</td></tr>
-                                                    <tr><td>Saturday</td><td>@selectedProduct.Hours[5]</td></tr>
-                                                    <tr><td>Sunday</td><td>@selectedProduct.Hours[6]</td></tr>
-                                                </table>
-                                            }
-                                        }
-                                    </p>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text fa-globe">
-                                        <b> WEBSITE:</b> <a href="@selectedProduct.Url" target="_blank">
-                                            @selectedProduct.Url
-                                        </a>
-                                    </p>
+                                    <table>
+                                        <thead><tr><th width="40%"></th><th width="60%"></th></tr></thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="card-text fa-map-pin"><b> LOCATION:</b></td>
+                                                <td> @selectedProduct.Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="card-text fa-phone"><b> PHONE:</b></td>
+                                                <td> @selectedProduct.Phone</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="card-text fa-clock-o"><b> HOURS:</b></td>
+                                                <td>
+                                                    @if (selectedProduct.Hours != null)
+                                                    {
+                                                        @if (selectedProduct.Hours.Length >= 7)
+                                                        {
+                                                            <table>
+                                                                <tr><td>Monday</td><td>@selectedProduct.Hours[0]</td></tr>
+                                                                <tr><td>Tuesday</td><td>@selectedProduct.Hours[1]</td></tr>
+                                                                <tr><td>Wednesday</td><td>@selectedProduct.Hours[2]</td></tr>
+                                                                <tr><td>Thursday</td><td>@selectedProduct.Hours[3]</td></tr>
+                                                                <tr><td>Friday</td><td>@selectedProduct.Hours[4]</td></tr>
+                                                                <tr><td>Saturday</td><td>@selectedProduct.Hours[5]</td></tr>
+                                                                <tr><td>Sunday</td><td>@selectedProduct.Hours[6]</td></tr>
+                                                            </table>
+                                                        }
+                                                    }
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="card-text fa-globe"><b> WEBSITE:</b></td>
+                                                <td> <a href="@selectedProduct.Url" target="_blank">@selectedProduct.Url</a></td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot></tfoot>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -150,11 +158,11 @@
                                 <div class="card-img" style="background-image: url('@selectedFood.Image');">
                                 </div>
                                 <div class="card-body">
-                                    <b class="card-text">@selectedFood.Name</b><br />
+                                    <b class="card-text"><b>@selectedFood.Name</b></b><br />
                                     <p class="card-text">@selectedFood.Description</p>
                                 </div>
                                 <div class="card-body">
-                                    <b class="card-text">RESTAURANT SUGGESTION</b><br />
+                                    <b class="card-text"><b>RESTAURANT SUGGESTION</b></b><br />
                                     <table>
                                         <tr>
                                             @if (selectedFood.Restaurants != null)
