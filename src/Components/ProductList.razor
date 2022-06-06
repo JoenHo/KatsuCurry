@@ -116,8 +116,10 @@
             @foreach (var food in ProductService.GetFood())
             {
                 <div class="card">
-                    <div class="card-img" style="background-image: url('@food.Image');">
-                    </div>
+                    <a href="/Product/ReadFood/?id=@food.Id" onclick="">
+                        <div class="card-img" style="background-image: url('@food.Image');">
+                        </div>
+                    </a>
                     <div class="card-body">
                         <h5 class="card-title">@food.Name</h5>
                     </div>
