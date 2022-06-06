@@ -28,7 +28,11 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .card-text {
-    font: 18px 'crimson text', serif;
+    font: 16px 'crimson text', serif;
+}
+
+.card-content {
+    font: 16px 'crimson text', serif;
 }
 
 .card-text::before{

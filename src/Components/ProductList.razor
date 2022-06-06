@@ -54,11 +54,11 @@
                                         <tbody>
                                             <tr>
                                                 <td class="card-text fa-map-pin"><b> LOCATION:</b></td>
-                                                <td> @selectedProduct.Address</td>
+                                                <td class="card-content"> @selectedProduct.Address</td>
                                             </tr>
                                             <tr>
                                                 <td class="card-text fa-phone"><b> PHONE:</b></td>
-                                                <td> @selectedProduct.Phone</td>
+                                                <td class="card-content"> @selectedProduct.Phone</td>
                                             </tr>
                                             <tr>
                                                 <td class="card-text fa-clock-o"><b> HOURS:</b></td>
@@ -68,13 +68,13 @@
                                                         @if (selectedProduct.Hours.Length >= 7)
                                                         {
                                                             <table>
-                                                                <tr><td>Monday</td><td>@selectedProduct.Hours[0]</td></tr>
-                                                                <tr><td>Tuesday</td><td>@selectedProduct.Hours[1]</td></tr>
-                                                                <tr><td>Wednesday</td><td>@selectedProduct.Hours[2]</td></tr>
-                                                                <tr><td>Thursday</td><td>@selectedProduct.Hours[3]</td></tr>
-                                                                <tr><td>Friday</td><td>@selectedProduct.Hours[4]</td></tr>
-                                                                <tr><td>Saturday</td><td>@selectedProduct.Hours[5]</td></tr>
-                                                                <tr><td>Sunday</td><td>@selectedProduct.Hours[6]</td></tr>
+                                                                <tr><td class="card-content">Monday</td><td class="card-content">@selectedProduct.Hours[0]</td></tr>
+                                                                <tr><td class="card-content">Tuesday</td><td class="card-content">@selectedProduct.Hours[1]</td></tr>
+                                                                <tr><td class="card-content">Wednesday</td><td class="card-content">@selectedProduct.Hours[2]</td></tr>
+                                                                <tr><td class="card-content">Thursday</td><td class="card-content">@selectedProduct.Hours[3]</td></tr>
+                                                                <tr><td class="card-content">Friday</td><td class="card-content">@selectedProduct.Hours[4]</td></tr>
+                                                                <tr><td class="card-content">Saturday</td><td class="card-content">@selectedProduct.Hours[5]</td></tr>
+                                                                <tr><td class="card-content">Sunday</td><td class="card-content">@selectedProduct.Hours[6]</td></tr>
                                                             </table>
                                                         }
                                                     }
@@ -82,7 +82,7 @@
                                             </tr>
                                             <tr>
                                                 <td class="card-text fa-globe"><b> WEBSITE:</b></td>
-                                                <td> <a href="@selectedProduct.Url" target="_blank">@selectedProduct.Url</a></td>
+                                                <td class="card-content"> <a href="@selectedProduct.Url" target="_blank">@selectedProduct.Url</a></td>
                                             </tr>
                                         </tbody>
                                         <tfoot></tfoot>
